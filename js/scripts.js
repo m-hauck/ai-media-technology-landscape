@@ -41,7 +41,11 @@ $( document ).ready(function() {
             currentLink = this.link;
             currentDescription = this.description;
             currentCategories = this.categories;
-            currentMediatype = "mediatype-" + this.mediatype;
+            if(this.mediatype.length > 1){
+                currentMediatype = "mediatype-mixed";
+            } else{
+                currentMediatype = "mediatype-" + this.mediatype;
+            };
             
             // go through each category of the item and add the product to the correspondig section
             $.each( currentCategories, function(key, currentCategory) {
@@ -51,7 +55,7 @@ $( document ).ready(function() {
                 } else{
                     currentProduct = currentName;
                 }
-                
+
                 html = `
                 <li class="product-wrapper text-center list-inline-item ${currentMediatype}">
                 <a href="${currentLink}" title="${currentProduct}: ${currentDescription}" target="_blank" class="product-link">

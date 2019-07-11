@@ -39,6 +39,9 @@
     border-color: #79b953;
 }
 .mediatype-mixed{
+    border-color: rgb(20, 133, 209);
+}
+.mediatype-other{
     border-color: #666;
 }
 .legend-item{

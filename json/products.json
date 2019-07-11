@@ -4,7 +4,9 @@
 		"manufacturer": "Cinema Intelligence",
 		"logo": "Cinema-Intelligence-RGB_highres.jpg",
 		"link": "https://cinemaintelligence.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Vorhersage der Filmperformance und Anwesenheit; verbesserte Vertriebsverhandlungen; optimierte Kinoplanung.",
 		"categories": [
 			"Packaging"
@@ -15,7 +17,9 @@
 		"manufacturer": "Vault AI",
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Prognose von Film-Umsätzen und der Zielgruppen-Demografie; Wettbewerbs-Titelanalyse",
 		"categories": [
 			"Packaging"
@@ -26,7 +30,9 @@
 		"manufacturer": "Vault AI",
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Visualisierung des Filmpublikums; Marken-, Sequenz- und Franchiseanalyse",
 		"categories": [
 			"BeschaffungInhalte"
@@ -37,7 +43,9 @@
 		"manufacturer": "Vault AI",
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Visualisierung des TV-Publikums; Marktanalysen- und vorhersagen",
 		"categories": [
 			"BeschaffungInhalte"
@@ -48,7 +56,9 @@
 		"manufacturer": "ScriptBook",
 		"logo": "scriptbook-registered.svg",
 		"link": "https://scriptbook.io/",
-		"mediatype": "text",
+		"mediatype": [
+			"text"
+		],
 		"description": "Drehbuchanalyse; Automatisierte Storygenerierung",
 		"categories": [
 			"ProduktionContent"
@@ -59,7 +69,9 @@
 		"manufacturer": "IBM",
 		"logo": "ibm-watson-avatar_purple.png",
 		"link": "https://www.ibm.com/blogs/think/2016/08/cognitive-movie-trailer",
-		"mediatype": "mixed",
+		"mediatype": [
+			"video"
+		],
 		"description": "Automatischer Videoschnitt",
 		"categories": [
 			"ProduktionContent"
@@ -70,7 +82,9 @@
 		"manufacturer": "Popgun",
 		"logo": "Gloss-Logo.svg",
 		"link": "https://glossaudio.com/",
-		"mediatype": "audio",
+		"mediatype": [
+			"audio"
+		],
 		"description": "Audio-Mastering",
 		"categories": [
 			"ProduktionContent"
@@ -81,7 +95,9 @@
 		"manufacturer": "Amper",
 		"logo": "amper_logo.svg",
 		"link": "https://www.ampermusic.com/",
-		"mediatype": "audio",
+		"mediatype": [
+			"audio"
+		],
 		"description": "Musik komponieren",
 		"categories": [
 			"ProduktionContent"
@@ -92,7 +108,9 @@
 		"manufacturer": "LANDR",
 		"logo": "LANDR.svg",
 		"link": "https://www.landr.com/",
-		"mediatype": "audio",
+		"mediatype": [
+			"audio"
+		],
 		"description": "Audio-Mastering & -Distribution",
 		"categories": [
 			"ProduktionContent",
@@ -104,7 +122,9 @@
 		"manufacturer": "CloudBounce",
 		"logo": "CloudBounce.svg",
 		"link": "https://www.cloudbounce.com/",
-		"mediatype": "audio",
+		"mediatype": [
+			"audio"
+		],
 		"description": "Audio-Mastering",
 		"categories": [
 			"ProduktionContent"
@@ -115,7 +135,9 @@
 		"manufacturer": "Aiva Technologies",
 		"logo": "aiva.png",
 		"link": "https://aiva.ai/",
-		"mediatype": "audio",
+		"mediatype": [
+			"audio"
+		],
 		"description": "Soundtrack komponieren",
 		"categories": [
 			"ProduktionContent"
@@ -126,7 +148,9 @@
 		"manufacturer": "RADIUS5",
 		"logo": "cre8tiveai.svg",
 		"link": "https://cre8tiveai.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Verbesserung der Bildqualität",
 		"categories": [
 			"ProduktionContent"
@@ -137,7 +161,9 @@
 		"manufacturer": "Arraiy",
 		"logo": "arraiy.png",
 		"link": "https://www.arraiy.com/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Augmented Reality im Broadcasting",
 		"categories": [
 			"ProduktionContent"
@@ -148,7 +174,9 @@
 		"manufacturer": "Realytics",
 		"logo": "realytics.svg",
 		"link": "https://www.realytics.io/",
-		"mediatype": "mixed",
+		"mediatype": [
+			"video"
+		],
 		"description": "Planung von TV-Mediaplänen",
 		"categories": [
 			"PlazierungWerbung",
@@ -160,7 +188,9 @@
 		"manufacturer": "Adobe",
 		"logo": "adobe.svg",
 		"link": "https://www.adobe.com/de/sensei.html",
-		"mediatype": "mixed",
+		"mediatype": [
+			"other"
+		],
 		"description": "Predictive Analytics, Optimierung Werbeausgaben, Projektorganisation",
 		"categories": [
 			"ProduktionContent",
@@ -173,7 +203,9 @@
 		"manufacturer": "QualiFiction",
 		"logo": "qualifiction.png",
 		"link": "https://www.qualifiction.info/",
-		"mediatype": "mixed",
+		"mediatype": [
+			"text"
+		],
 		"description": "Vorhersage von Bucherfolgen",
 		"categories": [
 			"BeschaffungInhalte"
@@ -184,7 +216,9 @@
 		"manufacturer": "Lobster",
 		"logo": "lobster.png",
 		"link": "https://lobster.media/",
-		"mediatype": "video",
+		"mediatype": [
+			"video"
+		],
 		"description": "Kuratieren und Lizenzieren von visuellen Inhalten mit KI-Filterung",
 		"categories": [
 			"BeschaffungInhalte"
@@ -261,7 +295,8 @@
 		"logo": "interra-systems.svg",
 		"link": "http://www.interrasystems.com/content-classification.php",
 		"mediatype": [
-			"mixed"
+			"video",
+			"audio"
 		],
 		"description": "Klassifizierung audiovisueller Inhalte in semantische Konzepte",
 		"categories": [
@@ -276,7 +311,7 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Video Annotationen",
+		"description": "Objekterkennung und -beschreibung",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -287,7 +322,8 @@
 		"logo": "telestream.png",
 		"link": "https://cloud.telestream.net/quality-control/",
 		"mediatype": [
-			"mixed"
+			"video",
+			"audio"
 		],
 		"description": "Automatisierte Qualitätskontrolle",
 		"categories": [
@@ -313,7 +349,7 @@
 		"logo": "recombee.svg",
 		"link": "https://www.recombee.com/",
 		"mediatype": [
-			"mixed"
+			"other"
 		],
 		"description": "Empfehlungssystem",
 		"categories": [
@@ -365,7 +401,7 @@
 		"logo": "Prime_Focus_Technologies.jpg",
 		"link": "https://www.primefocustechnologies.com/blog/metadata-harvested-with-ai-creates-new-revenue-opportunities/",
 		"mediatype": [
-			"mixed"
+			"other"
 		],
 		"description": "Metadatengenerierung",
 		"categories": [
@@ -391,7 +427,7 @@
 		"logo": "skyline-communications.png",
 		"link": "https://skyline.be/dataminer",
 		"mediatype": [
-			"mixed"
+			"other"
 		],
 		"description": "Automatisierte Sendeabläufe",
 		"categories": [
@@ -404,7 +440,7 @@
 		"logo": "ipv.jpg",
 		"link": "https://www.ipv.com/",
 		"mediatype": [
-			"mixed"
+			"video"
 		],
 		"description": "Metadaten-Generierung",
 		"categories": [
@@ -417,7 +453,8 @@
 		"logo": "lipsync.png",
 		"link": "https://lipsync.multicorewareinc.com/",
 		"mediatype": [
-			"mixed"
+			"video",
+			"audio"
 		],
 		"description": "Erkennung der Synchronisierung von Untertiteln",
 		"categories": [
@@ -435,6 +472,125 @@
 		"description": "Erkennung ungeeigneter Videoszenen",
 		"categories": [
 			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Podcast Advertising",
+		"manufacturer": "Pippa",
+		"logo": "pippa.svg",
+		"link": "https://pippa.io/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Dynamische, personalisierte Werbeschaltung",
+		"categories": [
+			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "Metaliquid",
+		"manufacturer": "Metaliquid",
+		"logo": "metaliquid.png",
+		"link": "https://www.meta-liquid.com/",
+		"mediatype": [
+			"video",
+			"audio"
+		],
+		"description": "Objekterkennung und -beschreibung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "drumatom²",
+		"manufacturer": "accusonus",
+		"logo": "drumatom.svg",
+		"link": "https://accusonus.com/products/drumatom",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Reduzierung von Störgeräuschen bei Schlagzeugaufnahmen",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Regroover",
+		"manufacturer": "accusonus",
+		"logo": "regroover.svg",
+		"link": "https://accusonus.com/products/regroover",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Anpassung der Lautstärke und Hinzufügen von Effekten auf separaten Sound-Layern",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Neutron",
+		"manufacturer": "iZotope",
+		"logo": "neutron.png",
+		"link": "https://www.izotope.com/en/products/mix/neutron.html",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Audio-Reparatur, Instrumentenklassifizierer",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Sentinel",
+		"manufacturer": "Pilot Analytics",
+		"logo": "pilot.png",
+		"link": "https://www.pilotmovies.com/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Management der Zuschauerbeziehungen",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "Prophet",
+		"manufacturer": "Pilot Analytics",
+		"logo": "pilot.png",
+		"link": "https://www.pilotmovies.com/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Prognose von Einspielergebnisse",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "Qloo",
+		"manufacturer": "Qloo",
+		"logo": "qloo.svg",
+		"link": "Vorlieben",
+		"mediatype": [
+			"video",
+			"audio"
+		],
+		"description": "Verbrauchervorlieben vorherzusagen",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "SmartFM",
+		"manufacturer": "WorldCast Systems",
+		"logo": "smartfm.svg",
+		"link": "https://www.worldcastsystems.com/en/c116p109/artificial-intelligence-for-radio/smart-fm",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Reduzierung Energiekosten und Erhöhung Audio-Qualität für FM-Sender",
+		"categories": [
+			"TechnischeProduktion"
 		]
 	}
 ]
