@@ -1,0 +1,30 @@
+[
+    {
+        "nameShort": "BeschaffungInhalte",
+        "nameLong": "Beschaffung von Informationen und Inhalten"
+    },
+    {
+        "nameShort": "AkquisitionWerbung",
+        "nameLong": "Akquisition von Werbung"
+    },
+    {
+        "nameShort": "ProduktionContent",
+        "nameLong": "Produktion und Aggregation von Content"
+    },
+    {
+        "nameShort": "PlazierungWerbung",
+        "nameLong": "Plazierung von Werbung"
+    },
+    {
+        "nameShort": "Packaging",
+        "nameLong": "Packaging der Produkte"
+    },
+    {
+        "nameShort": "TechnischeProduktion",
+        "nameLong": "Technische Produktion"
+    },
+    {
+        "nameShort": "Distribution",
+        "nameLong": "Distribution"
+    }
+]

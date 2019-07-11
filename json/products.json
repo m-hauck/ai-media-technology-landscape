@@ -1,0 +1,440 @@
+[
+	{
+		"name": "Cinema Intelligence",
+		"manufacturer": "Cinema Intelligence",
+		"logo": "Cinema-Intelligence-RGB_highres.jpg",
+		"link": "https://cinemaintelligence.com/",
+		"mediatype": "video",
+		"description": "Vorhersage der Filmperformance und Anwesenheit; verbesserte Vertriebsverhandlungen; optimierte Kinoplanung.",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "RealDemand Market Intelligence",
+		"manufacturer": "Vault AI",
+		"logo": "vault.png",
+		"link": "https://vault-ai.com/",
+		"mediatype": "video",
+		"description": "Prognose von Film-Umsätzen und der Zielgruppen-Demografie; Wettbewerbs-Titelanalyse",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "DeepAudience Analysis for Movies",
+		"manufacturer": "Vault AI",
+		"logo": "vault.png",
+		"link": "https://vault-ai.com/",
+		"mediatype": "video",
+		"description": "Visualisierung des Filmpublikums; Marken-, Sequenz- und Franchiseanalyse",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "DeepAudience Analysis for TV",
+		"manufacturer": "Vault AI",
+		"logo": "vault.png",
+		"link": "https://vault-ai.com/",
+		"mediatype": "video",
+		"description": "Visualisierung des TV-Publikums; Marktanalysen- und vorhersagen",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "ScriptBook",
+		"manufacturer": "ScriptBook",
+		"logo": "scriptbook-registered.svg",
+		"link": "https://scriptbook.io/",
+		"mediatype": "text",
+		"description": "Drehbuchanalyse; Automatisierte Storygenerierung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Watson",
+		"manufacturer": "IBM",
+		"logo": "ibm-watson-avatar_purple.png",
+		"link": "https://www.ibm.com/blogs/think/2016/08/cognitive-movie-trailer",
+		"mediatype": "mixed",
+		"description": "Automatischer Videoschnitt",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Gloss",
+		"manufacturer": "Popgun",
+		"logo": "Gloss-Logo.svg",
+		"link": "https://glossaudio.com/",
+		"mediatype": "audio",
+		"description": "Audio-Mastering",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Score",
+		"manufacturer": "Amper",
+		"logo": "amper_logo.svg",
+		"link": "https://www.ampermusic.com/",
+		"mediatype": "audio",
+		"description": "Musik komponieren",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "LANDR",
+		"manufacturer": "LANDR",
+		"logo": "LANDR.svg",
+		"link": "https://www.landr.com/",
+		"mediatype": "audio",
+		"description": "Audio-Mastering & -Distribution",
+		"categories": [
+			"ProduktionContent",
+			"Distribution"
+		]
+	},
+	{
+		"name": "CloudBounce",
+		"manufacturer": "CloudBounce",
+		"logo": "CloudBounce.svg",
+		"link": "https://www.cloudbounce.com/",
+		"mediatype": "audio",
+		"description": "Audio-Mastering",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "AIVA",
+		"manufacturer": "Aiva Technologies",
+		"logo": "aiva.png",
+		"link": "https://aiva.ai/",
+		"mediatype": "audio",
+		"description": "Soundtrack komponieren",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "cre8tiveAI",
+		"manufacturer": "RADIUS5",
+		"logo": "cre8tiveai.svg",
+		"link": "https://cre8tiveai.com/",
+		"mediatype": "video",
+		"description": "Verbesserung der Bildqualität",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "DeepStudio",
+		"manufacturer": "Arraiy",
+		"logo": "arraiy.png",
+		"link": "https://www.arraiy.com/",
+		"mediatype": "video",
+		"description": "Augmented Reality im Broadcasting",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Ad Plan",
+		"manufacturer": "Realytics",
+		"logo": "realytics.svg",
+		"link": "https://www.realytics.io/",
+		"mediatype": "mixed",
+		"description": "Planung von TV-Mediaplänen",
+		"categories": [
+			"PlazierungWerbung",
+			"Packaging"
+		]
+	},
+	{
+		"name": "Sensei",
+		"manufacturer": "Adobe",
+		"logo": "adobe.svg",
+		"link": "https://www.adobe.com/de/sensei.html",
+		"mediatype": "mixed",
+		"description": "Predictive Analytics, Optimierung Werbeausgaben, Projektorganisation",
+		"categories": [
+			"ProduktionContent",
+			"PlazierungWerbung",
+			"Packaging"
+		]
+	},
+	{
+		"name": "QualiFiction",
+		"manufacturer": "QualiFiction",
+		"logo": "qualifiction.png",
+		"link": "https://www.qualifiction.info/",
+		"mediatype": "mixed",
+		"description": "Vorhersage von Bucherfolgen",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "Lobster",
+		"manufacturer": "Lobster",
+		"logo": "lobster.png",
+		"link": "https://lobster.media/",
+		"mediatype": "video",
+		"description": "Kuratieren und Lizenzieren von visuellen Inhalten mit KI-Filterung",
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "Episodic Images",
+		"manufacturer": "Media Distillery",
+		"logo": "media-distillery.svg",
+		"link": "https://www.mediadistillery.com/tv-operators/episodic-images/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Automatische Auswahl von Vorschaubildern",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "Snackable Content",
+		"manufacturer": "Media Distillery",
+		"logo": "media-distillery.svg",
+		"link": "https://www.mediadistillery.com/tv-operators/snackable-content-2/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Automatische Erstellung von personalisierten Kurzfilmen",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Content Discovery",
+		"manufacturer": "Media Distillery",
+		"logo": "media-distillery.svg",
+		"link": "https://www.mediadistillery.com/tv-operators/content-discovery/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Empfehlungssystem",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "Addressable TV",
+		"manufacturer": "Media Distillery",
+		"logo": "media-distillery.svg",
+		"link": "https://www.mediadistillery.com/tv-operators/addressable-tv/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Tagging von Themen innerhalb von TV-Programmen",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "KAI-V",
+		"manufacturer": "KEEN AI",
+		"logo": "keen-ai.svg",
+		"link": "https://www.keen-ai.com/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Qualitätskontrolle und Zustandsbewertung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "BATON WINNOW",
+		"manufacturer": "Interra Systems",
+		"logo": "interra-systems.svg",
+		"link": "http://www.interrasystems.com/content-classification.php",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Klassifizierung audiovisueller Inhalte in semantische Konzepte",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Video Annotation",
+		"manufacturer": "Scale",
+		"logo": "scale.svg",
+		"link": "https://scale.ai/video-annotation",
+		"mediatype": [
+			"video"
+		],
+		"description": "Video Annotationen",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Quality Control",
+		"manufacturer": "Telestream",
+		"logo": "telestream.png",
+		"link": "https://cloud.telestream.net/quality-control/",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Automatisierte Qualitätskontrolle",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Movix",
+		"manufacturer": "Deep Systems",
+		"logo": "movix.png",
+		"link": "https://movix.ai/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Empfehlungssystem",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "Recombee",
+		"manufacturer": "Recombee",
+		"logo": "recombee.svg",
+		"link": "https://www.recombee.com/",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Empfehlungssystem",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "SOMA",
+		"manufacturer": "Isotoma",
+		"logo": "isotoma.svg",
+		"link": "https://isotoma.com/work/bbc-rd",
+		"mediatype": [
+			"video"
+		],
+		"description": "Compositing und Mixing von Videos im Browser",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Azure Media Analytics",
+		"manufacturer": "Microsoft",
+		"logo": "Microsoft_Azure.svg",
+		"link": "https://customers.microsoft.com/en-au/story/esg-media-telecommunications-azure",
+		"mediatype": [
+			"video"
+		],
+		"description": "Automatische Live-Szenenauswahl",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Video Encoding",
+		"manufacturer": "Bitmovin",
+		"logo": "bitmovin.svg",
+		"link": "https://bitmovin.com/encoding-service/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Bandbreiten- und Qualitätsoptimierung",
+		"categories": [
+			"TechnischeProduktion"
+		]
+	},
+	{
+		"name": "CLEAR Media ERP",
+		"manufacturer": "Prime Focus Technologies",
+		"logo": "Prime_Focus_Technologies.jpg",
+		"link": "https://www.primefocustechnologies.com/blog/metadata-harvested-with-ai-creates-new-revenue-opportunities/",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Metadatengenerierung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Ryff",
+		"manufacturer": "Ryff",
+		"logo": "ryff.png",
+		"link": "https://www.ryff.co/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Dynamische Produkt- und Markenplatzierung in produzierten Inhalten",
+		"categories": [
+			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "DataMiner",
+		"manufacturer": "Skyline Communications",
+		"logo": "skyline-communications.png",
+		"link": "https://skyline.be/dataminer",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Automatisierte Sendeabläufe",
+		"categories": [
+			"Distribution"
+		]
+	},
+	{
+		"name": "Curator",
+		"manufacturer": "IPV",
+		"logo": "ipv.jpg",
+		"link": "https://www.ipv.com/",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Metadaten-Generierung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "LipSync",
+		"manufacturer": "MulticoreWare",
+		"logo": "lipsync.png",
+		"link": "https://lipsync.multicorewareinc.com/",
+		"mediatype": [
+			"mixed"
+		],
+		"description": "Erkennung der Synchronisierung von Untertiteln",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Recognition",
+		"manufacturer": "Valossa",
+		"logo": "valossa.png",
+		"link": "https://valossa.com/products-api/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Erkennung ungeeigneter Videoszenen",
+		"categories": [
+			"ProduktionContent"
+		]
+	}
+]

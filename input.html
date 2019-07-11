@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Editor Selectize Integration Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+</head>
+<body>    
+    <div id='editor_holder'></div>
+    <button id='submit'>Submit (console.log)</button>
+
+    <img style="display: block; margin-top: 50px;" width="100%" src="img/Wertkette_Medienunternehmen.svg">
+    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+        
+        // Initialize the editor with a JSON schema
+        var editor = new JSONEditor(document.getElementById('editor_holder'),{
+            schema: {
+                type: "object",
+                title: "Text",
+                properties: {
+                    name: {
+                        type: "string"
+                    },
+                    manufacturer: {
+                        type: "string"
+                    },
+                    logo: {
+                        type: "string"
+                    },
+                    link: {
+                        type: "string"
+                    },
+                    mediatype: {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string",
+                            enum: ["video", "audio", "text", "mixed"],
+                            options: {
+                                enum_titles: ["Video", "Audio", "Text", "Gemischt"]
+                            }
+                        }
+                    },
+                    description: {
+                        type: "string"
+                    },
+                    categories: {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string",
+                            enum: ["BeschaffungInhalte","AkquisitionWerbung","ProduktionContent","PlazierungWerbung","Packaging","TechnischeProduktion","Distribution"],
+                            options: {
+                                enum_titles: ["Beschaffung von Informationen und Inhalten","Akquisition von Werbung","Produktion und Aggregation von Content","Plazierung von Werbung","Packaging der Produkte","Technische Produktion","Distribution"]
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        $('#submit').click(function() {
+            // read current products
+            $.getJSON( "json/products.json", function( data ) {                
+                // append editor data from form
+                data.push(editor.getValue());
+                // copy to clipboard
+                copyTextToClipboard(JSON.stringify(data, null, "\t"));
+            });
+        });
+        
+        
+        
+        function fallbackCopyTextToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Fallback: Copying text command was ' + msg);
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        function copyTextToClipboard(text) {
+            if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(text);
+                return;
+            }
+            navigator.clipboard.writeText(text).then(function() {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function(err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+        
+    </script>
+</body>
+</html>
