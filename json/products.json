@@ -70,9 +70,10 @@
 		"logo": "ibm-watson-avatar_purple.png",
 		"link": "https://www.ibm.com/blogs/think/2016/08/cognitive-movie-trailer",
 		"mediatype": [
-			"video"
+			"video",
+			"audio"
 		],
-		"description": "Automatischer Videoschnitt",
+		"description": "Automatischer Videoschnitt, Generierung von Musik",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -591,6 +592,112 @@
 		"description": "Reduzierung Energiekosten und Erhöhung Audio-Qualität für FM-Sender",
 		"categories": [
 			"TechnischeProduktion"
+		]
+	},
+	{
+		"name": "Brodstar Analyzer",
+		"manufacturer": "STRYME",
+		"logo": "brodstar.jpg",
+		"link": "http://www.stryme.com/brodstar/",
+		"mediatype": [
+			"video",
+			"audio"
+		],
+		"description": "Echtzeit-Qualitätsüberwachung ",
+		"categories": [
+			"TechnischeProduktion"
+		]
+	},
+	{
+		"name": "Cumulus",
+		"manufacturer": "Canto",
+		"logo": "cumulus.png",
+		"link": "https://www.canto.com/cumulus/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Bilderkennung und automatisches Tagging ",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Media Asset Management",
+		"manufacturer": "medialoopster",
+		"logo": "medialoopster.png",
+		"link": "https://www.medialoopster.com/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Sprach-, Gesichts-, Objekt- und Logo-Erkennung; Übersetzung; Generierung von Untertiteln; Fingerprinting",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Web Services: Rekognition",
+		"manufacturer": "Amazon",
+		"logo": "Amazon_Web_Services.svg",
+		"link": "https://aws.amazon.com/de/rekognition/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Identifizierung von Objekten, Personen, Texten, Szenen und Aktivitäten",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Agile Storywriter",
+		"manufacturer": "RivetAI",
+		"logo": "rivetai.png",
+		"link": "https://www.rivetai.com/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Erzeugung einer visuellen Darstellung einer Geschichte",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Magenta",
+		"manufacturer": "Google",
+		"logo": "magenta.png",
+		"link": "https://magenta.tensorflow.org/",
+		"mediatype": [
+			"video",
+			"audio"
+		],
+		"description": "Generierung von Musik und Kunst",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Orb Composer",
+		"manufacturer": "Orb Composer",
+		"logo": "orb-composer.png",
+		"link": "https://www.orb-composer.com/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Musik komponieren",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Blackwood Seven",
+		"manufacturer": "Blackwood Seven",
+		"logo": "blackwoodseven.png",
+		"link": "https://blackwoodseven.com/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Optimierung der Mediaplanung und Prognose der Geschäftsergebnisse",
+		"categories": [
+			"PlazierungWerbung"
 		]
 	}
 ]

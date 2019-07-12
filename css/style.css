@@ -9,7 +9,7 @@
     padding: 5px;
 }
 .product-wrapper {
-    width: 85px;
+    width: 79px;
     border: 2px solid #ccc;
     padding: 3px;
     margin-bottom: 0.5rem;
@@ -33,7 +33,7 @@
     border-color: #fb6e68;
 }
 .mediatype-audio{
-    border-color: #f8f378;
+    border-color: #f8d678;
 }
 .mediatype-text{
     border-color: #79b953;
@@ -58,4 +58,7 @@
 }
 .counter-text{
     font-size: 0.75em;
+}
+.list-inline-item:nth-child(6n){
+    margin-right: 0;
 }
