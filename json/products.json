@@ -178,8 +178,9 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Planung von TV-Mediaplänen",
+		"description": "Programmatic TV; Erstellung von TV-Mediaplänen",
 		"categories": [
+			"AkquisitionWerbung",
 			"PlazierungWerbung",
 			"Packaging"
 		]
@@ -571,7 +572,7 @@
 		"name": "Qloo",
 		"manufacturer": "Qloo",
 		"logo": "qloo.svg",
-		"link": "Vorlieben",
+		"link": "https://qloo.com/",
 		"mediatype": [
 			"video",
 			"audio"
@@ -698,6 +699,60 @@
 		"description": "Optimierung der Mediaplanung und Prognose der Geschäftsergebnisse",
 		"categories": [
 			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "Arc",
+		"manufacturer": "The Washington Post",
+		"logo": "arc.png",
+		"link": "https://www.arcpublishing.com/",
+		"mediatype": [
+			"text"
+		],
+		"description": "Digital-Publishing-Tools inkl. Empfehlungssystem",
+		"categories": [
+			"Packaging"
+		]
+	},
+	{
+		"name": "vidispine",
+		"manufacturer": "Arvato",
+		"logo": "vidispine.svg",
+		"link": "https://www.vidispine.com/",
+		"mediatype": [
+			"video",
+			"other"
+		],
+		"description": "Medienanalyse, Transkription, Optimierte Werbeplatzierung",
+		"categories": [
+			"ProduktionContent",
+			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "DeepVA",
+		"manufacturer": "The Chainless",
+		"logo": "DeepVA.svg",
+		"link": "https://deepva.com/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Video-Mining",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "SpotX",
+		"manufacturer": "SpotX",
+		"logo": "spotx.svg",
+		"link": "https://www.spotx.tv/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Video-Adserving-Plattform für Media Owner",
+		"categories": [
+			"AkquisitionWerbung"
 		]
 	}
 ]

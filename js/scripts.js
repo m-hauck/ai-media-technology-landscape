@@ -58,10 +58,10 @@ $( document ).ready(function() {
 
                 html = `
                 <li class="product-wrapper text-center list-inline-item ${currentMediatype}">
-                <a href="${currentLink}" title="${currentProduct}: ${currentDescription}" target="_blank" class="product-link">
-                <img class="logo" src="img/${currentLogo}">
-                </a>
-                <span class="product-name">${currentProduct}</span>
+                    <a href="${currentLink}" title="${currentProduct}: ${currentDescription}" target="_blank" class="product-link">
+                        <img class="logo" src="img/${currentLogo}">
+                        <span class="product-name">${currentProduct}</span>
+                    </a>
                 </li>
                 `;
                 

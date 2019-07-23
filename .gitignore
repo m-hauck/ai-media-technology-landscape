@@ -67,4 +67,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Domain shortcuts
+*.url
+
 # End of https://www.gitignore.io/api/macos,windows,visualstudiocode

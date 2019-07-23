@@ -1,3 +1,7 @@
+a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
+    color: black;
+    text-decoration: none;
+}
 .category-wrapper{
     margin-top: 1rem;
     margin-bottom: 1rem;
