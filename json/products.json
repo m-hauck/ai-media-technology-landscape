@@ -754,5 +754,102 @@
 		"categories": [
 			"AkquisitionWerbung"
 		]
+	},
+	{
+		"name": "Media Ai²",
+		"manufacturer": "Marketing Architects",
+		"logo": "MediaAi2.png",
+		"link": "https://www.marketingarchitects.com/media",
+		"mediatype": [
+			"other"
+		],
+		"description": "Programmatischer TV-Medieneinkauf",
+		"categories": [
+			"AkquisitionWerbung"
+		]
+	},
+	{
+		"name": "gracenote",
+		"manufacturer": "Nielsen",
+		"logo": "gracenote.svg",
+		"link": "http://www.gracenote.com",
+		"mediatype": [
+			"video",
+			"audio"
+		],
+		"description": "Metadatengenerierung",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Decidata",
+		"manufacturer": "Digicrunch",
+		"logo": "decidata.svg",
+		"link": "https://www.decidata.tv",
+		"mediatype": [
+			"video",
+			"other"
+		],
+		"description": "Videoinhalts- und Publikumsanalyse, Programmatic TV",
+		"categories": [
+			"AkquisitionWerbung",
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Rubicon Project",
+		"manufacturer": "Rubicon Project",
+		"logo": "rubicon.png",
+		"link": "https://rubiconproject.com/",
+		"mediatype": [
+			"video",
+			"other"
+		],
+		"description": "Programmatischer Marktplatz für Video",
+		"categories": [
+			"AkquisitionWerbung",
+			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "Q for Publisher",
+		"manufacturer": "Quantcast",
+		"logo": "q-for-publisher.png",
+		"link": "https://www.quantcast.com/q-for-publishers/",
+		"mediatype": [
+			"other"
+		],
+		"description": "KI-gesteuerte Publikumsverhaltensplattform",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "YouTube Ads",
+		"manufacturer": "Google",
+		"logo": "youtube.svg",
+		"link": "https://www.youtube.com/ads/",
+		"mediatype": [
+			"video"
+		],
+		"description": "KI-basierte Werbeaustrahlung",
+		"categories": [
+			"PlazierungWerbung",
+			"Distribution"
+		]
+	},
+	{
+		"name": "Tabris",
+		"manufacturer": "Tabris",
+		"logo": "tabris.png",
+		"link": "https://www.tabris.ai/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg.",
+		"categories": [
+			"PlazierungWerbung"
+		]
 	}
 ]

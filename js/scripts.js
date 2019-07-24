@@ -51,14 +51,14 @@ $( document ).ready(function() {
             $.each( currentCategories, function(key, currentCategory) {
                 // only show manufacturer if it isn't the same as the product name
                 if(currentManufacturer != currentName){
-                    currentProduct = currentManufacturer + " " + currentName;
+                    currentProduct = currentManufacturer + " <b>" + currentName + "</b>";
                 } else{
-                    currentProduct = currentName;
+                    currentProduct = "<b>" + currentName + "</b>";
                 }
 
                 html = `
                 <li class="product-wrapper text-center list-inline-item ${currentMediatype}">
-                    <a href="${currentLink}" title="${currentProduct}: ${currentDescription}" target="_blank" class="product-link">
+                    <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link">
                         <img class="logo" src="img/${currentLogo}">
                         <span class="product-name">${currentProduct}</span>
                     </a>
