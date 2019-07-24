@@ -372,16 +372,19 @@
 		]
 	},
 	{
-		"name": "Azure Media Analytics",
+		"name": "Azure Media Services",
 		"manufacturer": "Microsoft",
 		"logo": "Microsoft_Azure.svg",
-		"link": "https://customers.microsoft.com/en-au/story/esg-media-telecommunications-azure",
+		"link": "https://azure.microsoft.com/de-de/services/media-services/",
 		"mediatype": [
 			"video"
 		],
-		"description": "Automatische Live-Szenenauswahl",
+		"description": "Automatische Live-Szenenauswahl, Codierung, Videoindizierung, Streaming",
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent",
+			"Packaging",
+			"TechnischeProduktion",
+			"Distribution"
 		]
 	},
 	{
@@ -836,6 +839,7 @@
 		"description": "KI-basierte Werbeaustrahlung",
 		"categories": [
 			"PlazierungWerbung",
+			"TechnischeProduktion",
 			"Distribution"
 		]
 	},
@@ -850,6 +854,32 @@
 		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg.",
 		"categories": [
 			"PlazierungWerbung"
+		]
+	},
+	{
+		"name": "OrganicAI + PaidAI",
+		"manufacturer": "True Anthem",
+		"logo": "true_anthem.svg",
+		"link": "https://www.trueanthem.com/",
+		"mediatype": [
+			"other"
+		],
+		"description": "KI-gesteuerte Bereitstellung von Inhalten",
+		"categories": [
+			"TechnischeProduktion"
+		]
+	},
+	{
+		"name": "Zone·tv",
+		"manufacturer": "Zone·tv",
+		"logo": "zonetv.png",
+		"link": "https://www.zone.tv/",
+		"mediatype": [
+			"video"
+		],
+		"description": "Individuelle und personalisierte Videokanäle",
+		"categories": [
+			"Packaging"
 		]
 	}
 ]
