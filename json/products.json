@@ -881,5 +881,57 @@
 		"categories": [
 			"Packaging"
 		]
+	},
+	{
+		"name": "Aura",
+		"manufacturer": "Bridge.ai",
+		"logo": "bridge.svg",
+		"link": "https://bridge.ai/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Hören und Verstehen von Umgebungen, Vorhersagen und Diagnosen von mechanischen Ausfällen",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Novel Effect",
+		"manufacturer": "Novel Effect",
+		"logo": "novel-effect.png",
+		"link": "https://www.noveleffect.com/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Dynamisches Einfügen von Sound-Effekten zu vorgelesenem Text",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Lyrebird",
+		"manufacturer": "Lyrebird",
+		"logo": "lyrebird.svg",
+		"link": "https://lyrebird.ai/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Stimmrekonstruktion",
+		"categories": [
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Affdex",
+		"manufacturer": "Affectiva",
+		"logo": "affectiva.svg",
+		"link": "https://www.affectiva.com/product/affdex-for-market-research/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Emotionale Reaktionen auf digitale Medien erkennen",
+		"categories": [
+			"ProduktionContent"
+		]
 	}
 ]
