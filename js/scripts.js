@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    // switches for displaying various information
+    var showProductCount = false;
+    var showLegend = true;
+    var showNavbar = false;
+    var showTitle = false;
+    // configuration files
     var requestCategories = $.getJSON( "json/categories.json" );
     var requestProducts = $.getJSON( "json/products.json" );
     
@@ -71,6 +77,28 @@ $( document ).ready(function() {
                 $("#" + currentCategory + " span.count-product").html(parseInt($("#" + currentCategory + " span.count-product").html(), 10)+1);
             });
         });
+
+        // show or hide various information
+        if (showProductCount){
+            $(".counter-text").show();
+        } else{
+            $(".counter-text").hide();
+        };
+        if(showLegend){
+            $(".row-legend").show();
+        } else{
+            $(".row-legend").hide();
+        };
+        if (showNavbar){
+            $("nav").show();
+        } else{
+            $("nav").hide();
+        }
+        if (showTitle){
+            $("h1").show();
+        } else{
+            $("h1").hide();
+        }
     })
     .fail(function() {
         // Executed if at least one request fails
