@@ -33,20 +33,23 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 .product-name{
     display:block;
 }
+.mediatype-text{
+    border-color: #f8cd5d;
+}
+.mediatype-picture{
+    border-color: #f5961e;
+}
 .mediatype-video{
-    border-color: #fb6e68;
+    border-color: #d62048;
 }
 .mediatype-audio{
-    border-color: #f8d678;
-}
-.mediatype-text{
-    border-color: #79b953;
+    border-color: #124676;
 }
 .mediatype-mixed{
-    border-color: rgb(20, 133, 209);
+    border-color: #31acd6;
 }
 .mediatype-other{
-    border-color: #666;
+    border-color: #6ecbd2;
 }
 .legend-item{
     display: inline-block;

@@ -5,10 +5,11 @@
 		"logo": "Cinema-Intelligence-RGB_highres.jpg",
 		"link": "https://cinemaintelligence.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Vorhersage der Filmperformance und Anwesenheit; verbesserte Vertriebsverhandlungen; optimierte Kinoplanung.",
+		"description": "Prognose der Filmperformance und Zuschauerzahlen; optimierte Kinoplanung",
 		"categories": [
+			"BeschaffungInhalte",
 			"Packaging"
 		]
 	},
@@ -18,11 +19,11 @@
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Prognose von Film-Umsätzen und der Zielgruppen-Demografie; Wettbewerbs-Titelanalyse",
 		"categories": [
-			"Packaging"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -31,7 +32,7 @@
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Visualisierung des Filmpublikums; Marken-, Sequenz- und Franchiseanalyse",
 		"categories": [
@@ -44,7 +45,7 @@
 		"logo": "vault.png",
 		"link": "https://vault-ai.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Visualisierung des TV-Publikums; Marktanalysen- und vorhersagen",
 		"categories": [
@@ -73,7 +74,7 @@
 			"video",
 			"audio"
 		],
-		"description": "Automatischer Videoschnitt, Generierung von Musik",
+		"description": "Automatischer Videoschnitt; Generierung von Musik",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -99,7 +100,7 @@
 		"mediatype": [
 			"audio"
 		],
-		"description": "Musik komponieren",
+		"description": "Eigene Musik komponieren",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -112,7 +113,7 @@
 		"mediatype": [
 			"audio"
 		],
-		"description": "Audio-Mastering & -Distribution",
+		"description": "Audio-Mastering und -Distribution",
 		"categories": [
 			"ProduktionContent",
 			"Distribution"
@@ -139,7 +140,7 @@
 		"mediatype": [
 			"audio"
 		],
-		"description": "Soundtrack komponieren",
+		"description": "Eigene Soundtracks komponieren",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -150,9 +151,9 @@
 		"logo": "cre8tiveai.svg",
 		"link": "https://cre8tiveai.com/",
 		"mediatype": [
-			"video"
+			"picture"
 		],
-		"description": "Verbesserung der Bildqualität",
+		"description": "Verbesserung der Auflösung von Fotos",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -165,7 +166,7 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Augmented Reality im Broadcasting",
+		"description": "Augmented Reality im Broadcasting mittels automatischer Kameraverfolgung",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -176,12 +177,11 @@
 		"logo": "realytics.svg",
 		"link": "https://www.realytics.io/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Programmatic TV; Erstellung von TV-Mediaplänen",
 		"categories": [
 			"AkquisitionWerbung",
-			"PlazierungWerbung",
 			"Packaging"
 		]
 	},
@@ -191,13 +191,13 @@
 		"logo": "adobe.svg",
 		"link": "https://www.adobe.com/de/sensei.html",
 		"mediatype": [
+			"video",
 			"other"
 		],
-		"description": "Predictive Analytics, Optimierung Werbeausgaben, Projektorganisation",
+		"description": "Predictive Analytics; Optimierung Werbeausgaben; Projektorganisation",
 		"categories": [
-			"ProduktionContent",
-			"PlazierungWerbung",
-			"Packaging"
+			"BeschaffungInhalte",
+			"ProduktionContent"
 		]
 	},
 	{
@@ -206,9 +206,9 @@
 		"logo": "qualifiction.png",
 		"link": "https://www.qualifiction.info/",
 		"mediatype": [
-			"text"
+			"other"
 		],
-		"description": "Vorhersage von Bucherfolgen",
+		"description": "Textanalyse; Vorhersage von Bucherfolgen",
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -219,6 +219,7 @@
 		"logo": "lobster.png",
 		"link": "https://lobster.media/",
 		"mediatype": [
+			"picture",
 			"video"
 		],
 		"description": "Kuratieren und Lizenzieren von visuellen Inhalten mit KI-Filterung",
@@ -232,7 +233,7 @@
 		"logo": "media-distillery.svg",
 		"link": "https://www.mediadistillery.com/tv-operators/episodic-images/",
 		"mediatype": [
-			"video"
+			"picture"
 		],
 		"description": "Automatische Auswahl von Vorschaubildern",
 		"categories": [
@@ -260,7 +261,7 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Empfehlungssystem",
+		"description": "Personalisierte Videosuchmaschine",
 		"categories": [
 			"Packaging"
 		]
@@ -273,9 +274,10 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Tagging von Themen innerhalb von TV-Programmen",
+		"description": "Tagging von Themen innerhalb von TV-Programmen zur zielgerichteten Werbeausstrahlung",
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent",
+			"PlazierungWerbung"
 		]
 	},
 	{
@@ -284,9 +286,9 @@
 		"logo": "keen-ai.svg",
 		"link": "https://www.keen-ai.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Qualitätskontrolle und Zustandsbewertung",
+		"description": "Qualitätskontrolle und Zustandsbewertung von Bildern und Videos",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -297,10 +299,9 @@
 		"logo": "interra-systems.svg",
 		"link": "http://www.interrasystems.com/content-classification.php",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
-		"description": "Klassifizierung audiovisueller Inhalte in semantische Konzepte",
+		"description": "Klassifizierung audiovisueller Inhalte in semantische Konzepte; Qualitätskontrolle",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -311,10 +312,11 @@
 		"logo": "scale.svg",
 		"link": "https://scale.ai/video-annotation",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Objekterkennung und -beschreibung",
+		"description": "Objekterkennung und -beschreibung; Generierung von Metadaten",
 		"categories": [
+			"BeschaffungInhalte",
 			"ProduktionContent"
 		]
 	},
@@ -324,8 +326,7 @@
 		"logo": "telestream.png",
 		"link": "https://cloud.telestream.net/quality-control/",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
 		"description": "Automatisierte Qualitätskontrolle",
 		"categories": [
@@ -351,6 +352,8 @@
 		"logo": "recombee.svg",
 		"link": "https://www.recombee.com/",
 		"mediatype": [
+			"video",
+			"text",
 			"other"
 		],
 		"description": "Empfehlungssystem",
@@ -359,29 +362,16 @@
 		]
 	},
 	{
-		"name": "SOMA",
-		"manufacturer": "Isotoma",
-		"logo": "isotoma.svg",
-		"link": "https://isotoma.com/work/bbc-rd",
-		"mediatype": [
-			"video"
-		],
-		"description": "Compositing und Mixing von Videos im Browser",
-		"categories": [
-			"ProduktionContent"
-		]
-	},
-	{
 		"name": "Azure Media Services",
 		"manufacturer": "Microsoft",
 		"logo": "Microsoft_Azure.svg",
 		"link": "https://azure.microsoft.com/de-de/services/media-services/",
 		"mediatype": [
-			"video"
+			"video",
+			"other"
 		],
-		"description": "Automatische Live-Szenenauswahl, Codierung, Videoindizierung, Streaming",
+		"description": "Automatische Live-Szenenauswahl; Codierung; Videoindizierung; Streaming",
 		"categories": [
-			"ProduktionContent",
 			"Packaging",
 			"TechnischeProduktion",
 			"Distribution"
@@ -395,7 +385,7 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Bandbreiten- und Qualitätsoptimierung",
+		"description": "Bandbreiten- und Qualitätsoptimierung; Codierung",
 		"categories": [
 			"TechnischeProduktion"
 		]
@@ -408,9 +398,9 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadatengenerierung",
+		"description": "Metadaten-Generierung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -421,7 +411,7 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Dynamische Produkt- und Markenplatzierung in produzierten Inhalten",
+		"description": "Dynamische Produkt- und Markenplatzierung in produzierten Videos",
 		"categories": [
 			"PlazierungWerbung"
 		]
@@ -434,9 +424,9 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Automatisierte Sendeabläufe",
+		"description": "Netzwerkmanagement; Betriebsunterstützung für die Rundfunkindustrie",
 		"categories": [
-			"Distribution"
+			"TechnischeProduktion"
 		]
 	},
 	{
@@ -445,11 +435,12 @@
 		"logo": "ipv.jpg",
 		"link": "https://www.ipv.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Metadaten-Generierung",
+		"description": "Metadaten-Generierung; Media-Asset-Management",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte",
+			"Packaging"
 		]
 	},
 	{
@@ -463,29 +454,30 @@
 		],
 		"description": "Erkennung der Synchronisierung von Untertiteln",
 		"categories": [
-			"ProduktionContent"
+			"TechnischeProduktion"
 		]
 	},
 	{
 		"name": "Recognition",
 		"manufacturer": "Valossa",
 		"logo": "valossa.png",
-		"link": "https://valossa.com/products-api/",
+		"link": "https://valossa.com/video-recognition-api/",
 		"mediatype": [
-			"video"
+			"video",
+			"other"
 		],
-		"description": "Erkennung ungeeigneter Videoszenen",
+		"description": "Erkennung unangemessener Videoszenen; Metadaten-Generierung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
 		"name": "Podcast Advertising",
 		"manufacturer": "Pippa",
 		"logo": "pippa.svg",
-		"link": "https://pippa.io/",
+		"link": "https://pippa.io/advertisers",
 		"mediatype": [
-			"audio"
+			"other"
 		],
 		"description": "Dynamische, personalisierte Werbeschaltung",
 		"categories": [
@@ -498,12 +490,11 @@
 		"logo": "metaliquid.png",
 		"link": "https://www.meta-liquid.com/",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
 		"description": "Objekterkennung und -beschreibung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -542,6 +533,7 @@
 		],
 		"description": "Audio-Reparatur, Instrumentenklassifizierer",
 		"categories": [
+			"BeschaffungInhalte",
 			"ProduktionContent"
 		]
 	},
@@ -553,7 +545,7 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Management der Zuschauerbeziehungen",
+		"description": "Analysieren von Echtzeit-Social-Media-Daten, um gezielte Empfehlungen für bestimmte Zielgruppen zu generieren",
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -577,10 +569,9 @@
 		"logo": "qloo.svg",
 		"link": "https://qloo.com/",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
-		"description": "Verbrauchervorlieben vorherzusagen",
+		"description": "Verbrauchervorlieben vorhersagen",
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -591,10 +582,12 @@
 		"logo": "smartfm.svg",
 		"link": "https://www.worldcastsystems.com/en/c116p109/artificial-intelligence-for-radio/smart-fm",
 		"mediatype": [
-			"audio"
+			"audio",
+			"other"
 		],
 		"description": "Reduzierung Energiekosten und Erhöhung Audio-Qualität für FM-Sender",
 		"categories": [
+			"ProduktionContent",
 			"TechnischeProduktion"
 		]
 	},
@@ -604,12 +597,11 @@
 		"logo": "brodstar.jpg",
 		"link": "http://www.stryme.com/brodstar/",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
-		"description": "Echtzeit-Qualitätsüberwachung ",
+		"description": "Echtzeit-Qualitätsüberwachung",
 		"categories": [
-			"TechnischeProduktion"
+			"Distribution"
 		]
 	},
 	{
@@ -618,11 +610,11 @@
 		"logo": "cumulus.png",
 		"link": "https://www.canto.com/cumulus/",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Bilderkennung und automatisches Tagging ",
+		"description": "Metadaten-Generierung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -633,8 +625,9 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Sprach-, Gesichts-, Objekt- und Logo-Erkennung; Übersetzung; Generierung von Untertiteln; Fingerprinting",
+		"description": "Media-Asset-Management; Metadaten-Generierung; Übersetzung; Generierung von Untertiteln; Fingerprinting",
 		"categories": [
+			"BeschaffungInhalte",
 			"ProduktionContent"
 		]
 	},
@@ -644,11 +637,11 @@
 		"logo": "Amazon_Web_Services.svg",
 		"link": "https://aws.amazon.com/de/rekognition/",
 		"mediatype": [
-			"video"
+			"other"
 		],
-		"description": "Identifizierung von Objekten, Personen, Texten, Szenen und Aktivitäten",
+		"description": "Metadaten-Generierung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -657,11 +650,11 @@
 		"logo": "rivetai.png",
 		"link": "https://www.rivetai.com/",
 		"mediatype": [
-			"video"
+			"picture"
 		],
-		"description": "Erzeugung einer visuellen Darstellung einer Geschichte",
+		"description": "Erzeugung einer visuellen Darstellung einer geschriebenen Geschichte",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -670,8 +663,8 @@
 		"logo": "magenta.png",
 		"link": "https://magenta.tensorflow.org/",
 		"mediatype": [
-			"video",
-			"audio"
+			"audio",
+			"other"
 		],
 		"description": "Generierung von Musik und Kunst",
 		"categories": [
@@ -686,7 +679,7 @@
 		"mediatype": [
 			"audio"
 		],
-		"description": "Musik komponieren",
+		"description": "Audio-Composing",
 		"categories": [
 			"ProduktionContent"
 		]
@@ -701,6 +694,7 @@
 		],
 		"description": "Optimierung der Mediaplanung und Prognose der Geschäftsergebnisse",
 		"categories": [
+			"BeschaffungInhalte",
 			"PlazierungWerbung"
 		]
 	},
@@ -710,10 +704,11 @@
 		"logo": "arc.png",
 		"link": "https://www.arcpublishing.com/",
 		"mediatype": [
-			"text"
+			"other"
 		],
-		"description": "Digital-Publishing-Tools inkl. Empfehlungssystem",
+		"description": "Digital-Publishing; Empfehlungssystem",
 		"categories": [
+			"ProduktionContent",
 			"Packaging"
 		]
 	},
@@ -726,8 +721,9 @@
 			"video",
 			"other"
 		],
-		"description": "Medienanalyse, Transkription, Optimierte Werbeplatzierung",
+		"description": "Media-Asset-Management; Medienanalyse; Transkription; Optimierte Werbeplatzierung",
 		"categories": [
+			"BeschaffungInhalte",
 			"ProduktionContent",
 			"PlazierungWerbung"
 		]
@@ -738,11 +734,11 @@
 		"logo": "DeepVA.svg",
 		"link": "https://deepva.com/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Video-Mining",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -753,20 +749,21 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Video-Adserving-Plattform für Media Owner",
+		"description": "Video-Adserving-Plattform für Media Owner; Bereitstellung von Werbung",
 		"categories": [
-			"AkquisitionWerbung"
+			"AkquisitionWerbung",
+			"PlazierungWerbung"
 		]
 	},
 	{
 		"name": "Media Ai²",
 		"manufacturer": "Marketing Architects",
 		"logo": "MediaAi2.png",
-		"link": "https://www.marketingarchitects.com/media",
+		"link": "https://www.marketingarchitects.com/blog/meet-annikasm-the-future-of-tv-media-buying",
 		"mediatype": [
 			"other"
 		],
-		"description": "Programmatischer TV-Medieneinkauf",
+		"description": "Programmatic TV",
 		"categories": [
 			"AkquisitionWerbung"
 		]
@@ -777,12 +774,11 @@
 		"logo": "gracenote.svg",
 		"link": "http://www.gracenote.com",
 		"mediatype": [
-			"video",
-			"audio"
+			"other"
 		],
-		"description": "Metadatengenerierung",
+		"description": "Metadaten-Generierung",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -791,28 +787,29 @@
 		"logo": "decidata.svg",
 		"link": "https://www.decidata.tv",
 		"mediatype": [
-			"video",
 			"other"
 		],
-		"description": "Videoinhalts- und Publikumsanalyse, Programmatic TV",
+		"description": "Videoinhalts- und Publikumsanalyse; Programmatic TV; Qualitätsüberwachung",
 		"categories": [
+			"BeschaffungInhalte",
 			"AkquisitionWerbung",
-			"ProduktionContent"
+			"Distribution"
 		]
 	},
 	{
 		"name": "Rubicon Project",
 		"manufacturer": "Rubicon Project",
 		"logo": "rubicon.png",
-		"link": "https://rubiconproject.com/",
+		"link": "https://rubiconproject.com/premium-video-solutions/",
 		"mediatype": [
 			"video",
 			"other"
 		],
-		"description": "Programmatischer Marktplatz für Video",
+		"description": "Programmatischer Marktplatz für Video; Ausspielung",
 		"categories": [
 			"AkquisitionWerbung",
-			"PlazierungWerbung"
+			"PlazierungWerbung",
+			"TechnischeProduktion"
 		]
 	},
 	{
@@ -823,9 +820,9 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "KI-gesteuerte Publikumsverhaltensplattform",
+		"description": "Informationen über Zielgruppen",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -834,12 +831,13 @@
 		"logo": "youtube.svg",
 		"link": "https://www.youtube.com/ads/",
 		"mediatype": [
-			"video"
+			"video",
+			"other"
 		],
-		"description": "KI-basierte Werbeaustrahlung",
+		"description": "Werbeaustrahlung; Streaming",
 		"categories": [
+			"AkquisitionWerbung",
 			"PlazierungWerbung",
-			"TechnischeProduktion",
 			"Distribution"
 		]
 	},
@@ -853,6 +851,7 @@
 		],
 		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg.",
 		"categories": [
+			"AkquisitionWerbung",
 			"PlazierungWerbung"
 		]
 	},
@@ -860,7 +859,7 @@
 		"name": "OrganicAI + PaidAI",
 		"manufacturer": "True Anthem",
 		"logo": "true_anthem.svg",
-		"link": "https://www.trueanthem.com/",
+		"link": "https://www.trueanthem.com/true-anthem-organic-ai-paid-ai/",
 		"mediatype": [
 			"other"
 		],
@@ -875,7 +874,7 @@
 		"logo": "zonetv.png",
 		"link": "https://www.zone.tv/",
 		"mediatype": [
-			"video"
+			"other"
 		],
 		"description": "Individuelle und personalisierte Videokanäle",
 		"categories": [
@@ -890,9 +889,9 @@
 		"mediatype": [
 			"audio"
 		],
-		"description": "Hören und Verstehen von Umgebungen, Vorhersagen und Diagnosen von mechanischen Ausfällen",
+		"description": "Analyse von Umgebungsgeräuschen, Vorhersagen und Diagnosen von mechanischen Ausfällen",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	},
 	{
@@ -931,7 +930,7 @@
 		],
 		"description": "Emotionale Reaktionen auf digitale Medien erkennen",
 		"categories": [
-			"ProduktionContent"
+			"BeschaffungInhalte"
 		]
 	}
 ]

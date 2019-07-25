@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     // switches for displaying various information
-    var showProductCount = false;
+    var showProductCount = true;
     var showLegend = true;
     var showNavbar = false;
     var showTitle = false;
