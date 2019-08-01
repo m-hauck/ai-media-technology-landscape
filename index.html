@@ -2,54 +2,94 @@
 <html lang="en">
 
 <head>
-
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  
   <title>AI Media Technology Landscape</title>
-
+  
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
+  
 </head>
 
 <body>
-
+  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container">
       <a class="navbar-brand" href="http://wimm.hs-mainz.de"><img src="img/HSM_Logo_W_orange_SC.svg" alt="Hochschule Mainz"></a>
     </div>
   </nav>
-
+  
   <!-- Page Content -->
   <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>AI Media Technology Landscape <span class="counter-text">(<span id="count-total">0</span> Produkte)</span></h1>
-        </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>AI Media Technology Landscape <span class="counter-text">(<span id="count-total">0</span> Produkte)</span></h1>
       </div>
-      <div class="row" id="row-products"></div>
-      <div class="row-legend">
-        <h2>Legende</h2>
-        <div>Was ist der Output des Produktes?</div>
-        <div class="legend-item"><div class="mediatype-text">Text</div> </div>
-        <div class="legend-item"><div class="mediatype-picture">Bild</div> </div>
-        <div class="legend-item"><div class="mediatype-video">Video</div> </div>
-        <div class="legend-item"><div class="mediatype-audio">Audio</div> </div>
-        <div class="legend-item"><div class="mediatype-mixed">Gemischt</div> </div>
-        <div class="legend-item"><div class="mediatype-other">Sonstiges</div> </div>
+    </div>
+    <div class="row" id="row-products"></div>
+    <div class="row-legend">
+      <h2>Legende</h2>
+      <div class="legend-description">Was ist der Output des Produktes?</div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-text">Text</div>
       </div>
-  </div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-picture">Bild</div>
+      </div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-video">Video</div>
+      </div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-audio">Audio</div>
+      </div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-mixed">Gemischt</div>
+      </div>
+      <div class="legend-item legend-item-mediatype">
+        <div class="mediatype-other">Sonstiges</div>
+      </div>
+      
+      <div class="legend-description">Technology-Readiness-Level</div>
+      <div class="legend-item legend-item-trl">
+        <div class="trl-basic-research">Grundlagenforschung </div>
+      </div>
+      <div class="legend-item legend-item-trl">
+        <div class="trl-applied-research">Angewandte Forschung </div>
+      </div>
+      <div class="legend-item legend-item-trl">
+        <div class="trl-first-applications">Erste Anwendungen </div>
+      </div>
+      <div class="legend-item legend-item-trl">
+        <div class="trl-mass-production">Massenproduktion </div>
+      </div>
 
+      <div class="legend-description">Genutzte KI-Technologien</div>
+      <div class="legend-item legend-item-ai-technology">
+        <div class="legend-item-ai-technology-icon">CNN</div> = Convolutional Neural Network
+      </div>
+      <div class="legend-item legend-item-ai-technology">
+        <div class="legend-item-ai-technology-icon">HBN</div> = Hierarchical Bayesian Networks
+      </div>
+      <div class="legend-item legend-item-ai-technology">
+        <div class="legend-item-ai-technology-icon">NN</div> = Neural Network
+      </div>
+      <div class="legend-item legend-item-ai-technology">
+        <div class="legend-item-ai-technology-icon">LSTM</div> = Long Short-Term Memory
+      </div>
+    </div>
+  </div>
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/scripts.js"></script>
-
+  
 </body>
 
 </html>

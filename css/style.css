@@ -14,7 +14,6 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 }
 .product-wrapper {
     width: 79px;
-    border: 2px solid #ccc;
     padding: 3px;
     margin-bottom: 0.5rem;
     font-size: 0.6rem;
@@ -27,11 +26,58 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
     margin-bottom: 5px;
     display: inline-block;
 }
+.counter-text{
+    font-size: 0.75em;
+}
+.list-inline-item:nth-child(6n){
+    margin-right: 0;
+}
 .product-link{
     vertical-align: middle;
 }
 .product-name{
     display:block;
+}
+.ai-technology, .legend-item-ai-technology-icon{
+    margin-top: 0.25em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    color: #000;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    display: inline-block;
+}
+
+
+/*
+    LEGEND
+*/
+.row-legend{
+    margin-bottom: 2em;
+}
+.legend-description{
+    font-weight: bold;
+}
+.legend-item{
+    display: inline-block;
+}
+.legend-item div{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legend-item-mediatype div{
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
 }
 .mediatype-text{
     border-color: #f8cd5d;
@@ -51,21 +97,35 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 .mediatype-other{
     border-color: #6ecbd2;
 }
-.legend-item{
-    display: inline-block;
+
+
+.legend-item-trl div{
+    border-color: #aaa;
 }
-.legend-item div{
+.trl-unknown{
+    border-style: none;
     border-width: 2px;
+}
+.trl-basic-research{
+    border-style: dotted;
+    border-width: 2px;
+}
+.trl-applied-research{
+    border-style: dashed;
+    border-width: 2px;
+}
+.trl-first-applications{
     border-style: solid;
-    width: 100px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
-    display: inline-block;
+    border-width: 2px;
 }
-.counter-text{
-    font-size: 0.75em;
+.trl-mass-production{
+    border-style: groove;
+    border-width: 4px;
 }
-.list-inline-item:nth-child(6n){
-    margin-right: 0;
+
+.legend-item-ai-technology{
+    display: block;
+}
+.legend-item-ai-technology div{
+    padding: 0;
 }

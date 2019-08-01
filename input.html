@@ -9,7 +9,7 @@
 <body>    
     <div id='editor_holder'></div>
     <button id='submit'>Submit (console.log)</button>
-
+    
     <img style="display: block; margin-top: 50px;" width="100%" src="img/Wertkette_Medienunternehmen.svg">
     
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -46,6 +46,20 @@
                     },
                     description: {
                         type: "string"
+                    },
+                    technologyReadinessLevel: {
+                        "type": "string"
+                    },
+                    aiTechnologiesUsed: {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "string",
+                            enum: ["CNN", "NN", "LSTM"],
+                            options: {
+                                enum_titles: ["Convolutional Neural Network", "Neural Network", "Long Short-Term Memory"]
+                            }
+                        }
                     },
                     categories: {
                         "type": "array",

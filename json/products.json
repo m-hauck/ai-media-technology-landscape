@@ -8,6 +8,10 @@
 			"other"
 		],
 		"description": "Prognose der Filmperformance und Zuschauerzahlen; optimierte Kinoplanung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"Packaging"
@@ -17,11 +21,15 @@
 		"name": "RealDemand Market Intelligence",
 		"manufacturer": "Vault AI",
 		"logo": "vault.png",
-		"link": "https://vault-ai.com/",
+		"link": "https://vault-ai.com/RealDemand-market-intelligence.html",
 		"mediatype": [
 			"other"
 		],
 		"description": "Prognose von Film-Umsätzen und der Zielgruppen-Demografie; Wettbewerbs-Titelanalyse",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -35,6 +43,10 @@
 			"other"
 		],
 		"description": "Visualisierung des Filmpublikums; Marken-, Sequenz- und Franchiseanalyse",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -48,6 +60,10 @@
 			"other"
 		],
 		"description": "Visualisierung des TV-Publikums; Marktanalysen- und vorhersagen",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -61,6 +77,10 @@
 			"text"
 		],
 		"description": "Drehbuchanalyse; Automatisierte Storygenerierung",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -75,6 +95,10 @@
 			"audio"
 		],
 		"description": "Automatischer Videoschnitt; Generierung von Musik",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -88,6 +112,10 @@
 			"audio"
 		],
 		"description": "Audio-Mastering",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -101,6 +129,10 @@
 			"audio"
 		],
 		"description": "Eigene Musik komponieren",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -114,6 +146,10 @@
 			"audio"
 		],
 		"description": "Audio-Mastering und -Distribution",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent",
 			"Distribution"
@@ -128,6 +164,10 @@
 			"audio"
 		],
 		"description": "Audio-Mastering",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -141,6 +181,10 @@
 			"audio"
 		],
 		"description": "Eigene Soundtracks komponieren",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -154,6 +198,10 @@
 			"picture"
 		],
 		"description": "Verbesserung der Auflösung von Fotos",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -167,6 +215,10 @@
 			"video"
 		],
 		"description": "Augmented Reality im Broadcasting mittels automatischer Kameraverfolgung",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -180,6 +232,10 @@
 			"other"
 		],
 		"description": "Programmatic TV; Erstellung von TV-Mediaplänen",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung",
 			"Packaging"
@@ -195,6 +251,10 @@
 			"other"
 		],
 		"description": "Predictive Analytics; Optimierung Werbeausgaben; Projektorganisation",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"ProduktionContent"
@@ -209,6 +269,10 @@
 			"other"
 		],
 		"description": "Textanalyse; Vorhersage von Bucherfolgen",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -223,6 +287,10 @@
 			"video"
 		],
 		"description": "Kuratieren und Lizenzieren von visuellen Inhalten mit KI-Filterung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -236,6 +304,11 @@
 			"picture"
 		],
 		"description": "Automatische Auswahl von Vorschaubildern",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"CNN",
+			"NN"
+		],
 		"categories": [
 			"Packaging"
 		]
@@ -249,6 +322,11 @@
 			"video"
 		],
 		"description": "Automatische Erstellung von personalisierten Kurzfilmen",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"CNN",
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -262,6 +340,11 @@
 			"video"
 		],
 		"description": "Personalisierte Videosuchmaschine",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			"CNN",
+			"NN"
+		],
 		"categories": [
 			"Packaging"
 		]
@@ -275,6 +358,11 @@
 			"video"
 		],
 		"description": "Tagging von Themen innerhalb von TV-Programmen zur zielgerichteten Werbeausstrahlung",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			"CNN",
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent",
 			"PlazierungWerbung"
@@ -289,6 +377,10 @@
 			"other"
 		],
 		"description": "Qualitätskontrolle und Zustandsbewertung von Bildern und Videos",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -302,6 +394,10 @@
 			"other"
 		],
 		"description": "Klassifizierung audiovisueller Inhalte in semantische Konzepte; Qualitätskontrolle",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -315,6 +411,10 @@
 			"other"
 		],
 		"description": "Objekterkennung und -beschreibung; Generierung von Metadaten",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"ProduktionContent"
@@ -329,6 +429,10 @@
 			"other"
 		],
 		"description": "Automatisierte Qualitätskontrolle",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -342,6 +446,11 @@
 			"video"
 		],
 		"description": "Empfehlungssystem",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			"NN",
+			"LSTM"
+		],
 		"categories": [
 			"Packaging"
 		]
@@ -357,6 +466,11 @@
 			"other"
 		],
 		"description": "Empfehlungssystem",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"CNN",
+			"NN"
+		],
 		"categories": [
 			"Packaging"
 		]
@@ -371,6 +485,10 @@
 			"other"
 		],
 		"description": "Automatische Live-Szenenauswahl; Codierung; Videoindizierung; Streaming",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"Packaging",
 			"TechnischeProduktion",
@@ -386,6 +504,10 @@
 			"video"
 		],
 		"description": "Bandbreiten- und Qualitätsoptimierung; Codierung",
+		"technologyReadinessLevel": "mass-product",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"TechnischeProduktion"
 		]
@@ -399,6 +521,10 @@
 			"other"
 		],
 		"description": "Metadaten-Generierung",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -412,6 +538,10 @@
 			"video"
 		],
 		"description": "Dynamische Produkt- und Markenplatzierung in produzierten Videos",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"PlazierungWerbung"
 		]
@@ -420,11 +550,15 @@
 		"name": "DataMiner",
 		"manufacturer": "Skyline Communications",
 		"logo": "skyline-communications.png",
-		"link": "https://skyline.be/dataminer",
+		"link": "https://www.dataminer.co/",
 		"mediatype": [
 			"other"
 		],
 		"description": "Netzwerkmanagement; Betriebsunterstützung für die Rundfunkindustrie",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"TechnischeProduktion"
 		]
@@ -433,11 +567,15 @@
 		"name": "Curator",
 		"manufacturer": "IPV",
 		"logo": "ipv.jpg",
-		"link": "https://www.ipv.com/",
+		"link": "https://www.ipv.com/release-announcement-curator-2-2/",
 		"mediatype": [
 			"other"
 		],
 		"description": "Metadaten-Generierung; Media-Asset-Management",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"Packaging"
@@ -453,6 +591,10 @@
 			"audio"
 		],
 		"description": "Erkennung der Synchronisierung von Untertiteln",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"TechnischeProduktion"
 		]
@@ -467,6 +609,10 @@
 			"other"
 		],
 		"description": "Erkennung unangemessener Videoszenen; Metadaten-Generierung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -480,6 +626,10 @@
 			"other"
 		],
 		"description": "Dynamische, personalisierte Werbeschaltung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"PlazierungWerbung"
 		]
@@ -493,6 +643,10 @@
 			"other"
 		],
 		"description": "Objekterkennung und -beschreibung",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -506,6 +660,10 @@
 			"audio"
 		],
 		"description": "Reduzierung von Störgeräuschen bei Schlagzeugaufnahmen",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -519,6 +677,10 @@
 			"audio"
 		],
 		"description": "Anpassung der Lautstärke und Hinzufügen von Effekten auf separaten Sound-Layern",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -527,11 +689,15 @@
 		"name": "Neutron",
 		"manufacturer": "iZotope",
 		"logo": "neutron.png",
-		"link": "https://www.izotope.com/en/products/mix/neutron.html",
+		"link": "https://www.izotope.com/en/blog/music-production/izotope-and-assistive-audio-technology.html",
 		"mediatype": [
 			"audio"
 		],
 		"description": "Audio-Reparatur, Instrumentenklassifizierer",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"ProduktionContent"
@@ -546,6 +712,10 @@
 			"other"
 		],
 		"description": "Analysieren von Echtzeit-Social-Media-Daten, um gezielte Empfehlungen für bestimmte Zielgruppen zu generieren",
+		"technologyReadinessLevel": "basic-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -559,6 +729,10 @@
 			"other"
 		],
 		"description": "Prognose von Einspielergebnisse",
+		"technologyReadinessLevel": "basic-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -572,6 +746,10 @@
 			"other"
 		],
 		"description": "Verbrauchervorlieben vorhersagen",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -586,6 +764,10 @@
 			"other"
 		],
 		"description": "Reduzierung Energiekosten und Erhöhung Audio-Qualität für FM-Sender",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent",
 			"TechnischeProduktion"
@@ -600,6 +782,10 @@
 			"other"
 		],
 		"description": "Echtzeit-Qualitätsüberwachung",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"Distribution"
 		]
@@ -613,6 +799,10 @@
 			"other"
 		],
 		"description": "Metadaten-Generierung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -626,6 +816,10 @@
 			"other"
 		],
 		"description": "Media-Asset-Management; Metadaten-Generierung; Übersetzung; Generierung von Untertiteln; Fingerprinting",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"ProduktionContent"
@@ -640,6 +834,10 @@
 			"other"
 		],
 		"description": "Metadaten-Generierung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -653,6 +851,10 @@
 			"picture"
 		],
 		"description": "Erzeugung einer visuellen Darstellung einer geschriebenen Geschichte",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -667,6 +869,10 @@
 			"other"
 		],
 		"description": "Generierung von Musik und Kunst",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -680,6 +886,10 @@
 			"audio"
 		],
 		"description": "Audio-Composing",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -693,6 +903,10 @@
 			"other"
 		],
 		"description": "Optimierung der Mediaplanung und Prognose der Geschäftsergebnisse",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			"HBN"
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"PlazierungWerbung"
@@ -707,25 +921,51 @@
 			"other"
 		],
 		"description": "Digital-Publishing; Empfehlungssystem",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent",
 			"Packaging"
 		]
 	},
 	{
-		"name": "vidispine",
+		"name": "Vidispine",
 		"manufacturer": "Arvato",
 		"logo": "vidispine.svg",
-		"link": "https://www.vidispine.com/",
+		"link": "https://www.pressebox.com/pressrelease/arvato-systems-gmbh-guetersloh/AI-functionality-for-VPMS-BMS-and-Vidispine-customers-successfully-launched-at-NAB-2019/boxid/953654",
 		"mediatype": [
 			"video",
 			"other"
 		],
-		"description": "Media-Asset-Management; Medienanalyse; Transkription; Optimierte Werbeplatzierung",
+		"description": "Media-Asset-Management; Transkription",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
-			"ProduktionContent",
-			"PlazierungWerbung"
+			"ProduktionContent"
+		]
+	},
+	{
+		"name": "Vidinet",
+		"manufacturer": "Arvato",
+		"logo": "vidinet.svg",
+		"link": "https://www.pressebox.com/pressrelease/arvato-systems-gmbh-guetersloh/AI-functionality-for-VPMS-BMS-and-Vidispine-customers-successfully-launched-at-NAB-2019/boxid/953654",
+		"mediatype": [
+			"video",
+			"other"
+		],
+		"description": "Medienanalyse, Transcoding, Qualitätskontrolle",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"BeschaffungInhalte",
+			"ProduktionContent"
 		]
 	},
 	{
@@ -737,6 +977,10 @@
 			"other"
 		],
 		"description": "Video-Mining",
+		"technologyReadinessLevel": "basic-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -750,6 +994,10 @@
 			"other"
 		],
 		"description": "Video-Adserving-Plattform für Media Owner; Bereitstellung von Werbung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung",
 			"PlazierungWerbung"
@@ -764,6 +1012,10 @@
 			"other"
 		],
 		"description": "Programmatic TV",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung"
 		]
@@ -777,6 +1029,10 @@
 			"other"
 		],
 		"description": "Metadaten-Generierung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -790,6 +1046,10 @@
 			"other"
 		],
 		"description": "Videoinhalts- und Publikumsanalyse; Programmatic TV; Qualitätsüberwachung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte",
 			"AkquisitionWerbung",
@@ -800,12 +1060,16 @@
 		"name": "Rubicon Project",
 		"manufacturer": "Rubicon Project",
 		"logo": "rubicon.png",
-		"link": "https://rubiconproject.com/premium-video-solutions/",
+		"link": "https://rubiconproject.com/uncategorized/machine-learning-at-the-rubicon-project/",
 		"mediatype": [
 			"video",
 			"other"
 		],
-		"description": "Programmatischer Marktplatz für Video; Ausspielung",
+		"description": "Programmatischer Marktplatz für Video; Werbeausspielung",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung",
 			"PlazierungWerbung",
@@ -821,6 +1085,10 @@
 			"other"
 		],
 		"description": "Informationen über Zielgruppen",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
 		]
@@ -835,6 +1103,10 @@
 			"other"
 		],
 		"description": "Werbeaustrahlung; Streaming",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung",
 			"PlazierungWerbung",
@@ -850,6 +1122,10 @@
 			"other"
 		],
 		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg.",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"AkquisitionWerbung",
 			"PlazierungWerbung"
@@ -864,6 +1140,10 @@
 			"other"
 		],
 		"description": "KI-gesteuerte Bereitstellung von Inhalten",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"TechnischeProduktion"
 		]
@@ -877,34 +1157,12 @@
 			"other"
 		],
 		"description": "Individuelle und personalisierte Videokanäle",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"Packaging"
-		]
-	},
-	{
-		"name": "Aura",
-		"manufacturer": "Bridge.ai",
-		"logo": "bridge.svg",
-		"link": "https://bridge.ai/",
-		"mediatype": [
-			"audio"
-		],
-		"description": "Analyse von Umgebungsgeräuschen, Vorhersagen und Diagnosen von mechanischen Ausfällen",
-		"categories": [
-			"BeschaffungInhalte"
-		]
-	},
-	{
-		"name": "Novel Effect",
-		"manufacturer": "Novel Effect",
-		"logo": "novel-effect.png",
-		"link": "https://www.noveleffect.com/",
-		"mediatype": [
-			"audio"
-		],
-		"description": "Dynamisches Einfügen von Sound-Effekten zu vorgelesenem Text",
-		"categories": [
-			"ProduktionContent"
 		]
 	},
 	{
@@ -916,6 +1174,10 @@
 			"audio"
 		],
 		"description": "Stimmrekonstruktion",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"ProduktionContent"
 		]
@@ -929,8 +1191,45 @@
 			"other"
 		],
 		"description": "Emotionale Reaktionen auf digitale Medien erkennen",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
 		"categories": [
 			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "Web Services: Transcribe",
+		"manufacturer": "Amazon",
+		"logo": "Amazon_Web_Services.svg",
+		"link": "https://aws.amazon.com/de/transcribe/",
+		"mediatype": [
+			"text"
+		],
+		"description": "Automatische Spracherkennung und -transkription",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"BeschaffungInhalte"
+		]
+	},
+	{
+		"name": "mediahub",
+		"manufacturer": "SWISS TXT",
+		"logo": "swisstxt.svg",
+		"link": "https://www.swisstxt.ch/de/services/saas-media-cloud/mediahub/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Generierung von Untertiteln und Metadaten; Ingest, Asset Management und Delivery",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [],
+		"categories": [
+			"BeschaffungInhalte",
+			"Distribution"
 		]
 	}
 ]

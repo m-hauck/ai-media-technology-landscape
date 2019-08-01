@@ -2,8 +2,8 @@ $( document ).ready(function() {
     // switches for displaying various information
     var showProductCount = true;
     var showLegend = true;
+    var showTitle = true;
     var showNavbar = false;
-    var showTitle = false;
     // configuration files
     var requestCategories = $.getJSON( "json/categories.json" );
     var requestProducts = $.getJSON( "json/products.json" );
@@ -20,7 +20,7 @@ $( document ).ready(function() {
         $.each( dataCategories[0], function() {
             currentCategoryShort = this.nameShort;
             currentCategoryLong = this.nameLong;
-            currentProductCount = 0;
+            currentProductNameCount = 0;
             
             html = `
             <div class="category-wrapper col-md-6" id="${currentCategoryShort}">
@@ -47,6 +47,14 @@ $( document ).ready(function() {
             currentLink = this.link;
             currentDescription = this.description;
             currentCategories = this.categories;
+            currentAiTechnologiesUsed = this.aiTechnologiesUsed;
+
+            // add appropriate css classes for technology readiness level and mediatype
+            if(this.technologyReadinessLevel == ""){
+                currentTechnologyReadinessLevel = "trl-unknown";
+            }else{
+                currentTechnologyReadinessLevel = "trl-" + this.technologyReadinessLevel;
+            }
             if(this.mediatype.length > 1){
                 currentMediatype = "mediatype-mixed";
             } else{
@@ -57,16 +65,22 @@ $( document ).ready(function() {
             $.each( currentCategories, function(key, currentCategory) {
                 // only show manufacturer if it isn't the same as the product name
                 if(currentManufacturer != currentName){
-                    currentProduct = currentManufacturer + " <b>" + currentName + "</b>";
+                    currentProductName = currentManufacturer + " <b>" + currentName + "</b>";
                 } else{
-                    currentProduct = "<b>" + currentName + "</b>";
+                    currentProductName = "<b>" + currentName + "</b>";
                 }
 
                 html = `
-                <li class="product-wrapper text-center list-inline-item ${currentMediatype}">
+                <li class="product-wrapper text-center list-inline-item ${currentMediatype} ${currentTechnologyReadinessLevel}">
                     <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link">
                         <img class="logo" src="img/${currentLogo}">
-                        <span class="product-name">${currentProduct}</span>
+                        <span class="product-name">${currentProductName}</span>`;
+                $.each(currentAiTechnologiesUsed, function (index, value){
+                    if(value != ""){
+                        html += `<div class="ai-technology">${value}</div>`;
+                    }
+                });
+                html += `
                     </a>
                 </li>
                 `;
