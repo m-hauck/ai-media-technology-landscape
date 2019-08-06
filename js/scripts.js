@@ -1,8 +1,8 @@
 $( document ).ready(function() {
     // switches for displaying various information
     var showProductCount = true;
-    var showLegend = true;
-    var showTitle = true;
+    var showLegend = false;
+    var showTitle = false;
     var showNavbar = false;
     // configuration files
     var requestCategories = $.getJSON( "json/categories.json" );
@@ -12,7 +12,7 @@ $( document ).ready(function() {
     .done(function(dataCategories, dataProducts) {
         // count all products
         $("#count-total").html(dataProducts[0].length);
-
+        
         // Executed when both requests complete successfully
         // Both results are available here
         
@@ -20,15 +20,39 @@ $( document ).ready(function() {
         $.each( dataCategories[0], function() {
             currentCategoryShort = this.nameShort;
             currentCategoryLong = this.nameLong;
+            currentSubcategories = this.subcategories;
             currentProductNameCount = 0;
             
             html = `
-            <div class="category-wrapper col-md-6" id="${currentCategoryShort}">
-            <div class="category-header">
-            ${currentCategoryLong} <span class="counter-text">(<span class="count-product">0</span> Produkte)</item>
+            <div class="card">
+                <div class="category-wrapper" id="${currentCategoryShort}">
+                    <div class="category-header clearfix">
+                        ${currentCategoryLong} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
+                    </div>
+                    <ul class="list-inline" id="list-${currentCategoryShort}">
+                    </ul>`;
+
+            // sort subcategories by long name
+            if (currentSubcategories !== undefined){
+                currentSubcategories.sort(function (a, b) {
+                    return a.nameLong.localeCompare( b.nameLong );
+                });
+            }
+            
+            $.each(currentSubcategories, function (index, currentSubcategory){
+                currentSubcategoryShort = currentSubcategory.nameShort;
+                currentSubcategoryLong = currentSubcategory.nameLong;
+                html += `
+                    <div class="subcategory-header card-subtitle mb-2 text-muted">
+                    ${currentSubcategoryLong}
+                    </div>
+                    <ul class="list-inline" id="sublist-${currentSubcategoryShort}">
+                    </ul>`;
+            });
+
+            html += `
+                </div>
             </div>
-            <ul class="list-inline" id="list-${currentCategoryShort}">
-            </ul>
             `;
             $("#row-products").append(html);
         });
@@ -48,7 +72,7 @@ $( document ).ready(function() {
             currentDescription = this.description;
             currentCategories = this.categories;
             currentAiTechnologiesUsed = this.aiTechnologiesUsed;
-
+            
             // add appropriate css classes for technology readiness level and mediatype
             if(this.technologyReadinessLevel == ""){
                 currentTechnologyReadinessLevel = "trl-unknown";
@@ -62,36 +86,64 @@ $( document ).ready(function() {
             };
             
             // go through each category of the item and add the product to the correspondig section
-            $.each( currentCategories, function(key, currentCategory) {
+            $.each( currentCategories, function(key, currentCategoryWithSubcategory) {
+                currentCategoryWithSubcategory = currentCategoryWithSubcategory.split("_");
+                currentCategory = currentCategoryWithSubcategory[0];
+                currentSubcategory = currentCategoryWithSubcategory[1];
+                
                 // only show manufacturer if it isn't the same as the product name
                 if(currentManufacturer != currentName){
                     currentProductName = currentManufacturer + " <b>" + currentName + "</b>";
                 } else{
                     currentProductName = "<b>" + currentName + "</b>";
                 }
-
+                
                 html = `
                 <li class="product-wrapper text-center list-inline-item ${currentMediatype} ${currentTechnologyReadinessLevel}">
-                    <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link">
-                        <img class="logo" src="img/${currentLogo}">
-                        <span class="product-name">${currentProductName}</span>`;
+                <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link">
+                <img class="logo" src="img/${currentLogo}">
+                <span class="product-name">${currentProductName}</span>`;
                 $.each(currentAiTechnologiesUsed, function (index, value){
                     if(value != ""){
                         html += `<div class="ai-technology">${value}</div>`;
                     }
                 });
                 html += `
-                    </a>
+                </a>
                 </li>
                 `;
                 
-                $("#list-" + currentCategory).append(html);
+                try{
+                    // if the current product has no subcategory append it to the superior category
+                    if(currentSubcategory === undefined){
+                        // subcategory is NOT existing
+                        // add to superior category
+                        if($("#list-" + currentCategory).length){
+                            $("#list-" + currentCategory).append(html);
+                        } else{
+                            // given category is not available!
+                            throw new Error("The given category '"+ currentCategory + "' for '" + currentName + "' does not exist!");
+                        }
+                    }
+                    else{
+                        // subcategory is existing
+                        if($("#sublist-" + currentSubcategory).length){
+                            $("#sublist-" + currentSubcategory).append(html);
+                        } else{
+                            // given category is not available!
+                            throw new Error("The given subcategory '"+ currentSubcategory + "' for '" + currentName + "' does not exist!");
+                        }
+                    }
+                }
+                catch (error) {
+                    console.log(error);
+                }
                 
                 // increase count of products in current category
                 $("#" + currentCategory + " span.count-product").html(parseInt($("#" + currentCategory + " span.count-product").html(), 10)+1);
             });
         });
-
+        
         // show or hide various information
         if (showProductCount){
             $(".counter-text").show();

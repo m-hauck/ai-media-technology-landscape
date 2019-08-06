@@ -13,7 +13,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_PredictiveAnalytics",
 			"Packaging"
 		]
 	},
@@ -31,7 +31,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_PredictiveAnalytics"
 		]
 	},
 	{
@@ -48,7 +48,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_Visualisation"
 		]
 	},
 	{
@@ -65,7 +65,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_Visualisation"
 		]
 	},
 	{
@@ -100,7 +100,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_AudioGeneration"
 		]
 	},
 	{
@@ -117,7 +117,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -134,7 +134,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_AudioGeneration"
 		]
 	},
 	{
@@ -151,7 +151,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent",
+			"ProduktionContent_QualityImprovement",
 			"Distribution"
 		]
 	},
@@ -169,7 +169,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -186,7 +186,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_AudioGeneration"
 		]
 	},
 	{
@@ -203,7 +203,7 @@
 			"NN"
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -237,7 +237,7 @@
 			""
 		],
 		"categories": [
-			"AkquisitionWerbung",
+			"AkquisitionWerbung_ProgrammaticTV",
 			"Packaging"
 		]
 	},
@@ -256,7 +256,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_PredictiveAnalytics",
 			"ProduktionContent"
 		]
 	},
@@ -274,7 +274,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_PredictiveAnalytics"
 		]
 	},
 	{
@@ -365,7 +365,7 @@
 		],
 		"categories": [
 			"ProduktionContent",
-			"PlazierungWerbung"
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -382,7 +382,7 @@
 			"NN"
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -399,7 +399,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -410,14 +410,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Objekterkennung und -beschreibung; Generierung von Metadaten",
+		"description": "Objekterkennung und -beschreibung; Video-Annotierung",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
-			"ProduktionContent"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -434,7 +433,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -445,14 +444,14 @@
 		"mediatype": [
 			"video"
 		],
-		"description": "Empfehlungssystem",
+		"description": "Empfehlung von Filmen anhand von Filmtiteln oder Keywords",
 		"technologyReadinessLevel": "applied-research",
 		"aiTechnologiesUsed": [
 			"NN",
 			"LSTM"
 		],
 		"categories": [
-			"Packaging"
+			"Packaging_RecommenderSystem"
 		]
 	},
 	{
@@ -465,14 +464,14 @@
 			"text",
 			"other"
 		],
-		"description": "Empfehlungssystem",
+		"description": "Empfehlungen für Textbeiträge oder Videos",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			"CNN",
 			"NN"
 		],
 		"categories": [
-			"Packaging"
+			"Packaging_RecommenderSystem"
 		]
 	},
 	{
@@ -491,7 +490,7 @@
 		],
 		"categories": [
 			"Packaging",
-			"TechnischeProduktion",
+			"TechnischeProduktion_Coding",
 			"Distribution"
 		]
 	},
@@ -504,12 +503,12 @@
 			"video"
 		],
 		"description": "Bandbreiten- und Qualitätsoptimierung; Codierung",
-		"technologyReadinessLevel": "mass-product",
+		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"TechnischeProduktion"
+			"TechnischeProduktion_Coding"
 		]
 	},
 	{
@@ -520,13 +519,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadaten-Generierung",
+		"description": "Objekterkennung und -beschreibung; Kategorisierung; Tagging",
 		"technologyReadinessLevel": "applied-research",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -543,7 +542,7 @@
 			""
 		],
 		"categories": [
-			"PlazierungWerbung"
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -571,13 +570,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadaten-Generierung; Media-Asset-Management",
+		"description": "Text2Speech; Media-Asset-Management",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_TextToSpeechToText",
 			"Packaging"
 		]
 	},
@@ -608,13 +607,13 @@
 			"video",
 			"other"
 		],
-		"description": "Erkennung unangemessener Videoszenen; Metadaten-Generierung",
+		"description": "Objekterkennung und -beschreibung; Erkennung unangemessener Videoszenen",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -631,7 +630,7 @@
 			""
 		],
 		"categories": [
-			"PlazierungWerbung"
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -648,7 +647,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -665,7 +664,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -682,7 +681,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -700,7 +699,7 @@
 		],
 		"categories": [
 			"BeschaffungInhalte",
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -734,7 +733,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_PredictiveAnalytics"
 		]
 	},
 	{
@@ -751,7 +750,7 @@
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_PredictiveAnalytics"
 		]
 	},
 	{
@@ -769,8 +768,8 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent",
-			"TechnischeProduktion"
+			"ProduktionContent_QualityImprovement",
+			"TechnischeProduktion_Coding"
 		]
 	},
 	{
@@ -798,13 +797,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadaten-Generierung",
+		"description": "Objekterkennung und -beschreibung",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -815,13 +814,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Media-Asset-Management; Metadaten-Generierung; Übersetzung; Generierung von Untertiteln; Fingerprinting",
+		"description": "Media-Asset-Management; Tagging; Übersetzung; Generierung von Untertiteln; Fingerprinting",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_MetadataGeneration",
 			"ProduktionContent"
 		]
 	},
@@ -833,13 +832,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadaten-Generierung",
+		"description": "Objekterkennung und -beschreibung",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			"NN"
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -856,7 +855,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_Visualisation"
 		]
 	},
 	{
@@ -874,7 +873,7 @@
 			"NN"
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_AudioGeneration"
 		]
 	},
 	{
@@ -891,7 +890,7 @@
 			"NN"
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -908,8 +907,8 @@
 			"HBN"
 		],
 		"categories": [
-			"BeschaffungInhalte",
-			"PlazierungWerbung"
+			"BeschaffungInhalte_PredictiveAnalytics",
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -920,14 +919,14 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Digital-Publishing; Empfehlungssystem",
+		"description": "Digital-Publishing; Empfehlung von Textbeiträgen",
 		"technologyReadinessLevel": "first-applications",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
 			"ProduktionContent",
-			"Packaging"
+			"Packaging_RecommenderSystem"
 		]
 	},
 	{
@@ -945,7 +944,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_TextToSpeechToText",
 			"ProduktionContent"
 		]
 	},
@@ -964,8 +963,8 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
-			"ProduktionContent"
+			"BeschaffungInhalte_MetadataGeneration",
+			"ProduktionContent_QualityImprovement"
 		]
 	},
 	{
@@ -982,7 +981,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -1000,7 +999,7 @@
 		],
 		"categories": [
 			"AkquisitionWerbung",
-			"PlazierungWerbung"
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -1017,7 +1016,7 @@
 			""
 		],
 		"categories": [
-			"AkquisitionWerbung"
+			"AkquisitionWerbung_ProgrammaticTV"
 		]
 	},
 	{
@@ -1028,13 +1027,13 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Metadaten-Generierung",
+		"description": "Videobeschreibung, Popularitätsscore",
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_MetadataGeneration"
 		]
 	},
 	{
@@ -1051,8 +1050,8 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte",
-			"AkquisitionWerbung",
+			"BeschaffungInhalte_PredictiveAnalytics",
+			"AkquisitionWerbung_ProgrammaticTV",
 			"Distribution"
 		]
 	},
@@ -1071,8 +1070,8 @@
 			""
 		],
 		"categories": [
-			"AkquisitionWerbung",
-			"PlazierungWerbung",
+			"AkquisitionWerbung_ProgrammaticTV",
+			"PlatzierungWerbung",
 			"TechnischeProduktion"
 		]
 	},
@@ -1109,7 +1108,7 @@
 		],
 		"categories": [
 			"AkquisitionWerbung",
-			"PlazierungWerbung",
+			"PlatzierungWerbung",
 			"Distribution"
 		]
 	},
@@ -1121,14 +1120,14 @@
 		"mediatype": [
 			"other"
 		],
-		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg.",
+		"description": "Anpassung der Werbung an die Leser von Nachrichtenartikeln; Auswahl und Erreichung des am besten geeigneten Ziels über alle verfügbaren Medienkanäle hinweg",
 		"technologyReadinessLevel": "applied-research",
 		"aiTechnologiesUsed": [
 			""
 		],
 		"categories": [
 			"AkquisitionWerbung",
-			"PlazierungWerbung"
+			"PlatzierungWerbung"
 		]
 	},
 	{
@@ -1162,7 +1161,7 @@
 			""
 		],
 		"categories": [
-			"Packaging"
+			"Packaging_RecommenderSystem"
 		]
 	},
 	{
@@ -1179,7 +1178,7 @@
 			""
 		],
 		"categories": [
-			"ProduktionContent"
+			"ProduktionContent_AudioGeneration"
 		]
 	},
 	{
@@ -1196,7 +1195,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_PredictiveAnalytics"
 		]
 	},
 	{
@@ -1213,7 +1212,7 @@
 			""
 		],
 		"categories": [
-			"BeschaffungInhalte"
+			"BeschaffungInhalte_TextToSpeechToText"
 		]
 	},
 	{
@@ -1228,8 +1227,23 @@
 		"technologyReadinessLevel": "mass-production",
 		"aiTechnologiesUsed": [],
 		"categories": [
-			"BeschaffungInhalte",
+			"BeschaffungInhalte_MetadataGeneration",
 			"Distribution"
+		]
+	},
+	{
+		"name": "COMPASS",
+		"manufacturer": "ZDF Digital",
+		"logo": "compass.png",
+		"link": "https://www.compass-subtitling.com/",
+		"mediatype": [
+			"text"
+		],
+		"description": "Computerunterstützte Untertitelung",
+		"technologyReadinessLevel": "basic-research",
+		"aiTechnologiesUsed": [],
+		"categories": [
+			"BeschaffungInhalte_TextToSpeechToText"
 		]
 	}
 ]
