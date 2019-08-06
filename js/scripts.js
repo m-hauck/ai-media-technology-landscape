@@ -25,13 +25,13 @@ $( document ).ready(function() {
             
             html = `
             <div class="card">
-                <div class="category-wrapper" id="${currentCategoryShort}">
-                    <div class="category-header clearfix">
-                        ${currentCategoryLong} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
-                    </div>
-                    <ul class="list-inline" id="list-${currentCategoryShort}">
-                    </ul>`;
-
+            <div class="category-wrapper" id="${currentCategoryShort}">
+            <div class="category-header clearfix">
+            ${currentCategoryLong} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
+            </div>
+            <ul class="list-inline" id="list-${currentCategoryShort}">
+            </ul>`;
+            
             // sort subcategories by long name
             if (currentSubcategories !== undefined){
                 currentSubcategories.sort(function (a, b) {
@@ -43,15 +43,15 @@ $( document ).ready(function() {
                 currentSubcategoryShort = currentSubcategory.nameShort;
                 currentSubcategoryLong = currentSubcategory.nameLong;
                 html += `
-                    <div class="subcategory-header card-subtitle mb-2 text-muted">
-                    ${currentSubcategoryLong}
-                    </div>
-                    <ul class="list-inline" id="sublist-${currentSubcategoryShort}">
-                    </ul>`;
-            });
-
-            html += `
+                <div class="subcategory-header card-subtitle mb-2 text-muted">
+                ${currentSubcategoryLong}
                 </div>
+                <ul class="list-inline" id="sublist-${currentSubcategoryShort}">
+                </ul>`;
+            });
+            
+            html += `
+            </div>
             </div>
             `;
             $("#row-products").append(html);
@@ -99,8 +99,8 @@ $( document ).ready(function() {
                 }
                 
                 html = `
-                <li class="product-wrapper text-center list-inline-item ${currentMediatype} ${currentTechnologyReadinessLevel}">
-                <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link">
+                <li class="product-wrapper text-center d-inline-flex ${currentMediatype} ${currentTechnologyReadinessLevel}">
+                <a href="${currentLink}" title="${currentDescription}" target="_blank" class="product-link w-100 my-auto">
                 <img class="logo" src="img/${currentLogo}">
                 <span class="product-name">${currentProductName}</span>`;
                 $.each(currentAiTechnologiesUsed, function (index, value){
@@ -143,6 +143,13 @@ $( document ).ready(function() {
                 $("#" + currentCategory + " span.count-product").html(parseInt($("#" + currentCategory + " span.count-product").html(), 10)+1);
             });
         });
+        
+        // set equal minimum height for all products
+        var maxHeight = Math.max.apply(null, $(".product-wrapper").map(function ()
+        {
+            return $(this).height();
+        }).get());
+        $(".product-wrapper").css({"min-height" : maxHeight});
         
         // show or hide various information
         if (showProductCount){

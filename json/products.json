@@ -1241,7 +1241,9 @@
 		],
 		"description": "Computerunterstützte Untertitelung",
 		"technologyReadinessLevel": "basic-research",
-		"aiTechnologiesUsed": [],
+		"aiTechnologiesUsed": [
+			"NN"
+		],
 		"categories": [
 			"BeschaffungInhalte_TextToSpeechToText"
 		]
