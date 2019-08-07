@@ -1,3 +1,12 @@
+function setEqualProductHeight(){
+    // set equal minimum height for all products
+    // https://stackoverflow.com/a/6061029
+    var maxHeight = Math.max.apply(null, $(".product-wrapper").map(function (){
+        return $(this).height();
+    }).get());
+    $(".product-wrapper").css({"min-height" : maxHeight});
+}
+
 $( document ).ready(function() {
     // switches for displaying various information
     var showProductCount = true;
@@ -134,6 +143,7 @@ $( document ).ready(function() {
                             throw new Error("The given subcategory '"+ currentSubcategory + "' for '" + currentName + "' does not exist!");
                         }
                     }
+                    setEqualProductHeight();
                 }
                 catch (error) {
                     console.log(error);
@@ -143,13 +153,6 @@ $( document ).ready(function() {
                 $("#" + currentCategory + " span.count-product").html(parseInt($("#" + currentCategory + " span.count-product").html(), 10)+1);
             });
         });
-        
-        // set equal minimum height for all products
-        var maxHeight = Math.max.apply(null, $(".product-wrapper").map(function ()
-        {
-            return $(this).height();
-        }).get());
-        $(".product-wrapper").css({"min-height" : maxHeight});
         
         // show or hide various information
         if (showProductCount){
@@ -175,5 +178,5 @@ $( document ).ready(function() {
     })
     .fail(function() {
         // Executed if at least one request fails
-    })
+    });
 });

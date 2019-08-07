@@ -1247,5 +1247,22 @@
 		"categories": [
 			"BeschaffungInhalte_TextToSpeechToText"
 		]
+	},
+	{
+		"name": "Flow Machines",
+		"manufacturer": "Sony",
+		"logo": "flowmachines.svg",
+		"link": "https://www.flow-machines.com/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Melodien entwickeln",
+		"technologyReadinessLevel": "basic-research",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"ProduktionContent_AudioGeneration"
+		]
 	}
 ]
