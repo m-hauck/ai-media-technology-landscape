@@ -1264,5 +1264,73 @@
 		"categories": [
 			"ProduktionContent_AudioGeneration"
 		]
+	},
+	{
+		"name": "AI.MUSIC",
+		"manufacturer": "AI.MUSIC",
+		"logo": "aimusic.png",
+		"link": "https://www.aimusic.co.uk/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Dynamische Anpassung von Musik an den Hörer",
+		"technologyReadinessLevel": "applied-research",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"ProduktionContent_AudioGeneration"
+		]
+	},
+	{
+		"name": "smart:comp",
+		"manufacturer": "sonible",
+		"logo": "sonible.svg",
+		"link": "https://www.sonible.com/smartcomp/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Mastering; Dynamikbearbeitung; spektrale Kompression",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"ProduktionContent_QualityImprovement"
+		]
+	},
+	{
+		"name": "Indie",
+		"manufacturer": "Melodrive",
+		"logo": "melodrive.svg",
+		"link": "http://melodrive.com/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Automatische Musikgenerierung für Videospiele in Echtzeit",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"ProduktionContent_AudioGeneration"
+		]
+	},
+	{
+		"name": "Humtap",
+		"manufacturer": "Humtap",
+		"logo": "humtap.svg",
+		"link": "https://www.humtap.com/",
+		"mediatype": [
+			"audio"
+		],
+		"description": "Eigene Musik komponieren",
+		"technologyReadinessLevel": "first-applications",
+		"aiTechnologiesUsed": [
+			"NN"
+		],
+		"categories": [
+			"ProduktionContent_AudioGeneration"
+		]
 	}
 ]

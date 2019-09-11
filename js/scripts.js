@@ -10,9 +10,9 @@ function setEqualProductHeight(){
 $( document ).ready(function() {
     // switches for displaying various information
     var showProductCount = true;
-    var showLegend = false;
-    var showTitle = false;
-    var showNavbar = false;
+    var showLegend = true;
+    var showTitle = true;
+    var showNavbar = true;
     // configuration files
     var requestCategories = $.getJSON( "json/categories.json" );
     var requestProducts = $.getJSON( "json/products.json" );
