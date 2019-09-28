@@ -7,6 +7,14 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 }
 
 /*
+    NAVBAR
+*/
+.navbar-creators{
+    text-align: right;
+    float: right;
+}
+
+/*
     CATEGORIES
 */
 .card{
