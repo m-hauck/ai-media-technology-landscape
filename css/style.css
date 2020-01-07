@@ -13,7 +13,9 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
     text-align: right;
     float: right;
 }
-
+.navbar-brand img{
+    height: 50px;
+}
 /*
     CATEGORIES
 */
