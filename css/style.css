@@ -1,13 +1,41 @@
 /*
-    GENERAL
+GENERAL
 */
 a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
     color: black;
     text-decoration: none;
 }
+@font-face {
+    font-family: "Simple";
+    src: url("../fonts/lineto-simple-light.eot");
+    src: url("../fonts/lineto-simple-light.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-light.woff2") format("woff2"), url("../fonts/lineto-simple-light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Simple";
+    src: url("../fonts/lineto-simple-regular.eot");
+    src: url("../fonts/lineto-simple-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-regular.woff2") format("woff2"), url("../fonts/lineto-simple-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Simple";
+    src: url("../fonts/lineto-simple-bold.eot");
+    src: url("../fonts/lineto-simple-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-bold.woff2") format("woff2"), url("../fonts/lineto-simple-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: "Merriweather", "Times New Roman", "Times", serif;
+}
+h1, h2, h3 {
+    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+    font-weight: 400;
+}
 
 /*
-    NAVBAR
+NAVBAR
 */
 .navbar-creators{
     text-align: right;
@@ -22,7 +50,7 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
     height: 50px;
 }
 /*
-    CATEGORIES
+CATEGORIES
 */
 .card{
     border-color: rgba(0,0,0,.25);
@@ -32,7 +60,8 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
     color: #fff;
     margin-bottom: 0.5rem;
     padding: 5px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
 }
 .subcategory-header{
     background: #fff;
@@ -49,7 +78,7 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 }
 
 /*
-    PRODUCTS
+PRODUCTS
 */
 .product-wrapper {
     width: 79px;
@@ -82,7 +111,7 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 }
 
 /*
-    AI Technology Bubbles
+AI Technology Bubbles
 */
 .ai-technology, .legend-item-ai-technology-icon{
     margin-top: 0.5em;
@@ -100,7 +129,7 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 
 
 /*
-    LEGEND
+LEGEND
 */
 .row-legend{
     margin-bottom: 2em;
@@ -177,8 +206,12 @@ a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
 }
 
 /*
-    Footer
+Footer
 */
 footer img{
     height: 50px;
+}
+footer p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
