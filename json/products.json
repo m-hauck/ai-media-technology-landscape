@@ -495,6 +495,41 @@
 		]
 	},
 	{
+		"name": "Azure Cognitive Services",
+		"manufacturer": "Microsoft",
+		"logo": "Microsoft_Azure.svg",
+		"link": "https://azure.microsoft.com/de-de/services/cognitive-services/",
+		"mediatype": [
+			"other"
+		],
+		"description": "Text- und Bild-Analysen, TextToSpeech, SpeechToText",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"BeschaffungInhalte_MetadataGeneration",
+			"BeschaffungInhalte_TextToSpeechToText"
+		]
+	},
+	{
+		"name": "Cloud Natural Language",
+		"manufacturer": "Google",
+		"logo": "Google_Cloud.svg",
+		"link": "https://cloud.google.com/natural-language/?hl=de",
+		"mediatype": [
+			"other"
+		],
+		"description": "Text-Analysen",
+		"technologyReadinessLevel": "mass-production",
+		"aiTechnologiesUsed": [
+			""
+		],
+		"categories": [
+			"BeschaffungInhalte_MetadataGeneration"
+		]
+	},
+	{
 		"name": "Video Encoding",
 		"manufacturer": "Bitmovin",
 		"logo": "bitmovin.svg",
