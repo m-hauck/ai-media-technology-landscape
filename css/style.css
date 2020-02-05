@@ -210,6 +210,11 @@ Footer
 */
 footer img{
     height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer img:first-child{
+    margin-left: 0;
 }
 footer p {
     margin-top: 1em;
