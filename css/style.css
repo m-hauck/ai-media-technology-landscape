@@ -1,76 +1,105 @@
 /*
 GENERAL
 */
-a:link, a:visited, a:hover, a:focus, a:active, a:visited:hover {
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active,
+a:visited:hover {
     color: black;
     text-decoration: none;
 }
 @font-face {
     font-family: "Simple";
     src: url("../fonts/lineto-simple-light.eot");
-    src: url("../fonts/lineto-simple-light.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-light.woff2") format("woff2"), url("../fonts/lineto-simple-light.woff") format("woff");
+    src: url("../fonts/lineto-simple-light.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/lineto-simple-light.woff2") format("woff2"),
+        url("../fonts/lineto-simple-light.woff") format("woff");
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: "Simple";
     src: url("../fonts/lineto-simple-regular.eot");
-    src: url("../fonts/lineto-simple-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-regular.woff2") format("woff2"), url("../fonts/lineto-simple-regular.woff") format("woff");
+    src: url("../fonts/lineto-simple-regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/lineto-simple-regular.woff2") format("woff2"),
+        url("../fonts/lineto-simple-regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "Simple";
     src: url("../fonts/lineto-simple-bold.eot");
-    src: url("../fonts/lineto-simple-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lineto-simple-bold.woff2") format("woff2"), url("../fonts/lineto-simple-bold.woff") format("woff");
+    src: url("../fonts/lineto-simple-bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/lineto-simple-bold.woff2") format("woff2"),
+        url("../fonts/lineto-simple-bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
+}
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/merriweather.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 body {
     font-family: "Merriweather", "Times New Roman", "Times", serif;
 }
-h1, h2, h3 {
-    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+h1,
+h2,
+h3 {
+    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New",
+        monospace;
     font-weight: 400;
 }
 
 /*
 NAVBAR
 */
-.navbar-creators{
+.navbar-creators {
     text-align: right;
     float: right;
     font-size: 0.8em;
     height: 50px;
 }
-.navbar-brand{
+.navbar-brand {
     padding: 0;
 }
-.navbar-brand img{
+.navbar-brand img {
     height: 50px;
 }
 /*
 CATEGORIES
 */
-.card{
-    border-color: rgba(0,0,0,.25);
+.card {
+    border-color: rgba(0, 0, 0, 0.25);
 }
-.category-header, .subcategory-header{
+.category-header,
+.subcategory-header {
     background: #343a40;
     color: #fff;
     margin-bottom: 0.5rem;
     padding: 5px;
     font-weight: 400;
-    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+    font-family: "Simple", "Menlo", "Monaco", "Consolas", "Courier New",
+        monospace;
 }
-.subcategory-header{
+.subcategory-header {
     background: #fff;
     color: #000;
-    border-top: 1px dashed rgba(0,0,0,.5);
+    border-top: 1px dashed rgba(0, 0, 0, 0.5);
     padding-left: 12px;
     padding-right: 12px;
 }
-.counter-text{
+.counter-text {
     font-size: 0.75em;
     line-height: 2;
     float: right;
@@ -89,31 +118,32 @@ PRODUCTS
     vertical-align: middle;
     background: #fff;
 }
-.logo{
+.logo {
     max-width: 100%;
     max-height: 30px;
     margin-bottom: 5px;
     display: inline-block;
 }
-.list-inline{
+.list-inline {
     padding-left: 12px;
     padding-right: 12px;
 }
-.list-inline-item{
+.list-inline-item {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-.product-link{
+.product-link {
     vertical-align: middle;
 }
-.product-name{
-    display:block;
+.product-name {
+    display: block;
 }
 
 /*
 AI Technology Bubbles
 */
-.ai-technology, .legend-item-ai-technology-icon{
+.ai-technology,
+.legend-item-ai-technology-icon {
     margin-top: 0.5em;
     margin-left: 0.1em;
     margin-right: 0.1em;
@@ -127,20 +157,19 @@ AI Technology Bubbles
     display: inline-block;
 }
 
-
 /*
 LEGEND
 */
-.row-legend{
+.row-legend {
     margin-bottom: 2em;
 }
-.legend-description{
+.legend-description {
     font-weight: bold;
 }
-.legend-item{
+.legend-item {
     display: inline-block;
 }
-.legend-item div{
+.legend-item div {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     padding: 0.5em;
@@ -149,71 +178,70 @@ LEGEND
     vertical-align: middle;
 }
 
-.legend-item-mediatype div{
+.legend-item-mediatype div {
     border-style: solid;
     border-width: 2px;
     width: 100px;
 }
-.mediatype-text{
+.mediatype-text {
     border-color: #f8cd5d;
 }
-.mediatype-picture{
+.mediatype-picture {
     border-color: #f5961e;
 }
-.mediatype-video{
+.mediatype-video {
     border-color: #d62048;
 }
-.mediatype-audio{
+.mediatype-audio {
     border-color: #124676;
 }
-.mediatype-mixed{
+.mediatype-mixed {
     border-color: #31acd6;
 }
-.mediatype-other{
+.mediatype-other {
     border-color: #6ecbd2;
 }
 
-
-.legend-item-trl div{
+.legend-item-trl div {
     border-color: #aaa;
 }
-.trl-unknown{
+.trl-unknown {
     border-style: none;
     border-width: 2px;
 }
-.trl-basic-research{
+.trl-basic-research {
     border-style: dotted;
     border-width: 2px;
 }
-.trl-applied-research{
+.trl-applied-research {
     border-style: dashed;
     border-width: 2px;
 }
-.trl-first-applications{
+.trl-first-applications {
     border-style: solid;
     border-width: 2px;
 }
-.trl-mass-production{
+.trl-mass-production {
     border-style: groove;
     border-width: 4px;
 }
 
-.legend-item-ai-technology{
+.legend-item-ai-technology {
     display: block;
 }
-.legend-item-ai-technology div{
+.legend-item-ai-technology div {
     padding: 0;
 }
 
 /*
 Footer
 */
-footer img{
+footer img {
     height: 50px;
     margin-left: 10px;
     margin-right: 10px;
 }
-footer img:first-child{
+footer img:first-child {
     margin-left: 0;
 }
 footer p {
