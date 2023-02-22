@@ -91,10 +91,13 @@ header .container {
     text-align: right;
     font-size: 0.8em;
     height: 50px;
+    display: inline-block;
+    line-height: 1.5;
 }
 .header-brands {
     display: flex;
     gap: 1em;
+    flex-direction: column;
 }
 .header-brand {
     padding: 0;
@@ -111,6 +114,7 @@ CONTENT
 #headline {
     display: flex;
     justify-content: space-between;
+    font-size: 2em;
 }
 #content {
     padding: 0 1em;
@@ -310,16 +314,20 @@ footer .container {
 }
 footer img {
     height: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-footer img:first-child {
-    margin-left: 0;
 }
 footer p {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
+#footer-link-innoprom {
+    display: flex;
+    gap: 2rem;
+}
+
+/*
+Media queries
+*/
 
 @media (min-width: 40rem) {
     .category-columns {
@@ -327,6 +335,12 @@ footer p {
     }
     footer .container {
         grid-template-columns: 1fr 1fr;
+    }
+    .header-brands {
+        flex-direction: row;
+    }
+    .header-creators {
+        width: 22rem;
     }
 }
 

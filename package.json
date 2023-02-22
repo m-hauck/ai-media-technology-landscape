@@ -4,7 +4,9 @@
         "eslint": "^8.34.0"
     },
     "scripts": {
-        "build:esbuild": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js",
-        "build:esbuild:watch": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js --watch"
+        "esbuild:prod": "esbuild src/main.ts --bundle --outfile=dist/min/main.js --minify",
+        "esbuild:dev": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js",
+        "build": "npm run esbuild:prod && npm run esbuild:dev",
+        "build:watch": "npm run esbuild:dev -- --watch"
     }
 }
