@@ -29,31 +29,8 @@ interface Product {
     categories: string[];
 }
 
-function setEqualProductHeight() {
-    // set equal minimum height for all products
-    // https://stackoverflow.com/a/6061029
-    const products = document.querySelectorAll<HTMLElement>(".product-wrapper");
-
-    let maxHeight = 0;
-    products.forEach((item) => {
-        const itemHeight = item.getBoundingClientRect().height;
-
-        // Compare the height to the current maximum and update if it's larger
-        if (itemHeight > maxHeight) {
-            maxHeight = itemHeight;
-        }
-    });
-
-    // Set the maxHeight to all products in .product-wrapper
-    products.forEach((item) => {
-        item.style.minHeight = `${maxHeight}px`;
-    });
-}
-
-function sortDict<T extends Record<string, unknown>>(
-    unsortedDict: T
-): T | undefined {
-    if (unsortedDict == null) return;
+function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
+    if (unsortedDict == null) return {} as T;
 
     const sortedKeys = Object.keys(unsortedDict).sort();
     const sortedDict: T = {} as T;
@@ -148,7 +125,9 @@ function addProductsToHtmlElement(products: Product[], htmlTarget) {
 }
 
 function addProductsToPage(categories: Category[]): void {
+    console.log(categories);
     for (const [categoryKey, categoryValue] of Object.entries(categories)) {
+        // Add category
         let html = `
         <div class="card">
             <div class="category-wrapper" id="${categoryKey}">
@@ -162,15 +141,17 @@ function addProductsToPage(categories: Category[]): void {
         document.querySelector<HTMLDivElement>("#row-products")!.innerHTML +=
             html;
 
-        // Sort subcategories by description
-        const subcategories = categories[categoryKey]["subcategories"];
-        const subcategoriesSorted: Subcategories = sortDict(subcategories);
-
+        // Add products to main category (products that don't belong to a subcategory)
         addProductsToHtmlElement(
             categories[categoryKey]["products"],
             document.querySelector(`#${categoryKey} ul`)
         );
-        if (subcategoriesSorted == null) return;
+
+        // Add subcategories with their products
+        const subcategories = categories[categoryKey]["subcategories"];
+
+        // Sort subcategories by description
+        const subcategoriesSorted: Subcategories = sortDict(subcategories);
         for (const [subcategoryKey, subcategoryValue] of Object.entries(
             subcategoriesSorted
         )) {
@@ -202,15 +183,14 @@ function addProductsToPage(categories: Category[]): void {
                 ],
                 document.querySelector(`#${subcategoryKey}`)
             );
-
-            //             // increase count of products in current category
-            //             $("#" + currentCategory + " span.count-product").html(
-            //                 parseInt(
-            //                     $("#" + currentCategory + " span.count-product").html(),
-            //                     10
-            //                 ) + 1
-            //             );
         }
+
+        // Add product count
+        document.querySelector<HTMLSpanElement>(
+            `#${categoryKey} .count-product`
+        )!.innerText = document
+            .querySelectorAll(`#${categoryKey} .product-wrapper`)
+            .length.toString();
     }
 }
 
@@ -230,7 +210,6 @@ Promise.all([
 
     addProductsToPage(categories as Category[]);
 
-    setEqualProductHeight();
-
     // TODO: Loading spinner
+    // TODO: Replace bootstrap
 });
