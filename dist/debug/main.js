@@ -1,5 +1,18 @@
 (() => {
   // src/main.ts
+  function setEqualProductHeight() {
+    const products = document.querySelectorAll(".product");
+    let maxHeight = 0;
+    products.forEach((item) => {
+      const itemHeight = item.getBoundingClientRect().height;
+      if (itemHeight > maxHeight) {
+        maxHeight = itemHeight;
+      }
+    });
+    products.forEach((item) => {
+      item.style.minHeight = `${maxHeight}px`;
+    });
+  }
   function sortDict(unsortedDict) {
     if (unsortedDict == null)
       return {};
@@ -52,7 +65,7 @@
       );
       productClone.querySelector("li").classList.add(
         product["technologyReadinessLevelClass"],
-        product["mediaTypeClass"]
+        product["mediatypeClass"]
       );
       productClone.querySelector("a").href = product["link"];
       productClone.querySelector("img").src = `img/${product["logo"]}`;
@@ -70,17 +83,13 @@
     });
   }
   function addProductsToPage(categories) {
-    console.log(categories);
     for (const [categoryKey, categoryValue] of Object.entries(categories)) {
       let html = `
-        <div class="card">
-            <div class="category-wrapper" id="${categoryKey}">
-                <div class="category-header clearfix">
-                    ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
-                </div>
-                <ul class="list-inline" id="list-${categoryKey}">
-                </ul>
-            </div>
+        <div class="category" id="${categoryKey}">
+            <h2 class="category-header">
+                ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
+            </h2>
+            <ul class="product-list" id="list-${categoryKey}"></ul>
         </div>`;
       document.querySelector("#row-products").innerHTML += html;
       addProductsToHtmlElement(
@@ -92,28 +101,31 @@
       for (const [subcategoryKey, subcategoryValue] of Object.entries(
         subcategoriesSorted
       )) {
-        const subcategoryHeader = document.createElement("div");
-        subcategoryHeader.classList.add(
-          "subcategory-header",
+        const subcategoryElement = document.createElement("div");
+        subcategoryElement.classList.add(
+          "subcategory",
           "card-subtitle",
           "mb-2",
           "text-muted"
         );
+        subcategoryElement.id = subcategoryKey;
+        document.querySelector(`#${categoryKey}`)?.appendChild(subcategoryElement);
+        const subcategoryHeader = document.createElement("h3");
+        subcategoryHeader.classList.add("subcategory-header");
         subcategoryHeader.innerText = subcategoryValue["description"];
-        subcategoryHeader.id = subcategoryKey;
-        document.querySelector(`#${categoryKey}`)?.appendChild(subcategoryHeader);
+        subcategoryElement.appendChild(subcategoryHeader);
         const subcategoryProductsList = document.createElement("ul");
-        subcategoryProductsList.classList.add("list-inline");
+        subcategoryProductsList.classList.add("product-list");
         subcategoryProductsList.id = subcategoryKey;
         document.querySelector(`#${subcategoryKey}`)?.appendChild(subcategoryProductsList);
         addProductsToHtmlElement(
           categories[categoryKey]["subcategories"][subcategoryKey]["products"],
-          document.querySelector(`#${subcategoryKey}`)
+          document.querySelector(`#${subcategoryKey} .product-list`)
         );
       }
       document.querySelector(
         `#${categoryKey} .count-product`
-      ).innerText = document.querySelectorAll(`#${categoryKey} .product-wrapper`).length.toString();
+      ).innerText = document.querySelectorAll(`#${categoryKey} .product`).length.toString();
     }
   }
   console.clear();
@@ -128,5 +140,6 @@
     setTotalDataCount(products);
     addProductsToCategories(categories, products);
     addProductsToPage(categories);
+    setEqualProductHeight();
   });
 })();

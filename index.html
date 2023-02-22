@@ -2,83 +2,69 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="" />
         <meta name="author" content="" />
 
         <title>AI Media Technology Landscape</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="src/style.css" />
 
         <!-- Bootstrap core JavaScript -->
         <script src="dist/debug/main.js" defer></script>
     </head>
 
-    <body class="bg-light">
+    <body>
         <!-- Navigation -->
-        <nav
-            class="navbar-expand-lg navbar-light static-top p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
-        >
+        <header>
             <div class="container">
-                <a
-                    class="navbar-brand"
-                    href="http://wimm.hs-mainz.de"
-                    target="_blank"
-                    ><img
-                        src="img/HSM_Logo_W_orange_SC.svg"
-                        alt="Hochschule Mainz"
-                /></a>
-                <a class="navbar-brand" href="http://loci.biz" target="_blank"
-                    ><img src="img/loci.svg" alt="loci"
-                /></a>
+                <div class="header-brands">
+                    <a
+                        class="header-brand"
+                        href="http://wimm.hs-mainz.de"
+                        target="_blank"
+                        ><img
+                            src="img/HSM_Logo_W_orange_SC.svg"
+                            alt="Hochschule Mainz"
+                    /></a>
+                    <a
+                        class="header-brand"
+                        href="http://loci.biz"
+                        target="_blank"
+                        ><img src="img/loci.svg" alt="loci"
+                    /></a>
+                </div>
                 <a
                     href="http://wimm.hs-mainz.de"
                     target="_blank"
                     title="Forschungsgruppe WIMM"
-                    class="clearfix"
+                    id="header-authors"
                 >
-                    <span class="navbar-creators">
+                    <span class="header-creators">
                         Forschungsgruppe Wirtschaftsinformatik und<br />
                         Medienmanagement (WIMM)<br />
                         Prof. Dr. Sven Pagel, Marcel Hauck
                     </span>
                 </a>
             </div>
-        </nav>
+        </header>
 
-        <!-- Page Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 pt-4 pb-4">
-                    <h1>
-                        AI Media Technology Landscape
-                        <span class="counter-text"
-                            ><span id="count-total">0</span> Produkte</span
-                        >
-                        <template id="product-template">
-                            <li
-                                class="product-wrapper text-center d-inline-flex"
-                            >
-                                <a
-                                    href=""
-                                    title=""
-                                    target="_blank"
-                                    class="product-link w-100 my-auto"
-                                >
-                                    <img class="logo" src="" />
-                                    <span class="product-name"></span>
-                                </a>
-                            </li>
-                        </template>
-                    </h1>
-                </div>
-            </div>
-            <div class="card-columns" id="row-products"></div>
+        <!-- Page container -->
+        <div class="container" id="content">
+            <h1 id="headline">
+                AI Media Technology Landscape
+                <span class="counter-text"
+                    ><span id="count-total">0</span> Produkte</span
+                >
+            </h1>
+            <template id="product-template">
+                <li class="product">
+                    <a href="" title="" target="_blank" class="product-link">
+                        <img class="logo" src="" />
+                        <span class="product-name"></span>
+                    </a>
+                </li>
+            </template>
+            <div class="category-columns" id="row-products"></div>
             <div class="row-legend">
                 <h2>Legende</h2>
                 <div class="legend-description">Output des Produktes</div>
@@ -136,61 +122,59 @@
         </div>
 
         <!-- Footer -->
-        <footer class="pt-4 py-md-5 pt-md-5 border-top bg-white">
+        <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a
-                            rel="license"
-                            href="https://choosealicense.com/licenses/mit/"
-                            ><img
-                                alt="MIT License"
-                                style="border-width: 0"
-                                src="img/mit-license.svg" /></a
-                        ><br />
+                <div>
+                    <a
+                        rel="license"
+                        href="https://choosealicense.com/licenses/mit/"
+                        ><img
+                            alt="MIT License"
+                            style="border-width: 0"
+                            src="img/mit-license.svg" /></a
+                    ><br />
+                    <p>
+                        AI Media Technology Landscape von Marcel Hauck &amp;
+                        Sven Pagel ist lizenziert unter einer
+                        <a rel="license" href="LICENSE">MIT Lizenz</a>.
+                    </p>
+                    <p>
+                        Bei Nutzung bitte zitieren als "Hauck, M. &amp; Pagel,
+                        S. (2020). AI Media Technology Landscape –
+                        Systematisierungsinstrument für den Einsatz von KI in
+                        Medienunternehmen. MedienWirtschaft, 16. Jahrgang
+                        (4/2019), 50–62.".
+                    </p>
+                </div>
+                <div>
+                    <a
+                        href="http://innoprom-ki.hs-mainz.de"
+                        alt="InnoProm KI"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/Logo_EU.svg"
+                            alt="Logo der Europäischen Union"
+                        />
+                        <img
+                            src="img/Logo_MWWK.svg"
+                            alt="Logo des Landes Rheinland-Pfalz"
+                        />
+                        <img src="img/loci.svg" alt="loci" /><br />
                         <p>
-                            AI Media Technology Landscape von Marcel Hauck &amp;
-                            Sven Pagel ist lizenziert unter einer
-                            <a rel="license" href="LICENSE">MIT Lizenz</a>.
+                            Die kooperative Promotion ist gefördert durch den
+                            Europäischen Fonds für regionale Entwicklung (EFRE),
+                            kofinanziert vom Ministerium für Wissenschaft,
+                            Weiterbildung und Kultur Rheinland-Pfalz und dem
+                            Kooperationsunternehmen
+                            <a
+                                href="https://loci.biz"
+                                title="Kooperationsunternehmen loci"
+                                target="_blank"
+                                >loci GmbH Deutschland</a
+                            >.
                         </p>
-                        <p>
-                            Bei Nutzung bitte zitieren als "Hauck, M. &amp;
-                            Pagel, S. (2020). AI Media Technology Landscape –
-                            Systematisierungsinstrument für den Einsatz von KI
-                            in Medienunternehmen. MedienWirtschaft, 16. Jahrgang
-                            (4/2019), 50–62.".
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <a
-                            href="http://innoprom-ki.hs-mainz.de"
-                            alt="InnoProm KI"
-                            target="_blank"
-                        >
-                            <img
-                                src="img/Logo_EU.svg"
-                                alt="Logo der Europäischen Union"
-                            />
-                            <img
-                                src="img/Logo_MWWK.svg"
-                                alt="Logo des Landes Rheinland-Pfalz"
-                            />
-                            <img src="img/loci.svg" alt="loci" /><br />
-                            <p>
-                                Die kooperative Promotion ist gefördert durch
-                                den Europäischen Fonds für regionale Entwicklung
-                                (EFRE), kofinanziert vom Ministerium für
-                                Wissenschaft, Weiterbildung und Kultur
-                                Rheinland-Pfalz und dem Kooperationsunternehmen
-                                <a
-                                    href="https://loci.biz"
-                                    title="Kooperationsunternehmen loci"
-                                    target="_blank"
-                                    >loci GmbH Deutschland</a
-                                >.
-                            </p>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </footer>

@@ -29,6 +29,26 @@ interface Product {
     categories: string[];
 }
 
+function setEqualProductHeight() {
+    // set equal minimum height for all products
+    const products = document.querySelectorAll<HTMLElement>(".product");
+
+    let maxHeight = 0;
+    products.forEach((item) => {
+        const itemHeight = item.getBoundingClientRect().height;
+
+        // Compare the height to the current maximum and update if it's larger
+        if (itemHeight > maxHeight) {
+            maxHeight = itemHeight;
+        }
+    });
+
+    // Set the maxHeight to all products in .product
+    products.forEach((item) => {
+        item.style.minHeight = `${maxHeight}px`;
+    });
+}
+
 function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
     if (unsortedDict == null) return {} as T;
 
@@ -104,7 +124,7 @@ function addProductsToHtmlElement(products: Product[], htmlTarget) {
             .querySelector("li")!
             .classList.add(
                 product["technologyReadinessLevelClass"],
-                product["mediaTypeClass"]
+                product["mediatypeClass"]
             );
         productClone.querySelector("a")!.href = product["link"];
         productClone.querySelector("img")!.src = `img/${product["logo"]}`;
@@ -125,18 +145,14 @@ function addProductsToHtmlElement(products: Product[], htmlTarget) {
 }
 
 function addProductsToPage(categories: Category[]): void {
-    console.log(categories);
     for (const [categoryKey, categoryValue] of Object.entries(categories)) {
         // Add category
         let html = `
-        <div class="card">
-            <div class="category-wrapper" id="${categoryKey}">
-                <div class="category-header clearfix">
-                    ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
-                </div>
-                <ul class="list-inline" id="list-${categoryKey}">
-                </ul>
-            </div>
+        <div class="category" id="${categoryKey}">
+            <h2 class="category-header">
+                ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
+            </h2>
+            <ul class="product-list" id="list-${categoryKey}"></ul>
         </div>`;
         document.querySelector<HTMLDivElement>("#row-products")!.innerHTML +=
             html;
@@ -156,22 +172,25 @@ function addProductsToPage(categories: Category[]): void {
             subcategoriesSorted
         )) {
             // Add the subcategory to page
-            const subcategoryHeader = document.createElement("div");
-            subcategoryHeader.classList.add(
-                "subcategory-header",
+            const subcategoryElement = document.createElement("div");
+            subcategoryElement.classList.add(
+                "subcategory",
                 "card-subtitle",
                 "mb-2",
                 "text-muted"
             );
-            subcategoryHeader.innerText = subcategoryValue["description"];
-            subcategoryHeader.id = subcategoryKey;
+            subcategoryElement.id = subcategoryKey;
             document
                 .querySelector(`#${categoryKey}`)
-                ?.appendChild(subcategoryHeader);
+                ?.appendChild(subcategoryElement);
+            const subcategoryHeader = document.createElement("h3");
+            subcategoryHeader.classList.add("subcategory-header");
+            subcategoryHeader.innerText = subcategoryValue["description"];
+            subcategoryElement.appendChild(subcategoryHeader);
 
             // Add products to subcategory
             const subcategoryProductsList = document.createElement("ul");
-            subcategoryProductsList.classList.add("list-inline");
+            subcategoryProductsList.classList.add("product-list");
             subcategoryProductsList.id = subcategoryKey;
             document
                 .querySelector(`#${subcategoryKey}`)
@@ -181,7 +200,7 @@ function addProductsToPage(categories: Category[]): void {
                 categories[categoryKey]["subcategories"][subcategoryKey][
                     "products"
                 ],
-                document.querySelector(`#${subcategoryKey}`)
+                document.querySelector(`#${subcategoryKey} .product-list`)
             );
         }
 
@@ -189,7 +208,7 @@ function addProductsToPage(categories: Category[]): void {
         document.querySelector<HTMLSpanElement>(
             `#${categoryKey} .count-product`
         )!.innerText = document
-            .querySelectorAll(`#${categoryKey} .product-wrapper`)
+            .querySelectorAll(`#${categoryKey} .product`)
             .length.toString();
     }
 }
@@ -210,6 +229,5 @@ Promise.all([
 
     addProductsToPage(categories as Category[]);
 
-    // TODO: Loading spinner
-    // TODO: Replace bootstrap
+    setEqualProductHeight();
 });
