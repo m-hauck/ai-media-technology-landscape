@@ -1,0 +1,10 @@
+{
+    "devDependencies": {
+        "esbuild": "^0.17.10",
+        "eslint": "^8.34.0"
+    },
+    "scripts": {
+        "build:esbuild": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js",
+        "build:esbuild:watch": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js --watch"
+    }
+}

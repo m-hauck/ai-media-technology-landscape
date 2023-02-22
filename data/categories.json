@@ -1,0 +1,76 @@
+{
+    "BeschaffungInhalte": {
+        "description": "Beschaffung von Informationen und Inhalten",
+        "products": [],
+        "subcategories": {
+            "PredictiveAnalytics": {
+                "description": "Predictive Analytics",
+                "products": []
+            },
+            "MetadataGeneration": {
+                "description": "Metadaten-Generierung",
+                "products": []
+            },
+            "TextToSpeechToText": {
+                "description": "TextToSpeech oder SpeechToText",
+                "products": []
+            },
+            "Visualisation": {
+                "description": "Visualisierung",
+                "products": []
+            }
+        }
+    },
+    "AkquisitionWerbung": {
+        "description": "Akquisition von Werbung",
+        "products": [],
+        "subcategories": {
+            "ProgrammaticTV": {
+                "description": "Programmatic TV",
+                "products": []
+            }
+        }
+    },
+    "ProduktionContent": {
+        "description": "Produktion und Aggregation von Content",
+        "products": [],
+        "subcategories": {
+            "AudioGeneration": {
+                "description": "Audio-Generierung",
+                "products": []
+            },
+            "QualityImprovement": {
+                "description": "Qualitätskontrolle oder -verbesserung",
+                "products": []
+            }
+        }
+    },
+    "PlatzierungWerbung": {
+        "description": "Platzierung von Werbung",
+        "products": []
+    },
+    "Packaging": {
+        "description": "Packaging der Produkte",
+        "products": [],
+        "subcategories": {
+            "RecommenderSystem": {
+                "description": "Empfehlungssystem",
+                "products": []
+            }
+        }
+    },
+    "TechnischeProduktion": {
+        "description": "Technische Produktion",
+        "products": [],
+        "subcategories": {
+            "Coding": {
+                "description": "Kodierung oder Rekodierung",
+                "products": []
+            }
+        }
+    },
+    "Distribution": {
+        "description": "Distribution",
+        "products": []
+    }
+}

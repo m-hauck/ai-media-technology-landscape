@@ -13,7 +13,10 @@
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="src/style.css" />
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="dist/debug/main.js" defer></script>
     </head>
 
     <body class="bg-light">
@@ -57,6 +60,21 @@
                         <span class="counter-text"
                             ><span id="count-total">0</span> Produkte</span
                         >
+                        <template id="product-template">
+                            <li
+                                class="product-wrapper text-center d-inline-flex"
+                            >
+                                <a
+                                    href=""
+                                    title=""
+                                    target="_blank"
+                                    class="product-link w-100 my-auto"
+                                >
+                                    <img class="logo" src="" />
+                                    <span class="product-name"></span>
+                                </a>
+                            </li>
+                        </template>
                     </h1>
                 </div>
             </div>
@@ -176,10 +194,5 @@
                 </div>
             </div>
         </footer>
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
     </body>
 </html>
