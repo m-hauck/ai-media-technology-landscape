@@ -1,22 +1,18 @@
+interface Category {
+    [Key: string]: CategoryAttributes;
+}
 interface CategoryAttributes {
     description: string;
     products: string[];
     subcategories: Subcategories;
 }
-
 interface Subcategories {
     [key: string]: SubcategoryAttributes;
 }
-
 interface SubcategoryAttributes {
     description: string;
     products: string[];
 }
-
-interface Category {
-    [Key: string]: CategoryAttributes;
-}
-
 interface Product {
     name: string;
     manufacturer: string;
@@ -29,8 +25,10 @@ interface Product {
     categories: string[];
 }
 
+/**
+ * Set equal height for all products so that they have an uniform look
+ */
 function setEqualProductHeight() {
-    // set equal minimum height for all products
     const products = document.querySelectorAll<HTMLElement>(".product");
 
     let maxHeight = 0;
@@ -49,6 +47,11 @@ function setEqualProductHeight() {
     });
 }
 
+/**
+ * Sort a dictionary by its keys
+ * @param unsortedDict Unsorted dictionairy
+ * @returns Sorted dictionary
+ */
 function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
     if (unsortedDict == null) return {} as T;
 
@@ -61,6 +64,11 @@ function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
     return sortedDict;
 }
 
+/**
+ * Load a JSON file from path
+ * @param path Path of the JSON file to load
+ * @returns Loaded JSON file
+ */
 function loadJson(path: string): void | Promise<void | Category[] | Product[]> {
     return new Promise((resolve, reject) => {
         var xhr = new XMLHttpRequest();
@@ -78,11 +86,20 @@ function loadJson(path: string): void | Promise<void | Category[] | Product[]> {
     });
 }
 
-function setTotalDataCount(data: Product[]): void {
+/**
+ * Set count of total products
+ * @param products Data containing all products
+ */
+function setTotalDataCount(products: Product[]): void {
     document.querySelector<HTMLSpanElement>("#count-total")!.innerText =
-        data.length.toString();
+        products.length.toString();
 }
 
+/**
+ * Add products to categories list so that we can afterwards iterate through the categories and directly create the page with the products
+ * @param categories Available categories
+ * @param products Available products with their associated category
+ */
 function addProductsToCategories(
     categories: Category[],
     products: Product[]
@@ -112,6 +129,11 @@ function addProductsToCategories(
     });
 }
 
+/**
+ * Add products as HTML to an HTML element
+ * @param products Available products
+ * @param htmlTarget HTML Element that should contain the products
+ */
 function addProductsToHtmlElement(products: Product[], htmlTarget) {
     const productsTemplate =
         document.querySelector<HTMLTemplateElement>("#product-template");
@@ -144,7 +166,11 @@ function addProductsToHtmlElement(products: Product[], htmlTarget) {
     });
 }
 
-function addProductsToPage(categories: Category[]): void {
+/**
+ * Add all categories and their products to the page
+ * @param categories List of categories with products
+ */
+function addCategoriesAndProductsToPage(categories: Category[]): void {
     for (const [categoryKey, categoryValue] of Object.entries(categories)) {
         // Add category
         let html = `
@@ -215,6 +241,7 @@ function addProductsToPage(categories: Category[]): void {
 
 console.clear();
 
+/** Load products and add with categories to page */
 Promise.all([
     loadJson("data/categories.json"),
     loadJson("data/products.json"),
@@ -226,8 +253,6 @@ Promise.all([
 
     setTotalDataCount(products as Product[]);
     addProductsToCategories(categories as Category[], products as Product[]);
-
-    addProductsToPage(categories as Category[]);
-
+    addCategoriesAndProductsToPage(categories as Category[]);
     setEqualProductHeight();
 });
