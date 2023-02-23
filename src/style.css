@@ -203,51 +203,9 @@ PRODUCTS
     display: inline-block;
     object-fit: contain;
 }
-
 /*
-AI Technology Bubbles
+TAGS
 */
-.ai-technology,
-.legend-item-ai-technology-icon {
-    margin-top: 0.5em;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-    color: #000;
-    background-color: #f2f2f2;
-    border-radius: 100%;
-    border: 1px solid #ccc;
-    width: 30px;
-    height: 15px;
-    font-size: 9px;
-    display: inline-block;
-}
-
-/*
-LEGEND
-*/
-.row-legend {
-    margin-bottom: 2em;
-}
-.legend-description {
-    font-weight: bold;
-}
-.legend-item {
-    display: inline-block;
-}
-.legend-item div {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding: 0.5em;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.legend-item-mediatype div {
-    border-style: solid;
-    border-width: 2px;
-    width: 100px;
-}
 .mediatype-text {
     border-color: #f8cd5d;
 }
@@ -267,9 +225,6 @@ LEGEND
     border-color: #6ecbd2;
 }
 
-.legend-item-trl div {
-    border-color: #aaa;
-}
 .trl-unknown {
     border-style: none;
     border-width: 2px;
@@ -290,11 +245,57 @@ LEGEND
     border-style: groove;
     border-width: 4px;
 }
-
-.legend-item-ai-technology {
-    display: block;
+.ai-technology {
+    margin-top: 0.5em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    color: #000;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 15px;
+    font-size: 9px;
+    display: inline-block;
 }
-.legend-item-ai-technology div {
+
+/*
+LEGEND
+*/
+#legend {
+    margin-bottom: 2em;
+}
+.legend-description {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.legend-items {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.legend-item {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#legend-mediatype .legend-item {
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+}
+#legend-trl .legend-item {
+    border-color: #aaa;
+}
+#legend-ai-technology .legend-items {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#legend-ai-technology .legend-item {
+    margin: 0;
     padding: 0;
 }
 
