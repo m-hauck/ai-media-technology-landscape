@@ -3,7 +3,7 @@ interface Category {
 }
 interface CategoryAttributes {
     description: string;
-    products: string[];
+    products: Product[];
     subcategories: Subcategories;
 }
 interface Subcategories {
@@ -11,7 +11,7 @@ interface Subcategories {
 }
 interface SubcategoryAttributes {
     description: string;
-    products: string[];
+    products: Product[];
 }
 interface Product {
     name: string;
@@ -19,8 +19,10 @@ interface Product {
     logo: string;
     link: string;
     mediatype: string[];
+    mediatypeClass: string;
     description: string;
     technologyReadinessLevel: string;
+    technologyReadinessLevelClass: string;
     aiTechnologiesUsed: string[];
     categories: string[];
 }
@@ -52,13 +54,14 @@ function setEqualProductHeight() {
  * @param unsortedDict Unsorted dictionairy
  * @returns Sorted dictionary
  */
-function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
-    if (unsortedDict == null) return {} as T;
+function sortSubcategories(unsortedDict: Subcategories): Subcategories {
+    if (unsortedDict == null) return {} as Subcategories;
 
     const sortedKeys = Object.keys(unsortedDict).sort();
-    const sortedDict: T = {} as T;
+    const sortedDict = {} as Subcategories;
     sortedKeys.forEach((key) => {
-        sortedDict[key as keyof T] = unsortedDict[key as keyof T];
+        sortedDict[key as keyof Subcategories] =
+            unsortedDict[key as keyof Subcategories];
     });
 
     return sortedDict;
@@ -69,9 +72,9 @@ function sortDict<T extends Record<string, unknown>>(unsortedDict: T): T {
  * @param path Path of the JSON file to load
  * @returns Loaded JSON file
  */
-function loadJson(path: string): void | Promise<void | Category[] | Product[]> {
+function loadJson(path: string): void | Promise<void | Category | Product[]> {
     return new Promise((resolve, reject) => {
-        var xhr = new XMLHttpRequest();
+        const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) {
                 return;
@@ -101,7 +104,7 @@ function setTotalDataCount(products: Product[]): void {
  * @param products Available products with their associated category
  */
 function addProductsToCategories(
-    categories: Category[],
+    categories: Category,
     products: Product[]
 ): void {
     products.forEach((product: Product) => {
@@ -134,7 +137,12 @@ function addProductsToCategories(
  * @param products Available products
  * @param htmlTarget HTML Element that should contain the products
  */
-function addProductsToHtmlElement(products: Product[], htmlTarget) {
+function addProductsToHtmlElement(
+    products: Product[],
+    htmlTarget: HTMLElement | null
+) {
+    if (htmlTarget == null) return;
+
     const productsTemplate =
         document.querySelector<HTMLTemplateElement>("#product-template");
 
@@ -170,8 +178,8 @@ function addProductsToHtmlElement(products: Product[], htmlTarget) {
  * Add all categories and their products to the page
  * @param categories List of categories with products
  */
-function addCategoriesAndProductsToPage(categories: Category[]): void {
-    for (const [categoryKey, categoryValue] of Object.entries(categories)) {
+function addCategoriesAndProductsToPage(categories: Category): void {
+    for (const [categoryKey] of Object.entries(categories)) {
         // Add category
         let html = `
         <div class="category" id="${categoryKey}">
@@ -193,7 +201,8 @@ function addCategoriesAndProductsToPage(categories: Category[]): void {
         const subcategories = categories[categoryKey]["subcategories"];
 
         // Sort subcategories by description
-        const subcategoriesSorted: Subcategories = sortDict(subcategories);
+        const subcategoriesSorted: Subcategories =
+            sortSubcategories(subcategories);
         for (const [subcategoryKey, subcategoryValue] of Object.entries(
             subcategoriesSorted
         )) {
@@ -252,7 +261,7 @@ Promise.all([
     }
 
     setTotalDataCount(products as Product[]);
-    addProductsToCategories(categories as Category[], products as Product[]);
-    addCategoriesAndProductsToPage(categories as Category[]);
+    addProductsToCategories(categories as Category, products as Product[]);
+    addCategoriesAndProductsToPage(categories as Category);
     setEqualProductHeight();
 });

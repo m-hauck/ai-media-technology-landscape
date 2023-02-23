@@ -1,3 +1,4 @@
+"use strict";
 (() => {
   // src/main.ts
   function setEqualProductHeight() {
@@ -13,7 +14,7 @@
       item.style.minHeight = `${maxHeight}px`;
     });
   }
-  function sortDict(unsortedDict) {
+  function sortSubcategories(unsortedDict) {
     if (unsortedDict == null)
       return {};
     const sortedKeys = Object.keys(unsortedDict).sort();
@@ -25,7 +26,7 @@
   }
   function loadJson(path) {
     return new Promise((resolve, reject) => {
-      var xhr = new XMLHttpRequest();
+      const xhr = new XMLHttpRequest();
       xhr.onreadystatechange = () => {
         if (xhr.readyState !== XMLHttpRequest.DONE) {
           return;
@@ -39,8 +40,8 @@
       xhr.send();
     });
   }
-  function setTotalDataCount(data) {
-    document.querySelector("#count-total").innerText = data.length.toString();
+  function setTotalDataCount(products) {
+    document.querySelector("#count-total").innerText = products.length.toString();
   }
   function addProductsToCategories(categories, products) {
     products.forEach((product) => {
@@ -58,6 +59,8 @@
     });
   }
   function addProductsToHtmlElement(products, htmlTarget) {
+    if (htmlTarget == null)
+      return;
     const productsTemplate = document.querySelector("#product-template");
     products.forEach((product) => {
       let productClone = productsTemplate.content.cloneNode(
@@ -82,8 +85,8 @@
       htmlTarget.append(productClone);
     });
   }
-  function addProductsToPage(categories) {
-    for (const [categoryKey, categoryValue] of Object.entries(categories)) {
+  function addCategoriesAndProductsToPage(categories) {
+    for (const [categoryKey] of Object.entries(categories)) {
       let html = `
         <div class="category" id="${categoryKey}">
             <h2 class="category-header">
@@ -97,7 +100,7 @@
         document.querySelector(`#${categoryKey} ul`)
       );
       const subcategories = categories[categoryKey]["subcategories"];
-      const subcategoriesSorted = sortDict(subcategories);
+      const subcategoriesSorted = sortSubcategories(subcategories);
       for (const [subcategoryKey, subcategoryValue] of Object.entries(
         subcategoriesSorted
       )) {
@@ -139,7 +142,7 @@
     }
     setTotalDataCount(products);
     addProductsToCategories(categories, products);
-    addProductsToPage(categories);
+    addCategoriesAndProductsToPage(categories);
     setEqualProductHeight();
   });
 })();

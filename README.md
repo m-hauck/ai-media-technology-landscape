@@ -3,6 +3,10 @@
 
 Diese Technology Landscape zeigt KI-Produkte auf, die für Medienunternehmen angeboten werden.
 
+## Technische Dokumentation
+
+Die Dokumentation der TypeScript-Module wurde mit [TypeDoc](https://typedoc.org/) erstellt (`npm run generate-docs`) und ist als [GitLab Page](https://wimm.pages.gitlab.rlp.net/ai-media-technology-landscape/docs) zu finden.
+
 ## Kontakt
 
 Marcel Hauck
