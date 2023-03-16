@@ -1,122 +1,87 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>JSON Editor Selectize Integration Example</title>
-    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
-</head>
-<body>    
-    <div id='editor_holder'></div>
-    <button id='submit'>Submit (console.log)</button>
-    
-    <img style="display: block; margin-top: 50px;" width="100%" src="img/Wertkette_Medienunternehmen.svg">
-    
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script>
-        
-        // Initialize the editor with a JSON schema
-        var editor = new JSONEditor(document.getElementById('editor_holder'),{
-            schema: {
-                type: "object",
-                title: "Text",
-                properties: {
-                    name: {
-                        type: "string"
-                    },
-                    manufacturer: {
-                        type: "string"
-                    },
-                    logo: {
-                        type: "string"
-                    },
-                    link: {
-                        type: "string"
-                    },
-                    mediatype: {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "string",
-                            enum: ["video", "audio", "text", "picture", "other"],
-                            options: {
-                                enum_titles: ["Video", "Audio", "Text", "Bild", "Sonstiges"]
-                            }
-                        }
-                    },
-                    description: {
-                        type: "string"
-                    },
-                    technologyReadinessLevel: {
-                        "type": "string"
-                    },
-                    aiTechnologiesUsed: {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "string",
-                            enum: ["CNN", "NN", "LSTM"],
-                            options: {
-                                enum_titles: ["Convolutional Neural Network", "Neural Network", "Long Short-Term Memory"]
-                            }
-                        }
-                    },
-                    categories: {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "items": {
-                            "type": "string",
-                            enum: ["BeschaffungInhalte","AkquisitionWerbung","ProduktionContent","PlazierungWerbung","Packaging","TechnischeProduktion","Distribution"],
-                            options: {
-                                enum_titles: ["Beschaffung von Informationen und Inhalten","Akquisition von Werbung","Produktion und Aggregation von Content","Plazierung von Werbung","Packaging der Produkte","Technische Produktion","Distribution"]
-                            }
-                        }
-                    }
-                }
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>JSON Editor Selectize Integration Example</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"
+            defer
+        ></script>
+        <script src="dist/debug/input.js" defer></script>
+        <link rel="stylesheet" href="dist/min/spectre.min.css" />
+        <style>
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
             }
-        });
-        
-        $('#submit').click(function() {
-            // read current products
-            $.getJSON( "json/products.json", function( data ) {                
-                // append editor data from form
-                data.push(editor.getValue());
-                // copy to clipboard
-                copyTextToClipboard(JSON.stringify(data, null, "\t"));
-            });
-        });
-        
-        
-        
-        function fallbackCopyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-            textArea.value = text;
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            
-            try {
-                var successful = document.execCommand('copy');
-                var msg = successful ? 'successful' : 'unsuccessful';
-                console.log('Fallback: Copying text command was ' + msg);
-            } catch (err) {
-                console.error('Fallback: Oops, unable to copy', err);
+            .je-object__title,
+            .je-object__controls {
+                display: none !important;
             }
-            
-            document.body.removeChild(textArea);
-        }
-        function copyTextToClipboard(text) {
-            if (!navigator.clipboard) {
-                fallbackCopyTextToClipboard(text);
-                return;
+            img#value_chain {
+                display: block;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                width: 100%;
+                border: 1em solid white;
+                outline: 1px solid black;
             }
-            navigator.clipboard.writeText(text).then(function() {
-                console.log('Async: Copying to clipboard was successful!');
-            }, function(err) {
-                console.error('Async: Could not copy text: ', err);
-            });
-        }
-        
-    </script>
-</body>
+            table {
+                margin-bottom: 2em;
+            }
+            table img {
+                max-height: 2rem;
+            }
+            table caption {
+                display: none !important;
+            }
+            #output-textarea {
+                margin-bottom: 2em;
+                height: 20rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div id="input-editor"></div>
+                <button id="submit" class="btn btn-primary">Absenden</button>
+                <span id="valid_indicator"></span>
+                <img
+                    src="img/Wertkette_Medienunternehmen.svg"
+                    alt="Wertkette_Medienunternehmen"
+                    id="value_chain"
+                />
+
+                <table class="table table-striped table-hover">
+                    <caption>
+                        Eingabefelder
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Produktname</th>
+                            <th>Anbietername</th>
+                            <th>Dateiname Logo</th>
+                            <th>Link zur Produkt-Website</th>
+                            <th>Output des Produkts</th>
+                            <th>Produktbeschreibung (kurz)</th>
+                            <th>Technology-Readiness-Level</th>
+                            <th>Genannte KI-Technologien</th>
+                            <th>Wertschöpfungskette</th>
+                            <th>Bezahlmodell</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="output-table"></tbody>
+                </table>
+
+                <label class="form-label" for="output-textarea">
+                    Ausgabe Code
+                </label>
+                <textarea id="output-textarea" readonly class="form-input">
+[]</textarea
+                >
+            </div>
+        </div>
+    </body>
 </html>

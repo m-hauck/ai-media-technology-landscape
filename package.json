@@ -5,8 +5,8 @@
         "typedoc": "^0.23.25"
     },
     "scripts": {
-        "esbuild:prod": "esbuild src/main.ts --bundle --outfile=dist/min/main.js --minify",
-        "esbuild:dev": "esbuild src/main.ts --bundle --outfile=dist/debug/main.js",
+        "esbuild:prod": "esbuild src/*.ts --bundle --outdir=dist/min --minify",
+        "esbuild:dev": "esbuild src/*.ts --bundle --outdir=dist/debug",
         "build": "npm run esbuild:prod && npm run esbuild:dev",
         "build:watch": "npm run esbuild:dev -- --watch",
         "generate-docs": "npx typedoc"
