@@ -9,6 +9,7 @@
         ></script>
         <script src="dist/debug/input.js" defer></script>
         <link rel="stylesheet" href="dist/min/spectre.min.css" />
+        <link rel="stylesheet" href="dist/min/spectre-icons.min.css" />
         <style>
             .container {
                 max-width: 960px;
@@ -17,6 +18,10 @@
             .je-object__title,
             .je-object__controls {
                 display: none !important;
+            }
+            #valid_indicator {
+                display: none;
+                margin-left: 1em;
             }
             img#value_chain {
                 display: block;
@@ -38,6 +43,10 @@
             #output-textarea {
                 margin-bottom: 2em;
                 height: 20rem;
+                margin-top: 0.5em;
+            }
+            #download-button {
+                margin-left: 0.5em;
             }
         </style>
     </head>
@@ -46,7 +55,9 @@
             <div class="columns">
                 <div id="input-editor"></div>
                 <button id="submit" class="btn btn-primary">Absenden</button>
-                <span id="valid_indicator"></span>
+                <div id="valid_indicator" class="text-error">
+                    Fehler: Eingabe nicht vollständig
+                </div>
                 <img
                     src="img/Wertkette_Medienunternehmen.svg"
                     alt="Wertkette_Medienunternehmen"
@@ -78,6 +89,9 @@
                 <label class="form-label" for="output-textarea">
                     Ausgabe Code
                 </label>
+                <button class="btn btn-primary" id="download-button">
+                    Download <i class="icon icon-download"></i>
+                </button>
                 <textarea id="output-textarea" readonly class="form-input">
 []</textarea
                 >

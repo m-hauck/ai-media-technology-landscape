@@ -157,17 +157,28 @@
     const TEXTAREA_STRING = JSON.stringify(TEXTAREA_PARSED, null, 4);
     textarea.value = TEXTAREA_STRING;
   }
+  function downloadOutputCode() {
+    const CODE = document.querySelector("#output-textarea").value;
+    const FILE = new Blob([CODE], { type: "text/plain" });
+    const ANCHOR = document.createElement("a");
+    ANCHOR.href = URL.createObjectURL(FILE);
+    const TIMESTAMP = (/* @__PURE__ */ new Date()).toISOString().replace(/[-T:.Z]/g, "").slice(0, 12);
+    ANCHOR.download = `products_${TIMESTAMP.slice(0, 8)}_${TIMESTAMP.slice(
+      8
+    )}.json`;
+    ANCHOR.click();
+    URL.revokeObjectURL(ANCHOR.href);
+  }
   var EDITOR = createEditor();
   var SUBMIT_BUTTON = document.querySelector("#submit");
   SUBMIT_BUTTON.addEventListener("click", () => {
     const errors = EDITOR.validate();
     const indicator = document.getElementById("valid_indicator");
     if (errors.length) {
-      indicator.style.color = "red";
-      indicator.textContent = "not valid";
+      indicator.style.display = "inherit";
       return;
     }
-    indicator.textContent = "";
+    indicator.style.display = "none";
     const OUTPUT_TABLE_BODY = document.querySelector("#output-table");
     const OUTPUT_TEXTAREA = document.querySelector("#output-textarea");
     const NEW_PRODUCT = EDITOR.getValue();
@@ -199,5 +210,9 @@
     }
     EDITOR.destroy();
     EDITOR = createEditor();
+  });
+  var DOWNLOAD_BUTTON = document.querySelector("#download-button");
+  DOWNLOAD_BUTTON.addEventListener("click", () => {
+    downloadOutputCode();
   });
 })();

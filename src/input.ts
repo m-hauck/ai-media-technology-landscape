@@ -178,6 +178,36 @@ function addNewProductToTextarea(
     textarea.value = TEXTAREA_STRING;
 }
 
+function downloadOutputCode() {
+    // Get the text from the textarea
+    const CODE =
+        document.querySelector<HTMLTextAreaElement>("#output-textarea")!.value;
+
+    // Create a new Blob object with the text and set the type to "text/plain"
+    const FILE = new Blob([CODE], { type: "text/plain" });
+
+    // Create a new anchor element and set its href attribute to the URL of the Blob
+    const ANCHOR = document.createElement("a");
+    ANCHOR.href = URL.createObjectURL(FILE);
+
+    // Set the anchor element's download attribute to the desired filename with timestamp
+    const TIMESTAMP = new Date()
+        .toISOString()
+        .replace(/[-T:.Z]/g, "")
+        .slice(0, 12);
+
+    // Set the anchor element's download attribute to the desired filename
+    ANCHOR.download = `products_${TIMESTAMP.slice(0, 8)}_${TIMESTAMP.slice(
+        8
+    )}.json`;
+
+    // Click the anchor element to trigger the download
+    ANCHOR.click();
+
+    // Cleanup
+    URL.revokeObjectURL(ANCHOR.href);
+}
+
 // Initialize the editor with a JSON schema
 let EDITOR = createEditor();
 
@@ -188,12 +218,11 @@ SUBMIT_BUTTON.addEventListener("click", () => {
     const indicator = document.getElementById("valid_indicator")!;
     // Not valid
     if (errors.length) {
-        indicator.style.color = "red";
-        indicator.textContent = "not valid";
+        indicator.style.display = "inherit";
         return;
     }
     // Valid
-    indicator.textContent = "";
+    indicator.style.display = "none";
 
     const OUTPUT_TABLE_BODY =
         document.querySelector<HTMLTableElement>("#output-table")!;
@@ -241,4 +270,11 @@ SUBMIT_BUTTON.addEventListener("click", () => {
     // Clear all input fields
     EDITOR.destroy();
     EDITOR = createEditor();
+});
+
+// Download button
+const DOWNLOAD_BUTTON =
+    document.querySelector<HTMLButtonElement>("#download-button")!;
+DOWNLOAD_BUTTON.addEventListener("click", () => {
+    downloadOutputCode();
 });
