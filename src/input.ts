@@ -16,31 +16,34 @@ type Product = {
 function createEditor() {
     return new JSONEditor(document.getElementById("input-editor"), {
         required_by_default: true,
-        display_required_only: true,
         theme: "spectre",
         schema: {
             type: "object",
             properties: {
                 name: {
-                    type: "string",
                     title: "Produktname",
+                    type: "string",
                     minLength: 1,
                 },
                 manufacturer: {
-                    type: "string",
                     title: "Anbietername",
+                    type: "string",
+                    minLength: 1,
                 },
                 logo: {
-                    type: "string",
                     title: "Dateiname Logo",
+                    type: "string",
+                    minLength: 1,
                 },
                 link: {
-                    type: "string",
                     title: "Link zur Produkt-Website",
+                    type: "string",
+                    minLength: 1,
                 },
                 mediatype: {
                     title: "Output des Produkts",
                     type: "array",
+                    minItems: 1,
                     uniqueItems: true,
                     items: {
                         type: "string",
@@ -57,14 +60,14 @@ function createEditor() {
                     },
                 },
                 description: {
-                    type: "string",
                     title: "Produktbeschreibung (kurz)",
-                    input_width: "500px",
+                    type: "string",
+                    minLength: 1,
                 },
                 technologyReadinessLevel: {
+                    title: "Technology-Readiness-Level",
                     type: "string",
                     format: "radio",
-                    title: "Technology-Readiness-Level",
                     enum: [
                         "basic-research",
                         "applied-research",
@@ -81,8 +84,9 @@ function createEditor() {
                     },
                 },
                 aiTechnologiesUsed: {
-                    type: "array",
                     title: "Genannte KI-Technologien",
+                    type: "array",
+                    minItems: 1,
                     uniqueItems: true,
                     items: {
                         type: "string",
@@ -98,8 +102,9 @@ function createEditor() {
                     },
                 },
                 categories: {
-                    type: "array",
                     title: "Einordnung in Wertschöpfungskette",
+                    type: "array",
+                    minItems: 1,
                     uniqueItems: true,
                     items: {
                         type: "string",
@@ -126,8 +131,9 @@ function createEditor() {
                     },
                 },
                 paymentModel: {
-                    type: "array",
                     title: "Bezahlmodell",
+                    type: "array",
+                    minItems: 1,
                     uniqueItems: true,
                     items: {
                         type: "string",
@@ -151,6 +157,26 @@ function createEditor() {
                         },
                     },
                 },
+                company_location: {
+                    title: "Unternehmenssitz (Ort oder Land)",
+                    type: "string",
+                    required: false,
+                },
+                funding: {
+                    title: "Finanzierung / Funding (Höhe mit Währung)",
+                    type: "string",
+                    required: false,
+                },
+                revenue_per_year: {
+                    title: "Jahresumsatz (mit Währung)",
+                    type: "string",
+                    required: false,
+                },
+                notes: {
+                    title: "Bemerkungen",
+                    type: "string",
+                    required: false,
+                },
             },
         },
     });
@@ -169,7 +195,7 @@ function addNewProductToTextarea(
     product: Product,
     textarea: HTMLTextAreaElement
 ) {
-    let TEXTAREA_PARSED = JSON.parse(textarea.value);
+    let TEXTAREA_PARSED = JSON.parse(textarea.value) as Product[];
     // Add the new dictionary to the array
     TEXTAREA_PARSED.push(product);
     // Convert the updated array back to a string format with 4 spaces of indentation

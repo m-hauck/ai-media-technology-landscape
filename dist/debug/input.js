@@ -4,31 +4,34 @@
   function createEditor() {
     return new JSONEditor(document.getElementById("input-editor"), {
       required_by_default: true,
-      display_required_only: true,
       theme: "spectre",
       schema: {
         type: "object",
         properties: {
           name: {
-            type: "string",
             title: "Produktname",
+            type: "string",
             minLength: 1
           },
           manufacturer: {
+            title: "Anbietername",
             type: "string",
-            title: "Anbietername"
+            minLength: 1
           },
           logo: {
+            title: "Dateiname Logo",
             type: "string",
-            title: "Dateiname Logo"
+            minLength: 1
           },
           link: {
+            title: "Link zur Produkt-Website",
             type: "string",
-            title: "Link zur Produkt-Website"
+            minLength: 1
           },
           mediatype: {
             title: "Output des Produkts",
             type: "array",
+            minItems: 1,
             uniqueItems: true,
             items: {
               type: "string",
@@ -45,14 +48,14 @@
             }
           },
           description: {
-            type: "string",
             title: "Produktbeschreibung (kurz)",
-            input_width: "500px"
+            type: "string",
+            minLength: 1
           },
           technologyReadinessLevel: {
+            title: "Technology-Readiness-Level",
             type: "string",
             format: "radio",
-            title: "Technology-Readiness-Level",
             enum: [
               "basic-research",
               "applied-research",
@@ -69,8 +72,9 @@
             }
           },
           aiTechnologiesUsed: {
-            type: "array",
             title: "Genannte KI-Technologien",
+            type: "array",
+            minItems: 1,
             uniqueItems: true,
             items: {
               type: "string",
@@ -86,8 +90,9 @@
             }
           },
           categories: {
-            type: "array",
             title: "Einordnung in Wertsch\xF6pfungskette",
+            type: "array",
+            minItems: 1,
             uniqueItems: true,
             items: {
               type: "string",
@@ -114,8 +119,9 @@
             }
           },
           paymentModel: {
-            type: "array",
             title: "Bezahlmodell",
+            type: "array",
+            minItems: 1,
             uniqueItems: true,
             items: {
               type: "string",
@@ -138,6 +144,26 @@
                 ]
               }
             }
+          },
+          company_location: {
+            title: "Unternehmenssitz (Ort oder Land)",
+            type: "string",
+            required: false
+          },
+          funding: {
+            title: "Finanzierung / Funding (H\xF6he mit W\xE4hrung)",
+            type: "string",
+            required: false
+          },
+          revenue_per_year: {
+            title: "Jahresumsatz (mit W\xE4hrung)",
+            type: "string",
+            required: false
+          },
+          notes: {
+            title: "Bemerkungen",
+            type: "string",
+            required: false
           }
         }
       }
