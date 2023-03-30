@@ -3,49 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <title>JSON Editor Selectize Integration Example</title>
-        <script src="dist/min/jsoneditor.min.js" defer></script>
-        <script src="dist/debug/input.js" defer></script>
         <link rel="stylesheet" href="dist/min/spectre.min.css" />
         <link rel="stylesheet" href="dist/min/spectre-icons.min.css" />
-        <style>
-            .container {
-                max-width: 960px;
-                margin: 0 auto;
-            }
-            .je-object__title,
-            .je-object__controls {
-                display: none !important;
-            }
-            #valid_indicator {
-                display: none;
-                margin-left: 1em;
-            }
-            img#value_chain {
-                display: block;
-                margin-top: 2em;
-                margin-bottom: 2em;
-                width: 100%;
-                border: 1em solid white;
-                outline: 1px solid black;
-            }
-            table {
-                margin-bottom: 2em;
-            }
-            table img {
-                max-height: 2rem;
-            }
-            table caption {
-                display: none !important;
-            }
-            #output-textarea {
-                margin-bottom: 2em;
-                height: 20rem;
-                margin-top: 0.5em;
-            }
-            #download-button {
-                margin-left: 0.5em;
-            }
-        </style>
+        <link rel="stylesheet" href="src/aimtl-input.css" />
+        <script src="dist/min/jsoneditor.min.js" defer></script>
+        <script src="dist/debug/aimtl-input.js" defer></script>
     </head>
     <body>
         <div class="container">

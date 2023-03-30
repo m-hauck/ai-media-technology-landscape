@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-  // src/main.ts
+  // src/aimtl-landscape.ts
   function setEqualProductHeight() {
     const products = document.querySelectorAll(".product");
     let maxHeight = 0;

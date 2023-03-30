@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-  // src/input.ts
+  // src/aimtl-input.ts
   function createEditor() {
     return new JSONEditor(document.getElementById("input-editor"), {
       required_by_default: true,
