@@ -1,24 +1,29 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 # AI Media Technology Landscape
 
-Diese Technology Landscape zeigt KI-Produkte auf, die für Medienunternehmen angeboten werden.
+This Technology Landscape showcases AI products offered to media companies.
 
-## Technische Dokumentation
+## Technical Documentation
 
-Die Dokumentation der TypeScript-Module wurde mit [TypeDoc](https://typedoc.org/) erstellt (`npm run generate-docs`) und ist als [GitLab Page](https://wimm.pages.gitlab.rlp.net/ai-media-technology-landscape/docs) zu finden.
+The documentation for the TypeScript modules was generated using [TypeDoc](https://typedoc.org/) (npm run generate-docs) and can be found as a [GitLab Page](https://wimm.pages.gitlab.rlp.net/ai-media-technology-landscape/docs).
 
-## Kontakt
+## Resources
+- [JSON Editor](https://github.com/json-editor/json-editor): MIT License
+- [ts-reset](https://github.com/total-typescript/ts-reset): MIT License
 
-Marcel Hauck
+## Contact
 
-Forschungsgruppe für Wirtschaftsinformatik und Medienmanagement (WIMM)
-Prof. Dr. Sven Pagel – Fachbereich Wirtschaft
+Marcel Hauck, M. Sc.
+
+Research Group Business Informatics and Media Management
+Prof. Dr. Sven Pagel – School of Business
  
 Hochschule Mainz – University of Applied Sciences
-Lucy-Hillebrand-Straße 2 | 55128 Mainz | Raum A0.22
+Lucy-Hillebrand-Straße 2 | 55128 Mainz | Germany
  
-T: +49 6131 628 3325 | E: <marcel.hauck@hs-mainz.de> | wimm.hs-mainz.de
+T: +49 6131 628 3325
+E: <marcel.hauck@hs-mainz.de> | wimm.hs-mainz.de
 
-## Hinweise
+## Notes
 
-Dieses Projekt ist im Rahmen der Fördermaßnahme 'InnoProm – Innovation und Promotion' entstanden. Diese wird durch den Europäischen Fonds für regionale Entwicklung (EFRE) gefördert, kofinanziert vom Ministerium für Wissenschaft, Weiterbildung und Kultur Rheinland-Pfalz und dem Kooperationsunternehmen loci GmbH Deutschland.
+This project was created as part of the "InnoProm - Innovation and Promotion" funding initiative. This initiative is funded by the European Regional Development Fund (ERDF), co-financed by the Ministry of Science, Continuing Education and Culture of Rhineland-Palatinate, and the cooperating company loci GmbH Deutschland.
