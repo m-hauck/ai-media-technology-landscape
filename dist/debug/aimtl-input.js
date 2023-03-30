@@ -9,27 +9,27 @@
         type: "object",
         properties: {
           name: {
-            title: "Produktname",
+            title: "Product name",
             type: "string",
             minLength: 1
           },
           manufacturer: {
-            title: "Anbietername",
+            title: "Manufacturer",
             type: "string",
             minLength: 1
           },
           logo: {
-            title: "Dateiname Logo",
+            title: "File name of logo",
             type: "string",
             minLength: 1
           },
           link: {
-            title: "Link zur Produkt-Website",
+            title: "Link to the product website",
             type: "string",
             minLength: 1
           },
           mediatype: {
-            title: "Output des Produkts",
+            title: "Product output",
             type: "array",
             minItems: 1,
             uniqueItems: true,
@@ -48,7 +48,7 @@
             }
           },
           description: {
-            title: "Produktbeschreibung (kurz)",
+            title: "Product description (short)",
             type: "string",
             minLength: 1
           },
@@ -72,7 +72,7 @@
             }
           },
           aiTechnologiesUsed: {
-            title: "Genannte KI-Technologien",
+            title: "AI technologies mentioned",
             type: "array",
             minItems: 1,
             uniqueItems: true,
@@ -90,7 +90,7 @@
             }
           },
           categories: {
-            title: "Einordnung in Wertsch\xF6pfungskette",
+            title: "Classification in value chain",
             type: "array",
             minItems: 1,
             uniqueItems: true,
@@ -119,7 +119,7 @@
             }
           },
           paymentModel: {
-            title: "Bezahlmodell",
+            title: "Payment model",
             type: "array",
             minItems: 1,
             uniqueItems: true,
@@ -146,22 +146,22 @@
             }
           },
           company_location: {
-            title: "Unternehmenssitz (Ort oder Land)",
+            title: "Company headquarters (city or country)",
             type: "string",
             required: false
           },
           funding: {
-            title: "Finanzierung / Funding (H\xF6he mit W\xE4hrung)",
+            title: "Funding (amount with currency)",
             type: "string",
             required: false
           },
           revenue_per_year: {
-            title: "Jahresumsatz (mit W\xE4hrung)",
+            title: "Revenue per year (with currency)",
             type: "string",
             required: false
           },
           notes: {
-            title: "Bemerkungen",
+            title: "Notes",
             type: "string",
             required: false
           }
