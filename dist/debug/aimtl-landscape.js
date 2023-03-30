@@ -66,23 +66,35 @@
       let productClone = productsTemplate.content.cloneNode(
         true
       );
-      productClone.querySelector("li").classList.add(
+      const productListItem = productClone.querySelector("li");
+      const productImage = productClone.querySelector("img");
+      const productName = productClone.querySelector(".product-name");
+      productListItem.classList.add(
         product["technologyReadinessLevelClass"],
         product["mediatypeClass"]
       );
-      productClone.querySelector("a").href = product["link"];
-      productClone.querySelector("img").src = `img/${product["logo"]}`;
-      productClone.querySelector("img").title = product["description"];
-      productClone.querySelector(
-        ".product-name"
-      ).innerText = product["name"];
+      productImage.alt = product["name"];
+      productImage.src = `img/${product["logo"]}`;
+      productName.innerText = product["name"];
       product["aiTechnologiesUsed"].forEach((aiTechnology) => {
         const aiTechnologyDiv = document.createElement("div");
         aiTechnologyDiv.classList.add("ai-technology");
         aiTechnologyDiv.innerText = aiTechnology;
-        productClone.querySelector("a").appendChild(aiTechnologyDiv);
+        productClone.querySelector(".product-content").appendChild(aiTechnologyDiv);
       });
+      for (const [key, _] of Object.entries(product)) {
+        if (!product.hasOwnProperty(key)) {
+          continue;
+        }
+        productListItem.dataset[key] = product[key].toString();
+      }
       htmlTarget.append(productClone);
+    });
+    let productElements = document.querySelectorAll(".product");
+    productElements.forEach((element) => {
+      element.addEventListener("click", (event) => {
+        showModal(event.currentTarget);
+      });
     });
   }
   function addCategoriesAndProductsToPage(categories) {
@@ -131,6 +143,27 @@
       ).innerText = document.querySelectorAll(`#${categoryKey} .product`).length.toString();
     }
   }
+  var dialog = document.querySelector("dialog");
+  function showModal(element) {
+    if (element == null || !(element instanceof Element)) {
+      return;
+    }
+    const modal = document.querySelector("#modal");
+    const array = ["name", "description", "manufacturer"];
+    array.forEach(function(item, _) {
+      modal.querySelector(`[data-${item}]`).innerText = element.getAttribute(`data-${item}`);
+    });
+    modal.querySelector(
+      "[data-logo]"
+    ).src = `img/${element.getAttribute("data-logo")}`;
+    modal.showModal();
+  }
+  function closeModal(event) {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  }
+  dialog.addEventListener("click", closeModal);
   console.clear();
   Promise.all([
     loadJson("data/categories.json"),

@@ -150,27 +150,49 @@ function addProductsToHtmlElement(
         let productClone = productsTemplate!.content.cloneNode(
             true
         ) as HTMLLinkElement;
-        productClone
-            .querySelector("li")!
-            .classList.add(
-                product["technologyReadinessLevelClass"],
-                product["mediatypeClass"]
-            );
-        productClone.querySelector("a")!.href = product["link"];
-        productClone.querySelector("img")!.src = `img/${product["logo"]}`;
-        productClone.querySelector("img")!.title = product["description"];
-        productClone.querySelector<HTMLSpanElement>(
-            ".product-name"
-        )!.innerText = product["name"];
+
+        const productListItem = productClone.querySelector("li")!;
+        const productImage = productClone.querySelector("img")!;
+        const productName =
+            productClone.querySelector<HTMLSpanElement>(".product-name")!;
+
+        productListItem.classList.add(
+            product["technologyReadinessLevelClass"],
+            product["mediatypeClass"]
+        );
+        productImage.alt = product["name"];
+        productImage.src = `img/${product["logo"]}`;
+        productName.innerText = product["name"];
 
         product["aiTechnologiesUsed"].forEach((aiTechnology) => {
             const aiTechnologyDiv = document.createElement("div");
             aiTechnologyDiv.classList.add("ai-technology");
             aiTechnologyDiv.innerText = aiTechnology;
-            productClone.querySelector("a")!.appendChild(aiTechnologyDiv);
+            productClone
+                .querySelector(".product-content")!
+                .appendChild(aiTechnologyDiv);
         });
 
+        // Set data attributes for each product property
+        for (const [key, _] of Object.entries(product)) {
+            if (!product.hasOwnProperty(key)) {
+                continue;
+            }
+            productListItem.dataset[key] =
+                product[key as keyof Product].toString();
+        }
+
         htmlTarget.append(productClone);
+    });
+
+    // Add event listener after adding each product
+    // It has to be added after the products are in the DOM
+    // We cannot add the event listener to the productClones because those are only documentFragments
+    let productElements = document.querySelectorAll(".product");
+    productElements.forEach((element) => {
+        element.addEventListener("click", (event) => {
+            showModal(event.currentTarget);
+        });
     });
 }
 
@@ -247,6 +269,32 @@ function addCategoriesAndProductsToPage(categories: Category): void {
             .length.toString();
     }
 }
+
+const dialog = document.querySelector("dialog")!;
+function showModal(element: EventTarget | null): void {
+    if (element == null || !(element instanceof Element)) {
+        return;
+    }
+    const modal = document.querySelector<HTMLDialogElement>("#modal")!;
+
+    const array = ["name", "description", "manufacturer"];
+    array.forEach(function (item, _) {
+        modal.querySelector<HTMLElement>(`[data-${item}]`)!.innerText =
+            element.getAttribute(`data-${item}`)!;
+    });
+    modal.querySelector<HTMLImageElement>(
+        "[data-logo]"
+    )!.src = `img/${element.getAttribute("data-logo")!}`;
+
+    modal.showModal();
+}
+
+function closeModal(event: Event): void {
+    if (event.target === dialog) {
+        dialog.close();
+    }
+}
+dialog.addEventListener("click", closeModal);
 
 console.clear();
 

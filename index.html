@@ -9,7 +9,7 @@
         <title>AI Media Technology Landscape</title>
         <link rel="stylesheet" href="src/aimtl-landscape.css" />
 
-        <script src="dist/min/aimtl-landscape.js" defer></script>
+        <script src="dist/debug/aimtl-landscape.js" defer></script>
     </head>
 
     <body>
@@ -57,14 +57,14 @@
             </h1>
             <template id="product-template">
                 <li class="product">
-                    <a href="" title="" target="_blank" class="product-link">
+                    <div class="product-content">
                         <img
                             class="logo"
                             src=""
-                            alt="Click to show more information"
+                            alt="Click here for more information"
                         />
                         <span class="product-name"></span>
-                    </a>
+                    </div>
                 </li>
             </template>
             <div class="category-columns" id="row-products"></div>
@@ -125,6 +125,18 @@
                 </div>
             </div>
         </div>
+
+        <dialog id="modal">
+            <img src="" alt="" data-logo />
+            <div id="modal-grid">
+                <div>Manufacturer</div>
+                <div data-manufacturer></div>
+                <div>Name</div>
+                <div data-name></div>
+                <div>Description</div>
+                <div data-description></div>
+            </div>
+        </dialog>
 
         <!-- Footer -->
         <footer>
