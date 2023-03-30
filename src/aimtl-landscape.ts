@@ -82,7 +82,7 @@ function loadJson(path: string): void | Promise<void | Category | Product[]> {
             if (xhr.status !== 200) {
                 reject();
             }
-            resolve(JSON.parse(xhr.responseText));
+            resolve(JSON.parse(xhr.responseText) as Category | Product[]);
         };
         xhr.open("GET", path, true);
         xhr.send();
