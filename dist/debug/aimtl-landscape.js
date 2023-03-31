@@ -1,6 +1,17 @@
 "use strict";
 (() => {
   // src/aimtl-landscape.ts
+  var PRODUCT_KEY_NAMES = {
+    name: "Name",
+    manufacturer: "Company",
+    logo: "Logo",
+    link: "Link",
+    mediatype: "Media type",
+    description: "Description",
+    technologyReadinessLevel: "Technology Readiness Level (TRL)",
+    aiTechnologiesUsed: "AI technologies used",
+    categories: "Categories"
+  };
   function setEqualProductHeight() {
     const products = document.querySelectorAll(".product");
     let maxHeight = 0;
@@ -150,16 +161,36 @@
       ).innerText = document.querySelectorAll(`#${categoryKey} .product`).length.toString();
     }
   }
+  function setModalFields() {
+    const modalGrid = document.querySelector("#modal #modal-grid");
+    for (const [key, name] of Object.entries(PRODUCT_KEY_NAMES)) {
+      if (key == "logo") {
+        continue;
+      }
+      const keyColumn = document.createElement("div");
+      keyColumn.innerText = name;
+      modalGrid?.appendChild(keyColumn);
+      const nameColumn = document.createElement("div");
+      nameColumn.dataset[key] = "";
+      modalGrid?.appendChild(nameColumn);
+    }
+  }
   var dialog = document.querySelector("dialog");
   function showModal(element) {
     if (element == null || !(element instanceof Element)) {
       return;
     }
     const modal = document.querySelector("#modal");
-    const array = ["name", "description", "manufacturer"];
-    array.forEach(function(item, _) {
-      modal.querySelector(`[data-${item}]`).innerText = element.getAttribute(`data-${item}`);
-    });
+    for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
+      if (key === "logo") {
+        continue;
+      }
+      try {
+        modal.querySelector(`[data-${key}]`).innerText = element.getAttribute(`data-${key}`);
+      } catch (error) {
+        console.error(error);
+      }
+    }
     modal.querySelector(
       "[data-logo]"
     ).src = `img/${element.getAttribute("data-logo")}`;
@@ -183,6 +214,7 @@
     setTotalDataCount(products);
     addProductsToCategories(categories, products);
     addCategoriesAndProductsToPage(categories);
+    setModalFields();
     setEqualProductHeight();
   });
 })();

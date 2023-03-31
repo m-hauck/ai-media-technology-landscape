@@ -25,6 +25,18 @@ interface Product {
     categories: string[];
 }
 
+const PRODUCT_KEY_NAMES = {
+    name: "Name",
+    manufacturer: "Company",
+    logo: "Logo",
+    link: "Link",
+    mediatype: "Media type",
+    description: "Description",
+    technologyReadinessLevel: "Technology Readiness Level (TRL)",
+    aiTechnologiesUsed: "AI technologies used",
+    categories: "Categories",
+};
+
 /**
  * Set equal height for all products so that they have an uniform look
  */
@@ -273,6 +285,25 @@ function addCategoriesAndProductsToPage(categories: Category): void {
     }
 }
 
+function setModalFields(): void {
+    const modalGrid =
+        document.querySelector<HTMLDivElement>("#modal #modal-grid");
+
+    for (const [key, name] of Object.entries(PRODUCT_KEY_NAMES)) {
+        if (key == "logo") {
+            // Logo should be an image and not a div
+            continue;
+        }
+        const keyColumn = document.createElement("div");
+        keyColumn.innerText = name;
+        modalGrid?.appendChild(keyColumn);
+
+        const nameColumn = document.createElement("div");
+        nameColumn.dataset[key] = "";
+        modalGrid?.appendChild(nameColumn);
+    }
+}
+
 const dialog = document.querySelector("dialog")!;
 function showModal(element: EventTarget | null): void {
     if (element == null || !(element instanceof Element)) {
@@ -280,11 +311,17 @@ function showModal(element: EventTarget | null): void {
     }
     const modal = document.querySelector<HTMLDialogElement>("#modal")!;
 
-    const array = ["name", "description", "manufacturer"];
-    array.forEach(function (item, _) {
-        modal.querySelector<HTMLElement>(`[data-${item}]`)!.innerText =
-            element.getAttribute(`data-${item}`)!;
-    });
+    for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
+        if (key === "logo") {
+            continue;
+        }
+        try {
+            modal.querySelector<HTMLElement>(`[data-${key}]`)!.innerText =
+                element.getAttribute(`data-${key}`)!;
+        } catch (error) {
+            console.error(error);
+        }
+    }
     modal.querySelector<HTMLImageElement>(
         "[data-logo]"
     )!.src = `img/${element.getAttribute("data-logo")!}`;
@@ -314,5 +351,6 @@ Promise.all([
     setTotalDataCount(products as Product[]);
     addProductsToCategories(categories as Category, products as Product[]);
     addCategoriesAndProductsToPage(categories as Category);
+    setModalFields();
     setEqualProductHeight();
 });
