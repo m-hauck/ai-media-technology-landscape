@@ -64,10 +64,10 @@
             ],
             options: {
               enum_titles: [
-                "Grundlagenforschung",
-                "Angewandte Forschung",
-                "Erste Anwendungen",
-                "Massenproduktion"
+                "Basic research",
+                "Applied research",
+                "First applications",
+                "Mass production"
               ]
             }
           },
