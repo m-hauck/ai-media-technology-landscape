@@ -208,7 +208,7 @@ function addCategoriesAndProductsToPage(categories: Category): void {
         let html = `
         <div class="category" id="${categoryKey}">
             <h2 class="category-header">
-                ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> Produkte</span>
+                ${categories[categoryKey]["description"]} <span class="counter-text"><span class="count-product">0</span> products</span>
             </h2>
             <ul class="product-list" id="list-${categoryKey}"></ul>
         </div>`;
