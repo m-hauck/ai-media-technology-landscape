@@ -18,9 +18,11 @@ interface Product {
     manufacturer: string;
     logo: string;
     link: string;
-    mediatype: string | string[];
+    mediatype: string[];
+    mediatypeClass: string;
     description: string;
     technologyReadinessLevel: string;
+    technologyReadinessLevelClass: string;
     aiTechnologiesUsed: string[];
     categories: string[];
 }
@@ -121,20 +123,15 @@ function addProductsToCategories(
         const productCategories = product["categories"];
         productCategories.forEach((productCategory: string) => {
             const [mainCategory, subCategory] = productCategory.split("_");
-            if (product["technologyReadinessLevel"].substring(0, 3) != "trl") {
-                product[
-                    "technologyReadinessLevel"
-                ] = `trl-${product["technologyReadinessLevel"]}`;
-            }
-            if (typeof product["mediatype"] == "string") {
-                // Already updated the type to "mediatype-..."
-                // The mediatype is initially always an array
-                // It only becomes a string with the else branch of this function
-            } else if (product["mediatype"].length > 1) {
-                product["mediatype"] = "mediatype-mixed";
-            } else {
-                product["mediatype"] = `mediatype-${product["mediatype"]}`;
-            }
+
+            product["technologyReadinessLevelClass"] =
+                product["technologyReadinessLevel"] == null
+                    ? "trl-unknown"
+                    : `trl-${product["technologyReadinessLevel"]}`;
+            product["mediatypeClass"] =
+                product["mediatype"].length > 1
+                    ? "media-type-mixed"
+                    : `mediatype-${product["mediatype"]}`;
 
             if (subCategory != null) {
                 categories[mainCategory]["subcategories"][subCategory][
@@ -172,8 +169,8 @@ function addProductsToHtmlElement(
             productClone.querySelector<HTMLSpanElement>(".product-name")!;
 
         productListItem.classList.add(
-            product["technologyReadinessLevel"],
-            product["mediatype"] as string
+            product["technologyReadinessLevelClass"],
+            product["mediatypeClass"]
         );
         productImage.alt = product["name"];
         productImage.src = `img/${product["logo"]}`;

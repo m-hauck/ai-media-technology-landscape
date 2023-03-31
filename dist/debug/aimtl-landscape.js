@@ -59,15 +59,8 @@
       const productCategories = product["categories"];
       productCategories.forEach((productCategory) => {
         const [mainCategory, subCategory] = productCategory.split("_");
-        if (product["technologyReadinessLevel"].substring(0, 3) != "trl") {
-          product["technologyReadinessLevel"] = `trl-${product["technologyReadinessLevel"]}`;
-        }
-        if (typeof product["mediatype"] == "string") {
-        } else if (product["mediatype"].length > 1) {
-          product["mediatype"] = "mediatype-mixed";
-        } else {
-          product["mediatype"] = `mediatype-${product["mediatype"]}`;
-        }
+        product["technologyReadinessLevelClass"] = product["technologyReadinessLevel"] == null ? "trl-unknown" : `trl-${product["technologyReadinessLevel"]}`;
+        product["mediatypeClass"] = product["mediatype"].length > 1 ? "media-type-mixed" : `mediatype-${product["mediatype"]}`;
         if (subCategory != null) {
           categories[mainCategory]["subcategories"][subCategory]["products"].push(product);
         } else {
@@ -88,8 +81,8 @@
       const productImage = productClone.querySelector("img");
       const productName = productClone.querySelector(".product-name");
       productListItem.classList.add(
-        product["technologyReadinessLevel"],
-        product["mediatype"]
+        product["technologyReadinessLevelClass"],
+        product["mediatypeClass"]
       );
       productImage.alt = product["name"];
       productImage.src = `img/${product["logo"]}`;
