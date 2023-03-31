@@ -1,6 +1,6 @@
 import { setEmptyModalFields, showModal } from "./aimtl-modal";
 
-interface Category {
+export interface Category {
     [Key: string]: CategoryAttributes;
 }
 interface CategoryAttributes {
@@ -141,7 +141,8 @@ function addProductsToCategories(
  */
 function addProductsToHtmlElement(
     products: Product[],
-    htmlTarget: HTMLElement | null
+    htmlTarget: HTMLElement | null,
+    categories: Category
 ) {
     if (htmlTarget == null) return;
 
@@ -193,7 +194,7 @@ function addProductsToHtmlElement(
     let productElements = document.querySelectorAll(".product");
     productElements.forEach((element) => {
         element.addEventListener("click", (event) => {
-            showModal(event.currentTarget);
+            showModal(event.currentTarget, categories);
         });
     });
 }
@@ -218,7 +219,8 @@ function addCategoriesAndProductsToPage(categories: Category): void {
         // Add products to main category (products that don't belong to a subcategory)
         addProductsToHtmlElement(
             categories[categoryKey]["products"],
-            document.querySelector(`#${categoryKey} ul`)
+            document.querySelector(`#${categoryKey} ul`),
+            categories
         );
 
         // Add subcategories with their products
@@ -259,7 +261,8 @@ function addCategoriesAndProductsToPage(categories: Category): void {
                 categories[categoryKey]["subcategories"][subcategoryKey][
                     "products"
                 ],
-                document.querySelector(`#${subcategoryKey} .product-list`)
+                document.querySelector(`#${subcategoryKey} .product-list`),
+                categories
             );
         }
 

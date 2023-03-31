@@ -1,3 +1,5 @@
+import { Category } from "./aimtl-landscape";
+
 const modal = document.querySelector("dialog")!;
 const modalCloseButton = document.querySelector("dialog #modal-close-button")!;
 
@@ -67,7 +69,10 @@ export function setEmptyModalFields(): void {
     }
 }
 
-export function showModal(product: EventTarget | null): void {
+export function showModal(
+    product: EventTarget | null,
+    categories: Category
+): void {
     if (product == null || !(product instanceof HTMLElement)) {
         return;
     }
@@ -96,15 +101,34 @@ export function showModal(product: EventTarget | null): void {
             );
         }
         if (key === "technologyReadinessLevel") {
-            console.log(
-                textToTitleCase(
-                    product.getAttribute("data-technology-readiness-level")!
-                )
-            );
             product.dataset.technologyReadinessLevel = textToTitleCase(
                 product.getAttribute("data-technology-readiness-level")!
             );
         }
+        if (key === "categories" && product.dataset.categoriesUpdated == null) {
+            const productCategories = product
+                .getAttribute("data-categories")!
+                .split(",");
+
+            let productList: string[] = [];
+            productCategories.forEach((productCategoryWithSubcategory) => {
+                const [productCategory, productSubcategoryId] =
+                    productCategoryWithSubcategory.split("_");
+                productList.push(categories[productCategory]["description"]);
+                if (productSubcategoryId) {
+                    productList.push(
+                        categories[productCategory]["subcategories"][
+                            productSubcategoryId
+                        ]["description"]
+                    );
+                }
+            });
+
+            product.dataset.categories = productList.join(", ");
+
+            product.dataset.categoriesUpdated = "true";
+        }
+        // TODO: Rename categories to English from Limmeroth
 
         // Converts a camelCase key to kebab-case by using regular expressions and the toLowerCase method.
         // We need kebab-case for the data attribute selector

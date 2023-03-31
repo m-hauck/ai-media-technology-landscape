@@ -42,7 +42,7 @@
       modalGrid?.appendChild(contentColumn);
     }
   }
-  function showModal(product) {
+  function showModal(product, categories) {
     if (product == null || !(product instanceof HTMLElement)) {
       return;
     }
@@ -70,14 +70,24 @@
         );
       }
       if (key === "technologyReadinessLevel") {
-        console.log(
-          textToTitleCase(
-            product.getAttribute("data-technology-readiness-level")
-          )
-        );
         product.dataset.technologyReadinessLevel = textToTitleCase(
           product.getAttribute("data-technology-readiness-level")
         );
+      }
+      if (key === "categories" && product.dataset.categoriesUpdated == null) {
+        const productCategories = product.getAttribute("data-categories").split(",");
+        let productList = [];
+        productCategories.forEach((productCategoryWithSubcategory) => {
+          const [productCategory, productSubcategoryId] = productCategoryWithSubcategory.split("_");
+          productList.push(categories[productCategory]["description"]);
+          if (productSubcategoryId) {
+            productList.push(
+              categories[productCategory]["subcategories"][productSubcategoryId]["description"]
+            );
+          }
+        });
+        product.dataset.categories = productList.join(", ");
+        product.dataset.categoriesUpdated = "true";
       }
       const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
       modal2.querySelector(
@@ -165,7 +175,7 @@
       });
     });
   }
-  function addProductsToHtmlElement(products, htmlTarget) {
+  function addProductsToHtmlElement(products, htmlTarget, categories) {
     if (htmlTarget == null)
       return;
     const productsTemplate = document.querySelector("#product-template");
@@ -200,7 +210,7 @@
     let productElements = document.querySelectorAll(".product");
     productElements.forEach((element) => {
       element.addEventListener("click", (event) => {
-        showModal(event.currentTarget);
+        showModal(event.currentTarget, categories);
       });
     });
   }
@@ -216,7 +226,8 @@
       document.querySelector("#row-products").innerHTML += html;
       addProductsToHtmlElement(
         categories[categoryKey]["products"],
-        document.querySelector(`#${categoryKey} ul`)
+        document.querySelector(`#${categoryKey} ul`),
+        categories
       );
       const subcategories = categories[categoryKey]["subcategories"];
       const subcategoriesSorted = sortSubcategories(subcategories);
@@ -242,7 +253,8 @@
         document.querySelector(`#${subcategoryKey}`)?.appendChild(subcategoryProductsList);
         addProductsToHtmlElement(
           categories[categoryKey]["subcategories"][subcategoryKey]["products"],
-          document.querySelector(`#${subcategoryKey} .product-list`)
+          document.querySelector(`#${subcategoryKey} .product-list`),
+          categories
         );
       }
       document.querySelector(

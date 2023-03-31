@@ -42,7 +42,7 @@
       modalGrid?.appendChild(contentColumn);
     }
   }
-  function showModal(product) {
+  function showModal(product, categories) {
     if (product == null || !(product instanceof HTMLElement)) {
       return;
     }
@@ -70,14 +70,24 @@
         );
       }
       if (key === "technologyReadinessLevel") {
-        console.log(
-          textToTitleCase(
-            product.getAttribute("data-technology-readiness-level")
-          )
-        );
         product.dataset.technologyReadinessLevel = textToTitleCase(
           product.getAttribute("data-technology-readiness-level")
         );
+      }
+      if (key === "categories" && product.dataset.categoriesUpdated == null) {
+        const productCategories = product.getAttribute("data-categories").split(",");
+        let productList = [];
+        productCategories.forEach((productCategoryWithSubcategory) => {
+          const [productCategory, productSubcategoryId] = productCategoryWithSubcategory.split("_");
+          productList.push(categories[productCategory]["description"]);
+          if (productSubcategoryId) {
+            productList.push(
+              categories[productCategory]["subcategories"][productSubcategoryId]["description"]
+            );
+          }
+        });
+        product.dataset.categories = productList.join(", ");
+        product.dataset.categoriesUpdated = "true";
       }
       const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
       modal2.querySelector(

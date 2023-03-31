@@ -329,6 +329,7 @@ Modal
 #modal {
     border: none;
     border-radius: 0.5rem;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.5);
 }
 #modal img {
     width: 100%;
@@ -353,8 +354,8 @@ Modal
     position: absolute;
     right: 1rem;
     top: 1rem;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     opacity: 0.3;
     outline: none;
 }
@@ -366,7 +367,7 @@ Modal
     content: " ";
     position: absolute;
     left: 0.5rem;
-    height: 2rem;
+    height: 1.5rem;
     width: 0.1rem;
     background-color: #333;
 }
