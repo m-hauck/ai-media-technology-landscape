@@ -82,9 +82,9 @@
       const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
       modal2.querySelector(
         `[data-${kebabKey}-content]`
-      ).innerText = product.getAttribute(`data-${kebabKey}`);
+      ).innerText = product.getAttribute(`data-${kebabKey}`) || "";
       let display_style = "initial";
-      if (product.getAttribute(`data-${kebabKey}`) == "") {
+      if (product.getAttribute(`data-${kebabKey}`) == null || product.getAttribute(`data-${kebabKey}`) == "") {
         display_style = "none";
       }
       modal2.querySelector(

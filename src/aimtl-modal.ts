@@ -111,11 +111,14 @@ export function showModal(product: EventTarget | null): void {
         const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
         modal.querySelector<HTMLElement>(
             `[data-${kebabKey}-content]`
-        )!.innerText = product.getAttribute(`data-${kebabKey}`)!;
+        )!.innerText = product.getAttribute(`data-${kebabKey}`) || "";
 
         // Hide row if no data content available
         let display_style = "initial";
-        if (product.getAttribute(`data-${kebabKey}`)! == "") {
+        if (
+            product.getAttribute(`data-${kebabKey}`) == null ||
+            product.getAttribute(`data-${kebabKey}`) == ""
+        ) {
             display_style = "none";
         }
         modal.querySelector<HTMLElement>(
