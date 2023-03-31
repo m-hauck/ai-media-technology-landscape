@@ -145,7 +145,7 @@
               }
             }
           },
-          company_location: {
+          companyLocation: {
             title: "Company headquarters (city or country)",
             type: "string",
             required: false
@@ -155,7 +155,7 @@
             type: "string",
             required: false
           },
-          revenue_per_year: {
+          revenuePerYear: {
             title: "Revenue per year (with currency)",
             type: "string",
             required: false

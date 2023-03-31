@@ -11,6 +11,11 @@ const PRODUCT_KEY_NAMES = {
     technologyReadinessLevel: "Technology Readiness Level",
     aiTechnologiesUsed: "AI technologies used",
     categories: "Categories",
+    paymentModel: "Payment Model",
+    companyLocation: "Company headquarters",
+    funding: "Funding",
+    revenuePerYear: "Revenue",
+    notes: "Notes",
 };
 
 /**

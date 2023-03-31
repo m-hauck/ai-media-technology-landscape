@@ -12,7 +12,12 @@
     description: "Description",
     technologyReadinessLevel: "Technology Readiness Level",
     aiTechnologiesUsed: "AI technologies used",
-    categories: "Categories"
+    categories: "Categories",
+    paymentModel: "Payment Model",
+    companyLocation: "Company headquarters",
+    funding: "Funding",
+    revenuePerYear: "Revenue",
+    notes: "Notes"
   };
   function textListToTitleCase(text) {
     return text.split(",").map(

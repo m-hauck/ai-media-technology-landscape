@@ -157,7 +157,7 @@ function createEditor() {
                         },
                     },
                 },
-                company_location: {
+                companyLocation: {
                     title: "Company headquarters (city or country)",
                     type: "string",
                     required: false,
@@ -167,7 +167,7 @@ function createEditor() {
                     type: "string",
                     required: false,
                 },
-                revenue_per_year: {
+                revenuePerYear: {
                     title: "Revenue per year (with currency)",
                     type: "string",
                     required: false,
