@@ -1,3 +1,5 @@
+import { setEmptyModalFields, showModal } from "./aimtl-modal";
+
 interface Category {
     [Key: string]: CategoryAttributes;
 }
@@ -26,18 +28,6 @@ interface Product {
     aiTechnologiesUsed: string[];
     categories: string[];
 }
-
-const PRODUCT_KEY_NAMES = {
-    name: "Name",
-    manufacturer: "Company",
-    logo: "Logo",
-    link: "Link",
-    mediatype: "Media type",
-    description: "Description",
-    technologyReadinessLevel: "Technology Readiness Level (TRL)",
-    aiTechnologiesUsed: "AI technologies used",
-    categories: "Categories",
-};
 
 /**
  * Set equal height for all products so that they have an uniform look
@@ -130,7 +120,7 @@ function addProductsToCategories(
                     : `trl-${product["technologyReadinessLevel"]}`;
             product["mediatypeClass"] =
                 product["mediatype"].length > 1
-                    ? "media-type-mixed"
+                    ? "mediatype-mixed"
                     : `mediatype-${product["mediatype"]}`;
 
             if (subCategory != null) {
@@ -282,57 +272,6 @@ function addCategoriesAndProductsToPage(categories: Category): void {
     }
 }
 
-function setModalFields(): void {
-    const modalGrid =
-        document.querySelector<HTMLDivElement>("#modal #modal-grid");
-
-    for (const [key, name] of Object.entries(PRODUCT_KEY_NAMES)) {
-        if (key == "logo") {
-            // Logo should be an image and not a div
-            continue;
-        }
-        const keyColumn = document.createElement("div");
-        keyColumn.innerText = name;
-        modalGrid?.appendChild(keyColumn);
-
-        const nameColumn = document.createElement("div");
-        nameColumn.dataset[key] = "";
-        modalGrid?.appendChild(nameColumn);
-    }
-}
-
-const dialog = document.querySelector("dialog")!;
-function showModal(element: EventTarget | null): void {
-    if (element == null || !(element instanceof Element)) {
-        return;
-    }
-    const modal = document.querySelector<HTMLDialogElement>("#modal")!;
-
-    for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
-        if (key === "logo") {
-            continue;
-        }
-        try {
-            modal.querySelector<HTMLElement>(`[data-${key}]`)!.innerText =
-                element.getAttribute(`data-${key}`)!;
-        } catch (error) {
-            console.error(error);
-        }
-    }
-    modal.querySelector<HTMLImageElement>(
-        "[data-logo]"
-    )!.src = `img/${element.getAttribute("data-logo")!}`;
-
-    modal.showModal();
-}
-
-function closeModal(event: Event): void {
-    if (event.target === dialog) {
-        dialog.close();
-    }
-}
-dialog.addEventListener("click", closeModal);
-
 console.clear();
 
 /** Load products and add with categories to page */
@@ -348,6 +287,6 @@ Promise.all([
     setTotalDataCount(products as Product[]);
     addProductsToCategories(categories as Category, products as Product[]);
     addCategoriesAndProductsToPage(categories as Category);
-    setModalFields();
+    setEmptyModalFields();
     setEqualProductHeight();
 });

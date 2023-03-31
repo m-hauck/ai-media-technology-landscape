@@ -1,6 +1,8 @@
 "use strict";
 (() => {
-  // src/aimtl-landscape.ts
+  // src/aimtl-modal.ts
+  var modal = document.querySelector("dialog");
+  var modalCloseButton = document.querySelector("dialog #modal-close-button");
   var PRODUCT_KEY_NAMES = {
     name: "Name",
     manufacturer: "Company",
@@ -8,10 +10,99 @@
     link: "Link",
     mediatype: "Media type",
     description: "Description",
-    technologyReadinessLevel: "Technology Readiness Level (TRL)",
+    technologyReadinessLevel: "Technology Readiness Level",
     aiTechnologiesUsed: "AI technologies used",
     categories: "Categories"
   };
+  function textListToTitleCase(text) {
+    return text.split(",").map(
+      (word) => word.trim().charAt(0).toUpperCase() + word.trim().slice(1)
+    ).join(", ");
+  }
+  function textToTitleCase(text) {
+    return text.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+  }
+  function setEmptyModalFields() {
+    const modalGrid = document.querySelector("#modal #modal-grid");
+    for (const [key, name] of Object.entries(PRODUCT_KEY_NAMES)) {
+      if (key == "logo") {
+        continue;
+      }
+      const nameColumn = document.createElement("div");
+      nameColumn.dataset[key + "Name"] = "";
+      nameColumn.innerText = name;
+      modalGrid?.appendChild(nameColumn);
+      const contentColumn = document.createElement("div");
+      contentColumn.dataset[key + "Content"] = "";
+      modalGrid?.appendChild(contentColumn);
+    }
+  }
+  function showModal(product) {
+    if (product == null || !(product instanceof HTMLElement)) {
+      return;
+    }
+    const modal2 = document.querySelector("#modal");
+    for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
+      if (key === "logo") {
+        modal2.querySelector(
+          "[data-logo]"
+        ).src = `img/${product.getAttribute("data-logo")}`;
+        continue;
+      }
+      if (key === "link") {
+        modal2.querySelector(
+          "[data-link-content]"
+        ).innerHTML = `<a href="${product.getAttribute(
+          "data-link"
+        )}" target="_blank" title="Open external link to '${product.getAttribute(
+          "data-name"
+        )}'">${product.getAttribute("data-link")}</a>`;
+        continue;
+      }
+      if (key === "mediatype") {
+        product.dataset.mediatype = textListToTitleCase(
+          product.getAttribute("data-mediatype")
+        );
+      }
+      if (key === "technologyReadinessLevel") {
+        console.log(
+          textToTitleCase(
+            product.getAttribute("data-technology-readiness-level")
+          )
+        );
+        product.dataset.technologyReadinessLevel = textToTitleCase(
+          product.getAttribute("data-technology-readiness-level")
+        );
+      }
+      const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+      modal2.querySelector(
+        `[data-${kebabKey}-content]`
+      ).innerText = product.getAttribute(`data-${kebabKey}`);
+      let display_style = "initial";
+      if (product.getAttribute(`data-${kebabKey}`) == "") {
+        display_style = "none";
+      }
+      modal2.querySelector(
+        `[data-${kebabKey}-name]`
+      ).style.display = display_style;
+      modal2.querySelector(
+        `[data-${kebabKey}-content]`
+      ).style.display = display_style;
+    }
+    modal2.showModal();
+  }
+  function closeModal(event) {
+    if (event.target === modal || event.target instanceof HTMLElement && event.target.id === "modal-close-button") {
+      modal.close();
+    }
+  }
+  function setModalEventListeners() {
+    modal.addEventListener("click", closeModal);
+    modalCloseButton.addEventListener("click", closeModal);
+  }
+  setModalEventListeners();
+
+  // src/aimtl-landscape.ts
   function setEqualProductHeight() {
     const products = document.querySelectorAll(".product");
     let maxHeight = 0;
@@ -60,7 +151,7 @@
       productCategories.forEach((productCategory) => {
         const [mainCategory, subCategory] = productCategory.split("_");
         product["technologyReadinessLevelClass"] = product["technologyReadinessLevel"] == null ? "trl-unknown" : `trl-${product["technologyReadinessLevel"]}`;
-        product["mediatypeClass"] = product["mediatype"].length > 1 ? "media-type-mixed" : `mediatype-${product["mediatype"]}`;
+        product["mediatypeClass"] = product["mediatype"].length > 1 ? "mediatype-mixed" : `mediatype-${product["mediatype"]}`;
         if (subCategory != null) {
           categories[mainCategory]["subcategories"][subCategory]["products"].push(product);
         } else {
@@ -154,47 +245,6 @@
       ).innerText = document.querySelectorAll(`#${categoryKey} .product`).length.toString();
     }
   }
-  function setModalFields() {
-    const modalGrid = document.querySelector("#modal #modal-grid");
-    for (const [key, name] of Object.entries(PRODUCT_KEY_NAMES)) {
-      if (key == "logo") {
-        continue;
-      }
-      const keyColumn = document.createElement("div");
-      keyColumn.innerText = name;
-      modalGrid?.appendChild(keyColumn);
-      const nameColumn = document.createElement("div");
-      nameColumn.dataset[key] = "";
-      modalGrid?.appendChild(nameColumn);
-    }
-  }
-  var dialog = document.querySelector("dialog");
-  function showModal(element) {
-    if (element == null || !(element instanceof Element)) {
-      return;
-    }
-    const modal = document.querySelector("#modal");
-    for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
-      if (key === "logo") {
-        continue;
-      }
-      try {
-        modal.querySelector(`[data-${key}]`).innerText = element.getAttribute(`data-${key}`);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    modal.querySelector(
-      "[data-logo]"
-    ).src = `img/${element.getAttribute("data-logo")}`;
-    modal.showModal();
-  }
-  function closeModal(event) {
-    if (event.target === dialog) {
-      dialog.close();
-    }
-  }
-  dialog.addEventListener("click", closeModal);
   console.clear();
   Promise.all([
     loadJson("data/categories.json"),
@@ -207,7 +257,7 @@
     setTotalDataCount(products);
     addProductsToCategories(categories, products);
     addCategoriesAndProductsToPage(categories);
-    setModalFields();
+    setEmptyModalFields();
     setEqualProductHeight();
   });
 })();
