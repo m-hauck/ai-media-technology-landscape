@@ -1,6 +1,6 @@
 {
-    "BeschaffungInhalte": {
-        "description": "Beschaffung von Informationen und Inhalten",
+    "ProcurementContent": {
+        "description": "Procurement of information and content",
         "products": [],
         "subcategories": {
             "PredictiveAnalytics": {
@@ -8,21 +8,21 @@
                 "products": []
             },
             "MetadataGeneration": {
-                "description": "Metadaten-Generierung",
+                "description": "Metadata generation",
                 "products": []
             },
             "TextToSpeechToText": {
-                "description": "TextToSpeech oder SpeechToText",
+                "description": "TextToSpeech or SpeechToText",
                 "products": []
             },
             "Visualisation": {
-                "description": "Visualisierung",
+                "description": "Visualization",
                 "products": []
             }
         }
     },
-    "AkquisitionWerbung": {
-        "description": "Akquisition von Werbung",
+    "AcquisitionAdvertisement": {
+        "description": "Acquisition of advertisement",
         "products": [],
         "subcategories": {
             "ProgrammaticTV": {
@@ -31,40 +31,40 @@
             }
         }
     },
-    "ProduktionContent": {
-        "description": "Produktion und Aggregation von Content",
+    "ProductionContent": {
+        "description": "Production and aggregation of content",
         "products": [],
         "subcategories": {
             "AudioGeneration": {
-                "description": "Audio-Generierung",
+                "description": "Audio generation",
                 "products": []
             },
             "QualityImprovement": {
-                "description": "Qualitätskontrolle oder -verbesserung",
+                "description": "Quality monitoring or improvement",
                 "products": []
             }
         }
     },
-    "PlatzierungWerbung": {
-        "description": "Platzierung von Werbung",
+    "AdvertisementPlacement": {
+        "description": "Advertisement placement",
         "products": []
     },
     "Packaging": {
-        "description": "Packaging der Produkte",
+        "description": "Product packaging",
         "products": [],
         "subcategories": {
             "RecommenderSystem": {
-                "description": "Empfehlungssystem",
+                "description": "Recommender systems",
                 "products": []
             }
         }
     },
-    "TechnischeProduktion": {
-        "description": "Technische Produktion",
+    "TechnicalProduction": {
+        "description": "Technical production",
         "products": [],
         "subcategories": {
             "Coding": {
-                "description": "Kodierung oder Rekodierung",
+                "description": "Coding or recoding",
                 "products": []
             }
         }

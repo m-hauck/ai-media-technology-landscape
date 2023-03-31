@@ -128,7 +128,6 @@ export function showModal(
 
             product.dataset.categoriesUpdated = "true";
         }
-        // TODO: Rename categories to English from Limmeroth
 
         // Converts a camelCase key to kebab-case by using regular expressions and the toLowerCase method.
         // We need kebab-case for the data attribute selector

@@ -97,12 +97,12 @@
             items: {
               type: "string",
               enum: [
-                "BeschaffungInhalte",
-                "AkquisitionWerbung",
-                "ProduktionContent",
+                "ProcurementContent",
+                "AcquisitionAdvertisement",
+                "ProductionContent",
                 "PlazierungWerbung",
                 "Packaging",
-                "TechnischeProduktion",
+                "TechnicalProduction",
                 "Distribution"
               ],
               options: {
