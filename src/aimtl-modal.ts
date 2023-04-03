@@ -69,6 +69,32 @@ export function setEmptyModalFields(): void {
     }
 }
 
+/**
+ * Converts a camelCase key to kebab-case by using regular expressions and the toLowerCase method.
+ * We need kebab-case for the data attribute selector.
+ * @param product HTML product element
+ * @param key Key that should be converted
+ */
+function convertCases(product: HTMLElement, key: string): void {
+    const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+    modal.querySelector<HTMLElement>(`[data-${kebabKey}-content]`)!.innerText =
+        product.getAttribute(`data-${kebabKey}`) || "";
+
+    // Hide row if no data content available
+    let display_style = "initial";
+    if (
+        product.getAttribute(`data-${kebabKey}`) == null ||
+        product.getAttribute(`data-${kebabKey}`) == ""
+    ) {
+        display_style = "none";
+    }
+    modal.querySelector<HTMLElement>(`[data-${kebabKey}-name]`)!.style.display =
+        display_style;
+    modal.querySelector<HTMLElement>(
+        `[data-${kebabKey}-content]`
+    )!.style.display = display_style;
+}
+
 export function showModal(
     product: EventTarget | null,
     categories: Category
@@ -79,77 +105,78 @@ export function showModal(
     const modal = document.querySelector<HTMLDialogElement>("#modal")!;
 
     for (const [key, _] of Object.entries(PRODUCT_KEY_NAMES)) {
-        if (key === "logo") {
-            modal.querySelector<HTMLImageElement>(
-                "[data-logo]"
-            )!.src = `img/${product.getAttribute("data-logo")!}`;
-            continue;
-        }
-        if (key === "link") {
-            modal.querySelector<HTMLImageElement>(
-                "[data-link-content]"
-            )!.innerHTML = `<a href="${product.getAttribute(
-                "data-link"
-            )!}" target="_blank" title="Open external link to '${product.getAttribute(
-                "data-name"
-            )!}'">${product.getAttribute("data-link")!}</a>`;
-            continue;
-        }
-        if (key === "mediatype") {
-            product.dataset.mediatype = textListToTitleCase(
-                product.getAttribute("data-mediatype")!
-            );
-        }
-        if (key === "technologyReadinessLevel") {
-            product.dataset.technologyReadinessLevel = textToTitleCase(
-                product.getAttribute("data-technology-readiness-level")!
-            );
-        }
-        if (key === "categories" && product.dataset.categoriesUpdated == null) {
-            const productCategories = product
-                .getAttribute("data-categories")!
-                .split(",");
+        switch (key) {
+            case "logo":
+                modal.querySelector<HTMLImageElement>(
+                    "[data-logo]"
+                )!.src = `img/${product.getAttribute("data-logo")!}`;
 
-            let productList: string[] = [];
-            productCategories.forEach((productCategoryWithSubcategory) => {
-                const [productCategory, productSubcategoryId] =
-                    productCategoryWithSubcategory.split("_");
-                productList.push(categories[productCategory]["description"]);
-                if (productSubcategoryId) {
-                    productList.push(
-                        categories[productCategory]["subcategories"][
-                            productSubcategoryId
-                        ]["description"]
-                    );
+                break;
+
+            case "link":
+                modal.querySelector<HTMLImageElement>(
+                    "[data-link-content]"
+                )!.innerHTML = `<a href="${product.getAttribute(
+                    "data-link"
+                )!}" target="_blank" title="Open external link to '${product.getAttribute(
+                    "data-name"
+                )!}'">${product.getAttribute("data-link")!}</a>`;
+
+                break;
+
+            case "mediatype":
+                product.dataset.mediatype = textListToTitleCase(
+                    product.getAttribute("data-mediatype")!
+                );
+
+                convertCases(product, key);
+
+                break;
+
+            case "technologyReadinessLevel":
+                product.dataset.technologyReadinessLevel = textToTitleCase(
+                    product.getAttribute("data-technology-readiness-level")!
+                );
+
+                convertCases(product, key);
+
+                break;
+            case "categories":
+                if (product.dataset.categoriesUpdated != null) {
+                    convertCases(product, key);
+
+                    break;
                 }
-            });
+                const productCategories = product
+                    .getAttribute("data-categories")!
+                    .split(",");
 
-            product.dataset.categories = productList.join(", ");
+                let productList: string[] = [];
+                productCategories.forEach((productCategoryWithSubcategory) => {
+                    const [productCategory, productSubcategoryId] =
+                        productCategoryWithSubcategory.split("_");
+                    console.warn(categories[productCategory]["description"]);
+                    productList.push(
+                        categories[productCategory]["description"]
+                    );
+                    if (productSubcategoryId) {
+                        productList.push(
+                            categories[productCategory]["subcategories"][
+                                productSubcategoryId
+                            ]["description"]
+                        );
+                    }
+                });
 
-            product.dataset.categoriesUpdated = "true";
+                product.dataset.categories = productList.join(", ");
+                product.dataset.categoriesUpdated = "true";
+                convertCases(product, key);
+
+                break;
+
+            default:
+                convertCases(product, key);
         }
-
-        // Converts a camelCase key to kebab-case by using regular expressions and the toLowerCase method.
-        // We need kebab-case for the data attribute selector
-        const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
-        modal.querySelector<HTMLElement>(
-            `[data-${kebabKey}-content]`
-        )!.innerText = product.getAttribute(`data-${kebabKey}`) || "";
-
-        // Hide row if no data content available
-        let display_style = "initial";
-        if (
-            product.getAttribute(`data-${kebabKey}`) == null ||
-            product.getAttribute(`data-${kebabKey}`) == ""
-        ) {
-            display_style = "none";
-        }
-        modal.querySelector<HTMLElement>(
-            `[data-${kebabKey}-name]`
-        )!.style.display = display_style;
-        modal.querySelector<HTMLElement>(
-            `[data-${kebabKey}-content]`
-        )!.style.display = display_style;
     }
 
     modal.showModal();
