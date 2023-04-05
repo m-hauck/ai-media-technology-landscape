@@ -18,8 +18,17 @@
             type: "string",
             minLength: 1
           },
+          productAvailable: {
+            title: "Product available?",
+            type: "string",
+            format: "radio",
+            enum: ["true", "false"],
+            options: {
+              enum_titles: ["Yes", "No"]
+            }
+          },
           logo: {
-            title: "File name of logo",
+            title: "File name of logo (vector graphics if possible)",
             type: "string",
             minLength: 1
           },
@@ -41,8 +50,8 @@
                   "Video",
                   "Audio",
                   "Text",
-                  "Bild",
-                  "Sonstiges"
+                  "Pictures",
+                  "Other"
                 ]
               }
             }
@@ -69,24 +78,6 @@
                 "First applications",
                 "Mass production"
               ]
-            }
-          },
-          aiTechnologiesUsed: {
-            title: "AI technologies mentioned",
-            type: "array",
-            minItems: 1,
-            uniqueItems: true,
-            items: {
-              type: "string",
-              enum: ["CNN", "NN", "LSTM", "other"],
-              options: {
-                enum_titles: [
-                  "Convolutional Neural Network",
-                  "Neural Network",
-                  "Long Short-Term Memory",
-                  "Sonstiges"
-                ]
-              }
             }
           },
           categories: {
@@ -128,19 +119,19 @@
               enum: [
                 "free",
                 "freemium",
-                "free-trial",
-                "paid",
-                "contact-for-pricing",
-                "deals"
+                "paid-once",
+                "paid-periodically",
+                "paid-with-premium-extra",
+                "contact-for-pricing"
               ],
               options: {
                 enum_titles: [
                   "Free",
-                  "Freemium",
-                  "Free Trial",
-                  "Paid",
-                  "Contact for Pricing",
-                  "Deals"
+                  "Free with premium extras (Freemium)",
+                  "Paid once",
+                  "Paid with premium extras",
+                  "Paid periodically (subscription)",
+                  "Contact for Pricing"
                 ]
               }
             }
