@@ -1,6 +1,17 @@
 "use strict";
 (() => {
   // src/aimtl-input.ts
+  function trimProductWhitespace(product) {
+    const trimmedProduct = {};
+    for (const [key, value] of Object.entries(product)) {
+      if (typeof value === "string") {
+        trimmedProduct[key] = value.trim();
+      } else {
+        trimmedProduct[key] = value;
+      }
+    }
+    return trimmedProduct;
+  }
   function createEditor() {
     return new JSONEditor(document.getElementById("input-editor"), {
       required_by_default: true,
@@ -91,7 +102,7 @@
                 "ProcurementContent",
                 "AcquisitionAdvertisement",
                 "ProductionContent",
-                "PlazierungWerbung",
+                "AdvertisementPlacement",
                 "Packaging",
                 "TechnicalProduction",
                 "Distribution"
@@ -170,7 +181,7 @@
   }
   function addNewProductToTextarea(product, textarea) {
     let TEXTAREA_PARSED = JSON.parse(textarea.value);
-    TEXTAREA_PARSED.push(product);
+    TEXTAREA_PARSED.push(trimProductWhitespace(product));
     const TEXTAREA_STRING = JSON.stringify(TEXTAREA_PARSED, null, 4);
     textarea.value = TEXTAREA_STRING;
   }
@@ -210,7 +221,7 @@
             <td>${NEW_PRODUCT["mediatype"]}</td>
             <td>${NEW_PRODUCT["description"]}</td>
             <td>${NEW_PRODUCT["technologyReadinessLevel"]}</td>
-            <td>${NEW_PRODUCT["aiTechnologiesUsed"]}</td>
+            <td>${NEW_PRODUCT["paymentModel"]}</td>
             <td>${NEW_PRODUCT["categories"]}</td>
             <td>${NEW_PRODUCT["paymentModel"]}</td>
             <td>

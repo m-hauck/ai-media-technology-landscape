@@ -3,15 +3,32 @@ declare const JSONEditor: any;
 type Product = {
     name: string;
     manufacturer: string;
+    productAvailable: string;
     logo: string;
     link: string;
     mediatype: string[];
     description: string;
     technologyReadinessLevel: string[];
-    aiTechnologiesUsed: string[];
     categories: string[];
     paymentModel: string[];
+    companyLocation: string;
+    funding: string;
+    revenuePerYear: string;
+    notes: string;
+    [key: string]: string | string[];
 };
+
+function trimProductWhitespace(product: Product): Product {
+    const trimmedProduct = {} as Product;
+    for (const [key, value] of Object.entries(product)) {
+        if (typeof value === "string") {
+            trimmedProduct[key] = value.trim();
+        } else {
+            trimmedProduct[key] = value;
+        }
+    }
+    return trimmedProduct;
+}
 
 function createEditor() {
     return new JSONEditor(document.getElementById("input-editor"), {
@@ -103,7 +120,7 @@ function createEditor() {
                             "ProcurementContent",
                             "AcquisitionAdvertisement",
                             "ProductionContent",
-                            "PlazierungWerbung",
+                            "AdvertisementPlacement",
                             "Packaging",
                             "TechnicalProduction",
                             "Distribution",
@@ -188,7 +205,7 @@ function addNewProductToTextarea(
 ) {
     let TEXTAREA_PARSED = JSON.parse(textarea.value) as Product[];
     // Add the new dictionary to the array
-    TEXTAREA_PARSED.push(product);
+    TEXTAREA_PARSED.push(trimProductWhitespace(product));
     // Convert the updated array back to a string format with 4 spaces of indentation
     const TEXTAREA_STRING = JSON.stringify(TEXTAREA_PARSED, null, 4);
     // Set the updated value as the value of the textarea
@@ -264,7 +281,7 @@ SUBMIT_BUTTON.addEventListener("click", () => {
             <td>${NEW_PRODUCT["mediatype"]}</td>
             <td>${NEW_PRODUCT["description"]}</td>
             <td>${NEW_PRODUCT["technologyReadinessLevel"]}</td>
-            <td>${NEW_PRODUCT["aiTechnologiesUsed"]}</td>
+            <td>${NEW_PRODUCT["paymentModel"]}</td>
             <td>${NEW_PRODUCT["categories"]}</td>
             <td>${NEW_PRODUCT["paymentModel"]}</td>
             <td>
