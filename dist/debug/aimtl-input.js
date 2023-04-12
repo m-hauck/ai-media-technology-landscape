@@ -112,7 +112,7 @@
                   "Beschaffung von Informationen und Inhalten",
                   "Akquisition von Werbung",
                   "Produktion und Aggregation von Content",
-                  "Plazierung von Werbung",
+                  "Platzierung von Werbung",
                   "Packaging der Produkte",
                   "Technische Produktion",
                   "Distribution"
