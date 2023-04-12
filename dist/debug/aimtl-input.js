@@ -39,12 +39,12 @@
             }
           },
           logo: {
-            title: "File name of logo (vector graphics if possible)",
+            title: "File name of logo with file extension (vector graphics if possible)",
             type: "string",
             minLength: 1
           },
           link: {
-            title: "Link to the product website",
+            title: "Link to the product website (as specific as possible)",
             type: "string",
             minLength: 1
           },
