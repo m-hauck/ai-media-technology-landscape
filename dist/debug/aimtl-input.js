@@ -131,8 +131,8 @@
                 "free",
                 "freemium",
                 "paid-once",
-                "paid-periodically",
                 "paid-with-premium-extra",
+                "paid-periodically",
                 "contact-for-pricing"
               ],
               options: {
