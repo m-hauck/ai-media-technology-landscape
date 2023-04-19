@@ -1267,7 +1267,7 @@
         "name": "Gracenote",
         "manufacturer": "The Nielson Company",
         "productAvailable": "true",
-        "logo": "gracenote.png",
+        "logo": "gracenote.svg",
         "link": "https://www.nielsen.com/de/solutions/content-metadata/music-recognition/",
         "mediatype": ["image", "other"],
         "description": "AI music recognition; metadata management",
