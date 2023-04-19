@@ -106,7 +106,9 @@
       );
       productImage.alt = product["name"];
       productImage.src = `img/${product["logo"]}`;
-      productManufacturer.innerText = product["manufacturer"];
+      if (product["name"] != product["manufacturer"]) {
+        productManufacturer.innerText = product["manufacturer"];
+      }
       productName.innerText = product["name"];
       if (product["productAvailable"] == "false") {
         productListItem.classList.add("product-unavailable");
