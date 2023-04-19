@@ -57,7 +57,7 @@ function createEditor() {
                     },
                 },
                 logo: {
-                    title: "File name of logo with file extension (vector graphics if possible)",
+                    title: "File name of logo with file extension (vector graphics if possible; lowercase with underscores)",
                     type: "string",
                     minLength: 1,
                 },
