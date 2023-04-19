@@ -237,6 +237,9 @@
       );
       const productListItem = productClone.querySelector("li");
       const productImage = productClone.querySelector("img");
+      const productManufacturer = productClone.querySelector(
+        ".product-manufacturer"
+      );
       const productName = productClone.querySelector(".product-name");
       productListItem.classList.add(
         product["technologyReadinessLevelClass"],
@@ -244,6 +247,7 @@
       );
       productImage.alt = product["name"];
       productImage.src = `img/${product["logo"]}`;
+      productManufacturer.innerText = product["manufacturer"];
       productName.innerText = product["name"];
       if (product["productAvailable"] == "false") {
         productListItem.classList.add("product-unavailable");

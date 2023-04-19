@@ -191,6 +191,10 @@ PRODUCTS
     align-items: center;
     cursor: pointer;
 }
+.product-manufacturer {
+    font-weight: lighter;
+    color: #666666;
+}
 .product-name {
     display: block;
     font-weight: bold;
@@ -198,7 +202,7 @@ PRODUCTS
 .logo {
     width: 100%;
     max-height: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: inline-block;
     object-fit: contain;
 }

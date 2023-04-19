@@ -195,6 +195,9 @@ function addProductsToHtmlElement(
 
         const productListItem = productClone.querySelector("li")!;
         const productImage = productClone.querySelector("img")!;
+        const productManufacturer = productClone.querySelector<HTMLSpanElement>(
+            ".product-manufacturer"
+        )!;
         const productName =
             productClone.querySelector<HTMLSpanElement>(".product-name")!;
 
@@ -204,6 +207,7 @@ function addProductsToHtmlElement(
         );
         productImage.alt = product["name"];
         productImage.src = `img/${product["logo"]}`;
+        productManufacturer.innerText = product["manufacturer"];
         productName.innerText = product["name"];
 
         if (product["productAvailable"] == "false") {
