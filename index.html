@@ -55,6 +55,13 @@
                     ><span id="count-total">0</span> products</span
                 >
             </h1>
+            <div class="switch-wrapper">
+                <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                </label>
+                Show unavailable products
+            </div>
             <template id="product-template">
                 <li class="product">
                     <div class="product-content">
@@ -74,7 +81,7 @@
                     <div class="legend-description">Product output</div>
                     <div class="legend-items">
                         <div class="legend-item mediatype-text">Text</div>
-                        <div class="legend-item mediatype-picture">Picture</div>
+                        <div class="legend-item mediatype-image">Image</div>
                         <div class="legend-item mediatype-video">Video</div>
                         <div class="legend-item mediatype-audio">Audio</div>
                         <div class="legend-item mediatype-mixed">Mixed</div>
@@ -102,26 +109,20 @@
                     </div>
                 </div>
 
-                <div id="legend-ai-technology">
-                    <div class="legend-description">
-                        AI technology(s) mentioned
-                    </div>
+                <div id="legend-payment-model">
+                    <div class="legend-description">Payment model</div>
                     <div class="legend-items">
-                        <div class="legend-item">
-                            <div class="ai-technology">CNN</div>
-                            = Convolutional Neural Network
+                        <div class="legend-item payment-model">Free</div>
+                        <div class="legend-item payment-model">Freemium</div>
+                        <div class="legend-item payment-model">Paid once</div>
+                        <div class="legend-item payment-model">
+                            Paid with premium extras
                         </div>
-                        <div class="legend-item">
-                            <div class="ai-technology">HBN</div>
-                            = Hierarchical Bayesian Networks
+                        <div class="legend-item payment-model">
+                            Paid periodically
                         </div>
-                        <div class="legend-item">
-                            <div class="ai-technology">NN</div>
-                            = Neural Network
-                        </div>
-                        <div class="legend-item">
-                            <div class="ai-technology">LSTM</div>
-                            = Long Short-Term Memory
+                        <div class="legend-item payment-model">
+                            Contact for Pricing
                         </div>
                     </div>
                 </div>

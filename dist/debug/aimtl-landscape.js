@@ -96,7 +96,6 @@
           let productList = [];
           productCategories.forEach((productCategoryWithSubcategory) => {
             const [productCategory, productSubcategoryId] = productCategoryWithSubcategory.split("_");
-            console.warn(categories[productCategory]["description"]);
             productList.push(
               categories[productCategory]["description"]
             );
@@ -108,6 +107,21 @@
           });
           product.dataset.categories = productList.join(", ");
           product.dataset.categoriesUpdated = "true";
+          convertCases(product, key);
+          break;
+        case "paymentModel":
+          if (product.dataset.paymentModelUpdated != null) {
+            convertCases(product, key);
+            break;
+          }
+          const paymentModels = product.getAttribute("data-payment-model").split(",");
+          product.dataset.paymentModel = PAYMENT_MODEL_TEXT[product.getAttribute("data-payment-model")];
+          let paymentModelList = [];
+          paymentModels.forEach((paymentModel) => {
+            paymentModelList.push(PAYMENT_MODEL_TEXT[paymentModel]);
+          });
+          product.dataset.paymentModel = paymentModelList.join(", ");
+          product.dataset.paymentModelUpdated = "true";
           convertCases(product, key);
           break;
         default:
@@ -128,6 +142,14 @@
   setModalEventListeners();
 
   // src/aimtl-landscape.ts
+  var PAYMENT_MODEL_TEXT = {
+    "free": "Free",
+    "freemium": "Freemium",
+    "paid-once": "Paid once",
+    "paid-with-premium-extra": "Paid with premium extras",
+    "paid-periodically": "Paid periodically",
+    "contact-for-pricing": "Contact for Pricing"
+  };
   function setEqualProductHeight() {
     const products = document.querySelectorAll(".product");
     let maxHeight = 0;
@@ -167,8 +189,19 @@
       xhr.send();
     });
   }
-  function setTotalDataCount(products) {
-    document.querySelector("#count-total").innerText = products.length.toString();
+  function getVisibleProducts(htmlSelector) {
+    const VISIBLE_PRODUCTS = document.querySelectorAll(
+      `${htmlSelector} .product:not([style*='display: none'])`
+    );
+    return VISIBLE_PRODUCTS.length.toString();
+  }
+  function setProductCounts(categories) {
+    for (const [categoryKey] of Object.entries(categories)) {
+      document.querySelector(
+        `#${categoryKey} .count-product`
+      ).innerText = getVisibleProducts(`#${categoryKey}`);
+    }
+    document.querySelector("#count-total").innerText = getVisibleProducts("#row-products");
   }
   function addProductsToCategories(categories, products) {
     products.forEach((product) => {
@@ -182,6 +215,15 @@
         } else {
           categories[mainCategory]["products"].push(product);
         }
+        categories[mainCategory]["products"].sort((first, second) => {
+          if (first.name < second.name) {
+            return -1;
+          } else if (first.name > second.name) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
       });
     });
   }
@@ -203,11 +245,14 @@
       productImage.alt = product["name"];
       productImage.src = `img/${product["logo"]}`;
       productName.innerText = product["name"];
-      product["aiTechnologiesUsed"].forEach((aiTechnology) => {
-        const aiTechnologyDiv = document.createElement("div");
-        aiTechnologyDiv.classList.add("ai-technology");
-        aiTechnologyDiv.innerText = aiTechnology;
-        productClone.querySelector(".product-content").appendChild(aiTechnologyDiv);
+      if (product["productAvailable"] == "false") {
+        productListItem.classList.add("product-unavailable");
+      }
+      product["paymentModel"].forEach((paymentModel) => {
+        const paymentModelDiv = document.createElement("div");
+        paymentModelDiv.classList.add("payment-model");
+        paymentModelDiv.innerText = PAYMENT_MODEL_TEXT[paymentModel];
+        productClone.querySelector(".product-content").appendChild(paymentModelDiv);
       });
       for (const [key, _] of Object.entries(product)) {
         if (!product.hasOwnProperty(key)) {
@@ -267,10 +312,25 @@
           categories
         );
       }
-      document.querySelector(
-        `#${categoryKey} .count-product`
-      ).innerText = document.querySelectorAll(`#${categoryKey} .product`).length.toString();
     }
+  }
+  function toggleUnavailableProductsVisibility(categories) {
+    const INPUT_SWITCH = document.querySelector(".switch input");
+    const UNAVAILABLE_PRODUCTS = document.querySelectorAll(
+      ".product-unavailable"
+    );
+    INPUT_SWITCH?.addEventListener("change", () => {
+      let displayStyle = "";
+      if (INPUT_SWITCH.checked) {
+        displayStyle = "flex";
+      } else {
+        displayStyle = "none";
+      }
+      UNAVAILABLE_PRODUCTS.forEach((product) => {
+        product.style.display = displayStyle;
+      });
+      setProductCounts(categories);
+    });
   }
   console.clear();
   Promise.all([
@@ -281,10 +341,11 @@
     if (categories == null || products == null) {
       return;
     }
-    setTotalDataCount(products);
     addProductsToCategories(categories, products);
     addCategoriesAndProductsToPage(categories);
+    setProductCounts(categories);
     setEmptyModalFields();
     setEqualProductHeight();
+    toggleUnavailableProductsVisibility(categories);
   });
 })();

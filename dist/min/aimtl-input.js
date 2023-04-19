@@ -34,13 +34,7 @@
                         uniqueItems: !0,
                         items: {
                             type: "string",
-                            enum: [
-                                "video",
-                                "audio",
-                                "text",
-                                "picture",
-                                "other",
-                            ],
+                            enum: ["video", "audio", "text", "image", "other"],
                             options: {
                                 enum_titles: [
                                     "Video",

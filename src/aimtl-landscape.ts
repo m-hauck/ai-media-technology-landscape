@@ -1,5 +1,14 @@
 import { setEmptyModalFields, showModal } from "./aimtl-modal";
 
+export const PAYMENT_MODEL_TEXT: { [key: string]: string } = {
+    "free": "Free",
+    "freemium": "Freemium",
+    "paid-once": "Paid once",
+    "paid-with-premium-extra": "Paid with premium extras",
+    "paid-periodically": "Paid periodically",
+    "contact-for-pricing": "Contact for Pricing",
+};
+
 export interface Category {
     [Key: string]: CategoryAttributes;
 }
@@ -15,19 +24,24 @@ interface SubcategoryAttributes {
     description: string;
     products: Product[];
 }
-interface Product {
+type Product = {
     name: string;
     manufacturer: string;
+    productAvailable: string;
     logo: string;
     link: string;
     mediatype: string[];
     mediatypeClass: string;
     description: string;
-    technologyReadinessLevel: string;
+    technologyReadinessLevel: string[];
     technologyReadinessLevelClass: string;
-    aiTechnologiesUsed: string[];
     categories: string[];
-}
+    paymentModel: string[];
+    companyLocation: string;
+    funding: string;
+    revenuePerYear: string;
+    notes: string;
+};
 
 /**
  * Set equal height for all products so that they have an uniform look
@@ -91,13 +105,27 @@ function loadJson(path: string): void | Promise<void | Category | Product[]> {
     });
 }
 
+function getVisibleProducts(htmlSelector: string): string {
+    const VISIBLE_PRODUCTS = document.querySelectorAll(
+        `${htmlSelector} .product:not([style*='display: none'])`
+    );
+    return VISIBLE_PRODUCTS.length.toString();
+}
 /**
- * Set count of total products
- * @param products Data containing all products
+ * Add number of visible products in the categories to the corresponding header
+ * @param categories List of categories with products
  */
-function setTotalDataCount(products: Product[]): void {
+function setProductCounts(categories: Category) {
+    // Category product count
+    for (const [categoryKey] of Object.entries(categories)) {
+        document.querySelector<HTMLSpanElement>(
+            `#${categoryKey} .count-product`
+        )!.innerText = getVisibleProducts(`#${categoryKey}`);
+    }
+
+    // Total data count
     document.querySelector<HTMLSpanElement>("#count-total")!.innerText =
-        products.length.toString();
+        getVisibleProducts("#row-products");
 }
 
 /**
@@ -130,6 +158,17 @@ function addProductsToCategories(
             } else {
                 categories[mainCategory]["products"].push(product);
             }
+
+            // Sort content by product names
+            categories[mainCategory]["products"].sort((first, second) => {
+                if (first.name < second.name) {
+                    return -1;
+                } else if (first.name > second.name) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
         });
     });
 }
@@ -167,13 +206,17 @@ function addProductsToHtmlElement(
         productImage.src = `img/${product["logo"]}`;
         productName.innerText = product["name"];
 
-        product["aiTechnologiesUsed"].forEach((aiTechnology) => {
-            const aiTechnologyDiv = document.createElement("div");
-            aiTechnologyDiv.classList.add("ai-technology");
-            aiTechnologyDiv.innerText = aiTechnology;
+        if (product["productAvailable"] == "false") {
+            productListItem.classList.add("product-unavailable");
+        }
+
+        product["paymentModel"].forEach((paymentModel) => {
+            const paymentModelDiv = document.createElement("div");
+            paymentModelDiv.classList.add("payment-model");
+            paymentModelDiv.innerText = PAYMENT_MODEL_TEXT[paymentModel];
             productClone
                 .querySelector(".product-content")!
-                .appendChild(aiTechnologyDiv);
+                .appendChild(paymentModelDiv);
         });
 
         // Set data attributes for each product property
@@ -265,14 +308,32 @@ function addCategoriesAndProductsToPage(categories: Category): void {
                 categories
             );
         }
-
-        // Add product count
-        document.querySelector<HTMLSpanElement>(
-            `#${categoryKey} .count-product`
-        )!.innerText = document
-            .querySelectorAll(`#${categoryKey} .product`)
-            .length.toString();
     }
+}
+
+/**
+ * Toggle the visibility of unavailable products
+ * @param categories List of categories with products
+ */
+function toggleUnavailableProductsVisibility(categories: Category) {
+    const INPUT_SWITCH =
+        document.querySelector<HTMLInputElement>(".switch input");
+    const UNAVAILABLE_PRODUCTS = document.querySelectorAll<HTMLDivElement>(
+        ".product-unavailable"
+    );
+    INPUT_SWITCH?.addEventListener("change", () => {
+        let displayStyle = "";
+        if (INPUT_SWITCH.checked) {
+            displayStyle = "flex";
+        } else {
+            displayStyle = "none";
+        }
+
+        UNAVAILABLE_PRODUCTS.forEach((product) => {
+            product.style.display = displayStyle;
+        });
+        setProductCounts(categories);
+    });
 }
 
 console.clear();
@@ -287,9 +348,10 @@ Promise.all([
         return;
     }
 
-    setTotalDataCount(products as Product[]);
     addProductsToCategories(categories as Category, products as Product[]);
     addCategoriesAndProductsToPage(categories as Category);
+    setProductCounts(categories as Category);
     setEmptyModalFields();
     setEqualProductHeight();
+    toggleUnavailableProductsVisibility(categories as Category);
 });

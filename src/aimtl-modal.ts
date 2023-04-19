@@ -1,4 +1,4 @@
-import { Category } from "./aimtl-landscape";
+import { Category, PAYMENT_MODEL_TEXT } from "./aimtl-landscape";
 
 const modal = document.querySelector("dialog")!;
 const modalCloseButton = document.querySelector("dialog #modal-close-button")!;
@@ -110,7 +110,6 @@ export function showModal(
                 modal.querySelector<HTMLImageElement>(
                     "[data-logo]"
                 )!.src = `img/${product.getAttribute("data-logo")!}`;
-
                 break;
 
             case "link":
@@ -121,30 +120,25 @@ export function showModal(
                 )!}" target="_blank" title="Open external link to '${product.getAttribute(
                     "data-name"
                 )!}'">${product.getAttribute("data-link")!}</a>`;
-
                 break;
 
             case "mediatype":
                 product.dataset.mediatype = textListToTitleCase(
                     product.getAttribute("data-mediatype")!
                 );
-
                 convertCases(product, key);
-
                 break;
 
             case "technologyReadinessLevel":
                 product.dataset.technologyReadinessLevel = textToTitleCase(
                     product.getAttribute("data-technology-readiness-level")!
                 );
-
                 convertCases(product, key);
-
                 break;
+
             case "categories":
                 if (product.dataset.categoriesUpdated != null) {
                     convertCases(product, key);
-
                     break;
                 }
                 const productCategories = product
@@ -155,7 +149,6 @@ export function showModal(
                 productCategories.forEach((productCategoryWithSubcategory) => {
                     const [productCategory, productSubcategoryId] =
                         productCategoryWithSubcategory.split("_");
-                    console.warn(categories[productCategory]["description"]);
                     productList.push(
                         categories[productCategory]["description"]
                     );
@@ -171,7 +164,30 @@ export function showModal(
                 product.dataset.categories = productList.join(", ");
                 product.dataset.categoriesUpdated = "true";
                 convertCases(product, key);
+                break;
 
+            case "paymentModel":
+                if (product.dataset.paymentModelUpdated != null) {
+                    convertCases(product, key);
+                    break;
+                }
+
+                const paymentModels = product
+                    .getAttribute("data-payment-model")!
+                    .split(",");
+
+                product.dataset.paymentModel =
+                    PAYMENT_MODEL_TEXT[
+                        product.getAttribute("data-payment-model")!
+                    ];
+                let paymentModelList: string[] = [];
+                paymentModels.forEach((paymentModel) => {
+                    paymentModelList.push(PAYMENT_MODEL_TEXT[paymentModel]);
+                });
+
+                product.dataset.paymentModel = paymentModelList.join(", ");
+                product.dataset.paymentModelUpdated = "true";
+                convertCases(product, key);
                 break;
 
             default:

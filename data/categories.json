@@ -2,48 +2,17 @@
     "ProcurementContent": {
         "description": "Procurement of information and content",
         "products": [],
-        "subcategories": {
-            "PredictiveAnalytics": {
-                "description": "Predictive Analytics",
-                "products": []
-            },
-            "MetadataGeneration": {
-                "description": "Metadata generation",
-                "products": []
-            },
-            "TextToSpeechToText": {
-                "description": "TextToSpeech or SpeechToText",
-                "products": []
-            },
-            "Visualisation": {
-                "description": "Visualization",
-                "products": []
-            }
-        }
+        "subcategories": {}
     },
     "AcquisitionAdvertisement": {
         "description": "Acquisition of advertisement",
         "products": [],
-        "subcategories": {
-            "ProgrammaticTV": {
-                "description": "Programmatic TV",
-                "products": []
-            }
-        }
+        "subcategories": {}
     },
     "ProductionContent": {
         "description": "Production and aggregation of content",
         "products": [],
-        "subcategories": {
-            "AudioGeneration": {
-                "description": "Audio generation",
-                "products": []
-            },
-            "QualityImprovement": {
-                "description": "Quality monitoring or improvement",
-                "products": []
-            }
-        }
+        "subcategories": {}
     },
     "AdvertisementPlacement": {
         "description": "Advertisement placement",
@@ -52,22 +21,12 @@
     "Packaging": {
         "description": "Product packaging",
         "products": [],
-        "subcategories": {
-            "RecommenderSystem": {
-                "description": "Recommender systems",
-                "products": []
-            }
-        }
+        "subcategories": {}
     },
     "TechnicalProduction": {
         "description": "Technical production",
         "products": [],
-        "subcategories": {
-            "Coding": {
-                "description": "Coding or recoding",
-                "products": []
-            }
-        }
+        "subcategories": {}
     },
     "Distribution": {
         "description": "Distribution",
