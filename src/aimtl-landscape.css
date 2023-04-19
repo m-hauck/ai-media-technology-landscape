@@ -44,11 +44,7 @@ a:visited:hover {
 }
 @font-face {
     font-family: "Simple";
-    src: url("../fonts/lineto-simple-bold.eot");
-    src: url("../fonts/lineto-simple-bold.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/lineto-simple-bold.woff2") format("woff2"),
-        url("../fonts/lineto-simple-bold.woff") format("woff");
+    src: url("../fonts/lineto-simple-bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
