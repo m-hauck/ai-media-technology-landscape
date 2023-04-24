@@ -1720,7 +1720,7 @@
         "notes": ""
     },
     {
-        "name": "GPT",
+        "name": "ChatGPT",
         "manufacturer": "OpenAI",
         "productAvailable": "true",
         "logo": "openai.svg",
@@ -1736,11 +1736,11 @@
         "notes": ""
     },
     {
-        "name": "Dall-E 2",
+        "name": "DALL·E",
         "manufacturer": "OpenAI",
         "productAvailable": "true",
         "logo": "openai.svg",
-        "link": "Generating images with text intput",
+        "link": "https://openai.com/product/dall-e-2",
         "mediatype": ["image"],
         "description": "Generating images with text intput",
         "technologyReadinessLevel": "first-applications",
