@@ -190,6 +190,7 @@ PRODUCTS
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 .product-manufacturer {
     font-weight: lighter;
