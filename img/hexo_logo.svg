@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="30px" viewBox="0 0 105 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <defs>
+        <radialGradient cx="50.0003996%" cy="50%" fx="50.0003996%" fy="50%" r="73.5348678%" gradientTransform="translate(0.500004,0.500000),scale(0.866026,1.000000),rotate(60.000000),translate(-0.500004,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFC9FF" offset="0%"></stop>
+            <stop stop-color="#F379FF" offset="67.7083%"></stop>
+            <stop stop-color="#DF65FF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hexo-logo" transform="translate(0.385180, 0.663340)">
+            <polygon id="Path" fill="#EE6157" fill-rule="nonzero" points="1.77635684e-15 0 1.77635684e-15 27.97896 6.35131 27.97896 6.35131 16.27266 16.77082 16.27266 16.77082 27.97896 23.08062 27.97896 23.08062 0 16.77082 0 16.77082 10.75156 6.35131 10.75156 6.35131 0"></polygon>
+            <polygon id="Path" fill="#37B33B" fill-rule="nonzero" points="45.26672 11.00066 34.97182 11.00066 34.97182 5.18896 45.88942 5.18896 45.88942 0 28.62052 0 28.62052 27.97896 46.47052 27.97896 46.47052 22.79006 34.97182 22.79006 34.97182 16.14816 45.26672 16.14816"></polygon>
+            <path d="M72.83802,27.97896 L64.53572,13.65736 L72.42292,0 L65.19992,0 L62.83372,5.10596 C62.12802,6.72496 61.58832,7.97026 60.92412,9.75526 L60.84112,9.75526 C60.17692,8.17786 59.55422,6.80796 58.72402,5.10596 L56.27482,0 L49.01022,0 L56.81452,13.82346 L48.71962,27.97896 L55.94272,27.97896 L58.26742,22.91456 C59.13912,20.96346 59.84482,19.51056 60.42602,17.89166 L60.50902,17.89166 C61.29772,19.51056 61.96192,20.96346 62.99972,22.91456 L65.53192,27.97896 L72.83802,27.97896 Z" id="Path" fill="#2F80FA" fill-rule="nonzero"></path>
+            <polygon id="Path" stroke="url(#radialGradient-1)" stroke-width="5.93026" points="75.49702 14.60446 81.75272 3.76926 94.26422 3.76926 100.51982 14.60446 94.26422 25.43966 81.75272 25.43966"></polygon>
+        </g>
+    </g>
+</svg>
