@@ -71,9 +71,13 @@ function setEqualProductHeight() {
  * @returns Sorted dictionary
  */
 function sortSubcategories(unsortedDict: Subcategories): Subcategories {
-    if (unsortedDict == null) return {} as Subcategories;
+    if (unsortedDict == null) {
+        return {} as Subcategories;
+    }
 
-    const sortedKeys = Object.keys(unsortedDict).sort();
+    const sortedKeys = Object.keys(unsortedDict).sort((a, b) =>
+        a.localeCompare(b)
+    );
     const sortedDict = {} as Subcategories;
     sortedKeys.forEach((key) => {
         sortedDict[key as keyof Subcategories] =
@@ -106,11 +110,19 @@ function loadJson(path: string): void | Promise<void | Category | Product[]> {
 }
 
 function getVisibleProducts(htmlSelector: string): string {
-    const VISIBLE_PRODUCTS = document.querySelectorAll(
+    const visibleProducts = document.querySelectorAll<HTMLDivElement>(
         `${htmlSelector} .product:not([style*='display: none'])`
     );
-    return VISIBLE_PRODUCTS.length.toString();
+
+    const uniqueProducts = new Set();
+    visibleProducts.forEach((product) => {
+        const productText = product.innerText.trim();
+        uniqueProducts.add(productText);
+    });
+
+    return uniqueProducts.size.toString();
 }
+
 /**
  * Add number of visible products in the categories to the corresponding header
  * @param categories List of categories with products
@@ -183,7 +195,9 @@ function addProductsToHtmlElement(
     htmlTarget: HTMLElement | null,
     categories: Category
 ) {
-    if (htmlTarget == null) return;
+    if (htmlTarget == null) {
+        return;
+    }
 
     const productsTemplate =
         document.querySelector<HTMLTemplateElement>("#product-template");
@@ -345,19 +359,18 @@ function toggleUnavailableProductsVisibility(categories: Category) {
 console.clear();
 
 /** Load products and add with categories to page */
-Promise.all([
-    loadJson("data/categories.json"),
-    loadJson("data/products.json"),
-]).then((values) => {
-    const [categories, products] = values;
-    if (categories == null || products == null) {
-        return;
-    }
+Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")])
+    .then((values) => {
+        const [categories, products] = values;
+        if (categories == null || products == null) {
+            return;
+        }
 
-    addProductsToCategories(categories as Category, products as Product[]);
-    addCategoriesAndProductsToPage(categories as Category);
-    setProductCounts(categories as Category);
-    setEmptyModalFields();
-    setEqualProductHeight();
-    toggleUnavailableProductsVisibility(categories as Category);
-});
+        addProductsToCategories(categories as Category, products as Product[]);
+        addCategoriesAndProductsToPage(categories as Category);
+        setProductCounts(categories as Category);
+        setEmptyModalFields();
+        setEqualProductHeight();
+        toggleUnavailableProductsVisibility(categories as Category);
+    })
+    .catch(() => console.error("Could not load values."));

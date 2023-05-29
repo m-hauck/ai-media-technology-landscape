@@ -23,9 +23,12 @@
     });
   }
   function sortSubcategories(unsortedDict) {
-    if (unsortedDict == null)
+    if (unsortedDict == null) {
       return {};
-    const sortedKeys = Object.keys(unsortedDict).sort();
+    }
+    const sortedKeys = Object.keys(unsortedDict).sort(
+      (a, b) => a.localeCompare(b)
+    );
     const sortedDict = {};
     sortedKeys.forEach((key) => {
       sortedDict[key] = unsortedDict[key];
@@ -49,10 +52,15 @@
     });
   }
   function getVisibleProducts(htmlSelector) {
-    const VISIBLE_PRODUCTS = document.querySelectorAll(
+    const visibleProducts = document.querySelectorAll(
       `${htmlSelector} .product:not([style*='display: none'])`
     );
-    return VISIBLE_PRODUCTS.length.toString();
+    const uniqueProducts = /* @__PURE__ */ new Set();
+    visibleProducts.forEach((product) => {
+      const productText = product.innerText.trim();
+      uniqueProducts.add(productText);
+    });
+    return uniqueProducts.size.toString();
   }
   function setProductCounts(categories) {
     for (const [categoryKey] of Object.entries(categories)) {
@@ -87,8 +95,9 @@
     });
   }
   function addProductsToHtmlElement(products, htmlTarget, categories) {
-    if (htmlTarget == null)
+    if (htmlTarget == null) {
       return;
+    }
     const productsTemplate = document.querySelector("#product-template");
     products.forEach((product) => {
       let productClone = productsTemplate.content.cloneNode(
@@ -198,10 +207,7 @@
     });
   }
   console.clear();
-  Promise.all([
-    loadJson("data/categories.json"),
-    loadJson("data/products.json")
-  ]).then((values) => {
+  Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")]).then((values) => {
     const [categories, products] = values;
     if (categories == null || products == null) {
       return;
@@ -212,7 +218,7 @@
     setEmptyModalFields();
     setEqualProductHeight();
     toggleUnavailableProductsVisibility(categories);
-  });
+  }).catch(() => console.error("Could not load values."));
 
   // src/aimtl-modal.ts
   var modal = document.querySelector("dialog");
