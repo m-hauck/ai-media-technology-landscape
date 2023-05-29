@@ -322,8 +322,8 @@ Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
     content: "";
     height: calc(var(--switch-height) * 0.85);
     width: calc(var(--switch-height) * 0.85);
-    left: calc(var(--switch-height) * 0.075);
-    bottom: calc(var(--switch-height) * 0.065);
+    left: calc(var(--switch-height) * 0.1);
+    bottom: calc(var(--switch-height) * 0.07);
     background-color: white;
     transition: 0.2s;
     border-radius: 50%;
@@ -338,7 +338,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(calc(var(--switch-height) * 0.95));
+    transform: translateX(calc(var(--switch-height) * 0.9));
 }
 
 /*
