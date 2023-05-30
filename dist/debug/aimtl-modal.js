@@ -68,7 +68,11 @@
         `#${categoryKey} .count-product`
       ).innerText = getVisibleProducts(`#${categoryKey}`);
     }
-    document.querySelector("#count-total").innerText = getVisibleProducts("#row-products");
+    document.querySelector("#count-number").innerText = getVisibleProducts("#row-products");
+  }
+  function afterProductsLoaded() {
+    document.querySelector("#counter-total")?.classList.remove("invisible");
+    document.querySelector("#unavailable-products-switch")?.classList.remove("invisible");
   }
   function addProductsToCategories(categories, products) {
     products.forEach((product) => {
@@ -186,6 +190,7 @@
           categories
         );
       }
+      afterProductsLoaded();
     }
   }
   function toggleUnavailableProductsVisibility(categories) {

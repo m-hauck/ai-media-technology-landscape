@@ -69,6 +69,10 @@ h3 {
     font-weight: 400;
 }
 
+.invisible {
+    display: none;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;

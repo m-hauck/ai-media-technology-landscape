@@ -136,8 +136,20 @@ function setProductCounts(categories: Category) {
     }
 
     // Total data count
-    document.querySelector<HTMLSpanElement>("#count-total")!.innerText =
+    document.querySelector<HTMLSpanElement>("#count-number")!.innerText =
         getVisibleProducts("#row-products");
+}
+
+/**
+ * Functions that run after all products are loaded
+ */
+function afterProductsLoaded() {
+    document
+        .querySelector<HTMLSpanElement>("#counter-total")
+        ?.classList.remove("invisible");
+    document
+        .querySelector<HTMLSpanElement>("#unavailable-products-switch")
+        ?.classList.remove("invisible");
 }
 
 /**
@@ -328,6 +340,8 @@ function addCategoriesAndProductsToPage(categories: Category): void {
                 categories
             );
         }
+
+        afterProductsLoaded();
     }
 }
 
