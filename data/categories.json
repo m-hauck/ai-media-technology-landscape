@@ -2,34 +2,247 @@
     "ProcurementContent": {
         "description": "Procurement of information and content",
         "products": [],
-        "subcategories": {}
+        "subcategories": {
+            "": {
+                "description": "",
+                "products": []
+            }
+        }
     },
     "AcquisitionAdvertisement": {
         "description": "Acquisition of advertisement",
         "products": [],
-        "subcategories": {}
+        "subcategories": {
+            "AdvertisingPlatform": {
+                "description": "Advertising Platform",
+                "products": []
+            },
+            "Analyzes": {
+                "description": "Analyzes",
+                "products": []
+            },
+            "ProgrammaticAdvertisement": {
+                "description": "Programmatic Advertisement",
+                "products": []
+            }
+        }
     },
     "ProductionContent": {
         "description": "Production and aggregation of content",
         "products": [],
-        "subcategories": {}
+        "subcategories": {
+            "3DModeling": {
+                "description": "3DModeling",
+                "products": []
+            },
+            "AudioMastering": {
+                "description": "Audio Mastering",
+                "products": []
+            },
+            "ContentRepurposing": {
+                "description": "Repurposing of Content",
+                "products": []
+            },
+            "Deepfake": {
+                "description": "Deep Fake",
+                "products": []
+            },
+            "Design": {
+                "description": "Design",
+                "products": []
+            },
+            "Dubbing": {
+                "description": "Dubbing",
+                "products": []
+            },
+            "GenerativeAudio": {
+                "description": "Generative (Audio)",
+                "products": []
+            },
+            "GenerativeGaming": {
+                "description": "Generative (Gaming)",
+                "products": []
+            },
+            "GenerativeImage": {
+                "description": "Generative (Image)",
+                "products": []
+            },
+            "GenerativeMetadata": {
+                "description": "Generative (Metadata)",
+                "products": []
+            },
+            "GenerativeMultimedia": {
+                "description": "Generative (Multimedia)",
+                "products": []
+            },
+            "GenerativeText": {
+                "description": "Generative (Text)",
+                "products": []
+            },
+            "GenerativeVideo": {
+                "description": "Generative (Video)",
+                "products": []
+            },
+            "GenerativeVoice": {
+                "description": "Generative (Voice)",
+                "products": []
+            },
+            "ImageEditor": {
+                "description": "Image Editor",
+                "products": []
+            },
+            "Marketing": {
+                "description": "Marketing",
+                "products": []
+            },
+            "Personalization": {
+                "description": "Personalization",
+                "products": []
+            },
+            "SpeechToText": {
+                "description": "Speech-To-Text / Speech-To-Text",
+                "products": []
+            },
+            "Testing": {
+                "description": "Testing",
+                "products": []
+            },
+            "Transcription": {
+                "description": "Transcription",
+                "products": []
+            },
+            "Upscaling": {
+                "description": "Upscaling",
+                "products": []
+            },
+            "VideoAnalysis": {
+                "description": "Video Analysis",
+                "products": []
+            },
+            "VideoEditor": {
+                "description": "Video Editor",
+                "products": []
+            },
+            "VideoPersonalization": {
+                "description": "Video Personalization",
+                "products": []
+            },
+            "Writing": {
+                "description": "Writing",
+                "products": []
+            }
+        }
     },
     "AdvertisementPlacement": {
         "description": "Advertisement placement",
-        "products": []
+        "products": [],
+        "subcategories": {
+            "AdTargetingPersonalization": {
+                "description": "Ad Targeting & Personalization",
+                "products": []
+            },
+            "AdvertisingPlatform": {
+                "description": "Advertising Platform",
+                "products": []
+            },
+            "Analyzes": {
+                "description": "Analyzes",
+                "products": []
+            },
+            "GenerativeAdContent": {
+                "description": "Generative (Ad Content)",
+                "products": []
+            },
+            "SEO": {
+                "description": "SEO",
+                "products": []
+            }
+        }
     },
     "Packaging": {
         "description": "Product packaging",
         "products": [],
-        "subcategories": {}
+        "subcategories": {
+            "AudioEditor": {
+                "description": "Audio Editor",
+                "products": []
+            },
+            "Automation": {
+                "description": "Automation",
+                "products": []
+            },
+            "ImageEditor": {
+                "description": "ImageEditor",
+                "products": []
+            },
+            "Personalization": {
+                "description": "Personalization",
+                "products": []
+            },
+            "Recommendation": {
+                "description": "Recommendation",
+                "products": []
+            },
+            "SpeechToText": {
+                "description": "Speech-To-Text / Speech-To-Text",
+                "products": []
+            },
+            "TextEditor": {
+                "description": "Text Editor",
+                "products": []
+            },
+            "VideoEditor": {
+                "description": "Video Editor",
+                "products": []
+            }
+        }
     },
     "TechnicalProduction": {
         "description": "Technical production",
         "products": [],
-        "subcategories": {}
+        "subcategories": {
+            "ContentCreation": {
+                "description": "Content Creation",
+                "products": []
+            },
+            "Encoding": {
+                "description": "Encoding",
+                "products": []
+            },
+            "SalesAutomation": {
+                "description": "Sales Automation",
+                "products": []
+            },
+            "SpeechToText": {
+                "description": "Speech-To-Text / Speech-To-Text",
+                "products": []
+            },
+            "VirtualMeetings": {
+                "description": "Virtual Meetings",
+                "products": []
+            }
+        }
     },
     "Distribution": {
         "description": "Distribution",
-        "products": []
+        "products": [],
+        "subcategories": {
+            "AudioDistribution": {
+                "description": "Audio Distribution",
+                "products": []
+            },
+            "SalesAutomation ": {
+                "description": "Sales Automation ",
+                "products": []
+            },
+            "Streaming": {
+                "description": "Streaming",
+                "products": []
+            },
+            "VideoDistribution": {
+                "description": "Video Distribution",
+                "products": []
+            }
+        }
     }
 }
