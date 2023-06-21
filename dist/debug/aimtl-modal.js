@@ -183,10 +183,12 @@
         const subcategoryProductsList = document.createElement("ul");
         subcategoryProductsList.classList.add("product-list");
         subcategoryProductsList.id = subcategoryKey;
-        document.querySelector(`#${subcategoryKey}`)?.appendChild(subcategoryProductsList);
+        document.querySelector(`#${categoryKey} #${subcategoryKey}`)?.appendChild(subcategoryProductsList);
         addProductsToHtmlElement(
           categories[categoryKey]["subcategories"][subcategoryKey]["products"],
-          document.querySelector(`#${subcategoryKey} .product-list`),
+          document.querySelector(
+            `#${categoryKey} #${subcategoryKey} .product-list`
+          ),
           categories
         );
       }
@@ -223,7 +225,7 @@
     setEmptyModalFields();
     setEqualProductHeight();
     toggleUnavailableProductsVisibility(categories);
-  }).catch(() => console.error("Could not load values."));
+  }).catch((error) => console.error(`Could not load values. ${error.stack}`));
 
   // src/aimtl-modal.ts
   var modal = document.querySelector("dialog");

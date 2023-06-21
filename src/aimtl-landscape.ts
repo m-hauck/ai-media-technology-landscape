@@ -329,14 +329,16 @@ function addCategoriesAndProductsToPage(categories: Category): void {
             subcategoryProductsList.classList.add("product-list");
             subcategoryProductsList.id = subcategoryKey;
             document
-                .querySelector(`#${subcategoryKey}`)
+                .querySelector(`#${categoryKey} #${subcategoryKey}`)
                 ?.appendChild(subcategoryProductsList);
 
             addProductsToHtmlElement(
                 categories[categoryKey]["subcategories"][subcategoryKey][
                     "products"
                 ],
-                document.querySelector(`#${subcategoryKey} .product-list`),
+                document.querySelector(
+                    `#${categoryKey} #${subcategoryKey} .product-list`
+                ),
                 categories
             );
         }
@@ -387,4 +389,4 @@ Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")])
         setEqualProductHeight();
         toggleUnavailableProductsVisibility(categories as Category);
     })
-    .catch(() => console.error("Could not load values."));
+    .catch((error) => console.error(`Could not load values. ${error.stack}`));
