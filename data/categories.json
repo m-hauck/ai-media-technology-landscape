@@ -1,13 +1,7 @@
 {
     "ProcurementContent": {
         "description": "Procurement of information and content",
-        "products": [],
-        "subcategories": {
-            "": {
-                "description": "",
-                "products": []
-            }
-        }
+        "products": []
     },
     "AcquisitionAdvertisement": {
         "description": "Acquisition of advertisement",
@@ -31,8 +25,8 @@
         "description": "Production and aggregation of content",
         "products": [],
         "subcategories": {
-            "3DModeling": {
-                "description": "3DModeling",
+            "ThreeDimensionalModeling": {
+                "description": "3D Modelling",
                 "products": []
             },
             "AudioMastering": {
