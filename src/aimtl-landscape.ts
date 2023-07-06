@@ -41,6 +41,7 @@ type Product = {
     funding: string;
     revenuePerYear: string;
     notes: string;
+    highlightProduct: string;
 };
 
 /**
@@ -240,6 +241,10 @@ function addProductsToHtmlElement(
 
         if (product["productAvailable"] == "false") {
             productListItem.classList.add("product-unavailable");
+        }
+
+        if (product["highlightProduct"] == "yes") {
+            productListItem.classList.add("product-highlight");
         }
 
         product["paymentModel"].forEach((paymentModel) => {

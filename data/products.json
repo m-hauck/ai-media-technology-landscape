@@ -13,7 +13,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Neutron",
@@ -32,7 +33,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Sentinel",
@@ -48,7 +50,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Q for Publisher",
@@ -64,7 +67,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Video Annotation",
@@ -80,7 +84,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Azure Cognitive Services",
@@ -100,7 +105,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Cloud Natural Language",
@@ -116,7 +122,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "CLEAR Media ERP",
@@ -132,7 +139,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Recognition",
@@ -148,7 +156,8 @@
         "companyLocation": "Oulu",
         "funding": "$2.700.000",
         "revenuePerYear": "$10.200.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Metaliquid",
@@ -164,7 +173,8 @@
         "companyLocation": "Milano, Italy",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Cumulus",
@@ -180,7 +190,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Media Asset Management",
@@ -199,7 +210,8 @@
         "companyLocation": "Hamburg, Germany",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Web Services: Rekognition",
@@ -215,7 +227,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DeepVA",
@@ -231,7 +244,8 @@
         "companyLocation": "Freiburg",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "mediahub",
@@ -247,7 +261,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Cinema Intelligence",
@@ -263,7 +278,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "RealDemand Market Intelligence",
@@ -279,7 +295,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Sensei",
@@ -295,7 +312,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "QualiFiction",
@@ -311,7 +329,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Prophet",
@@ -327,7 +346,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Qloo",
@@ -343,7 +363,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Blackwood Seven",
@@ -359,7 +380,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Decidata",
@@ -379,7 +401,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Affdex",
@@ -395,7 +418,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Curator",
@@ -411,7 +435,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Vidispine",
@@ -427,7 +452,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "COMPASS",
@@ -443,7 +469,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DeepAudience Analysis for Movies",
@@ -459,7 +486,8 @@
         "companyLocation": "Los Angeles and Israel",
         "funding": "$8M Series A",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Agile Storywriter",
@@ -475,7 +503,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "SpotX",
@@ -494,7 +523,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "YouTube Ads",
@@ -514,7 +544,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Tabris",
@@ -533,7 +564,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Ad Plan",
@@ -552,7 +584,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Media Ai\u00b2",
@@ -568,7 +601,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Rubicon Project",
@@ -588,7 +622,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "ScriptBook",
@@ -604,7 +639,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DeepStudio",
@@ -620,7 +656,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Snackable Content",
@@ -636,7 +673,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Addressable TV",
@@ -655,7 +693,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Arc",
@@ -671,7 +710,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Watson",
@@ -687,7 +727,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Score",
@@ -703,7 +744,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AIVA",
@@ -719,7 +761,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Magenta",
@@ -735,7 +778,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Lyrebird",
@@ -751,7 +795,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Flow Machines",
@@ -767,7 +812,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AI.MUSIC",
@@ -783,7 +829,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Indie",
@@ -799,7 +846,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Humtap",
@@ -815,7 +863,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Gloss",
@@ -831,7 +880,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "LANDR",
@@ -850,7 +900,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "CloudBounce",
@@ -866,7 +917,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "cre8tiveAI",
@@ -882,7 +934,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "KAI-V",
@@ -898,7 +951,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "BATON WINNOW",
@@ -914,7 +968,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Quality Control",
@@ -930,7 +985,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "drumatom\u00b2",
@@ -946,7 +1002,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Regroover",
@@ -962,7 +1019,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "SmartFM",
@@ -978,7 +1036,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Orb Composer",
@@ -994,7 +1053,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "smart:comp",
@@ -1010,7 +1070,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Ryff",
@@ -1026,7 +1087,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Podcast Advertising",
@@ -1042,7 +1104,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Episodic Images",
@@ -1058,7 +1121,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Content Discovery",
@@ -1074,7 +1138,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Azure Media Services",
@@ -1094,7 +1159,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Movix",
@@ -1110,7 +1176,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Recombee",
@@ -1126,7 +1193,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Zone\u00b7tv",
@@ -1142,7 +1210,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DataMiner",
@@ -1158,7 +1227,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "LipSync",
@@ -1174,7 +1244,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "OrganicAI + PaidAI",
@@ -1190,7 +1261,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Video Encoding",
@@ -1206,7 +1278,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Brodstar Analyzer",
@@ -1222,7 +1295,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DeepAudience Analysis for TV",
@@ -1238,7 +1312,8 @@
         "companyLocation": "Los Angeles and Israel",
         "funding": "$8M Series A",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Web Services: Transcribe",
@@ -1254,7 +1329,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Gracenote",
@@ -1270,7 +1346,8 @@
         "companyLocation": "New York",
         "funding": "",
         "revenuePerYear": "$3.500.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Second Spectrum",
@@ -1286,7 +1363,8 @@
         "companyLocation": "Los Angeles",
         "funding": "",
         "revenuePerYear": "18.600.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Viostream",
@@ -1306,7 +1384,8 @@
         "companyLocation": "Sydney",
         "funding": "",
         "revenuePerYear": "$22.600.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Receptiviti",
@@ -1322,7 +1401,8 @@
         "companyLocation": "Toronto",
         "funding": "",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Zype",
@@ -1341,7 +1421,8 @@
         "companyLocation": "New York",
         "funding": "$17.300.000",
         "revenuePerYear": "$2.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Veritone",
@@ -1360,7 +1441,8 @@
         "companyLocation": "Denver",
         "funding": "",
         "revenuePerYear": "$149.700.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Rev",
@@ -1376,7 +1458,8 @@
         "companyLocation": "Austin",
         "funding": "$30.500.000",
         "revenuePerYear": "$857.700.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "PaveAI",
@@ -1392,7 +1475,8 @@
         "companyLocation": "Walnut (California)",
         "funding": "",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Kensho Scribe",
@@ -1408,7 +1492,8 @@
         "companyLocation": "Cambridge",
         "funding": "$81.100.000",
         "revenuePerYear": "$14.400.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Kensho Nerd",
@@ -1427,7 +1512,8 @@
         "companyLocation": "Cambridge",
         "funding": "$81.100.000",
         "revenuePerYear": "$14.400.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Dataminr Pulse",
@@ -1443,7 +1529,8 @@
         "companyLocation": "New York",
         "funding": "",
         "revenuePerYear": "$77.500.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Gravy Analytics Data-as-a-Service",
@@ -1459,7 +1546,8 @@
         "companyLocation": "Dulles",
         "funding": "",
         "revenuePerYear": "$11.200.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Genius Plus",
@@ -1478,7 +1566,8 @@
         "companyLocation": "New York",
         "funding": "",
         "revenuePerYear": "$25.200.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "FakeRank",
@@ -1494,7 +1583,8 @@
         "companyLocation": "Amsterdam",
         "funding": "",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Daylight",
@@ -1510,7 +1600,8 @@
         "companyLocation": "Cambridge",
         "funding": "",
         "revenuePerYear": "$8.600.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Scoop.it",
@@ -1526,7 +1617,8 @@
         "companyLocation": "San Francisco",
         "funding": "",
         "revenuePerYear": "$10.500.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Zest Model Management System",
@@ -1542,7 +1634,8 @@
         "companyLocation": "Burbank",
         "funding": "",
         "revenuePerYear": "$21.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Chorus",
@@ -1558,7 +1651,8 @@
         "companyLocation": "San Francisco",
         "funding": "",
         "revenuePerYear": "$55.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Wordsmith",
@@ -1578,7 +1672,8 @@
         "companyLocation": "Chicago",
         "funding": "",
         "revenuePerYear": "$30.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Wavi",
@@ -1597,7 +1692,8 @@
         "companyLocation": "New York",
         "funding": "",
         "revenuePerYear": "$16.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Cloud Vision API",
@@ -1613,7 +1709,8 @@
         "companyLocation": "Mountain View",
         "funding": "",
         "revenuePerYear": "$279.800.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Experience Insights",
@@ -1629,7 +1726,8 @@
         "companyLocation": "Silicon Valley",
         "funding": "$40.000.000",
         "revenuePerYear": "$78.900.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AI Story Assist",
@@ -1645,7 +1743,8 @@
         "companyLocation": "New York",
         "funding": "$7.100.000",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Deep Art Effects",
@@ -1661,7 +1760,8 @@
         "companyLocation": "Karlsruhe",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Shutterstock",
@@ -1681,7 +1781,8 @@
         "companyLocation": "New York City",
         "funding": "",
         "revenuePerYear": "$828.000.000",
-        "notes": "Uses internal training data (ethical AI)"
+        "notes": "Uses internal training data (ethical AI)",
+        "highlightProduct": "no"
     },
     {
         "name": "Pikazo",
@@ -1697,7 +1798,8 @@
         "companyLocation": "St Louis",
         "funding": "",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "DALL\u00b7E",
@@ -1713,7 +1815,8 @@
         "companyLocation": "San Francisco",
         "funding": "$11.000.000.000",
         "revenuePerYear": "$19.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Lumen5",
@@ -1729,7 +1832,8 @@
         "companyLocation": "Vancouver",
         "funding": "$105.000",
         "revenuePerYear": "$4.800.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Looka",
@@ -1745,7 +1849,8 @@
         "companyLocation": "Toronto",
         "funding": "$5.500.000",
         "revenuePerYear": "$840.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Podcastle",
@@ -1761,7 +1866,8 @@
         "companyLocation": "Yerevan",
         "funding": "$8.800.000",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Lalal.ai",
@@ -1780,7 +1886,8 @@
         "companyLocation": "Zug",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Murf.AI",
@@ -1796,7 +1903,8 @@
         "companyLocation": "Salt Lake City, Utah, United States",
         "funding": "$10,000,000.00",
         "revenuePerYear": "$11,500,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Taboola",
@@ -1812,7 +1920,8 @@
         "companyLocation": "New York",
         "funding": "$445.000.000",
         "revenuePerYear": "$1.380.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AdEspresso",
@@ -1828,7 +1937,8 @@
         "companyLocation": "San Francisco",
         "funding": "$3.200.000",
         "revenuePerYear": "$4.800.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Midjourney",
@@ -1844,7 +1954,8 @@
         "companyLocation": "San Francisco",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AI Marketer",
@@ -1860,7 +1971,8 @@
         "companyLocation": "Hetzliya",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Curio",
@@ -1876,7 +1988,8 @@
         "companyLocation": "Beverly Hills",
         "funding": "$21.600.000",
         "revenuePerYear": "$10.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Axle",
@@ -1892,7 +2005,8 @@
         "companyLocation": "Boston",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AINAR",
@@ -1908,7 +2022,8 @@
         "companyLocation": "Stockholm",
         "funding": "$7.500.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Adgreetz",
@@ -1927,7 +2042,8 @@
         "companyLocation": "Los Angeles",
         "funding": "$10.500.000",
         "revenuePerYear": "$10.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Speechmatics",
@@ -1946,7 +2062,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Beatoven.ai",
@@ -1962,7 +2079,8 @@
         "companyLocation": "Bengaluru",
         "funding": "$1.100.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Craiyon",
@@ -1978,7 +2096,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Copy.ai",
@@ -1994,7 +2113,8 @@
         "companyLocation": "Memphis, Tennessee, United States",
         "funding": "$11,000,000.00",
         "revenuePerYear": "$13,900,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Designs.ai",
@@ -2010,7 +2130,8 @@
         "companyLocation": "Singapore",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Yseop",
@@ -2026,7 +2147,8 @@
         "companyLocation": "Paris, France",
         "funding": "$12,8 Mio.",
         "revenuePerYear": "$3,8 Mio.",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Stockimg.AI",
@@ -2042,7 +2164,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "GPTGo.AI",
@@ -2058,7 +2181,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Monica",
@@ -2074,7 +2198,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "people.ai",
@@ -2094,7 +2219,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "InsideSales",
@@ -2113,7 +2239,8 @@
         "companyLocation": "Austin, TX",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Seismic",
@@ -2129,7 +2256,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Adobe Firefly",
@@ -2148,10 +2276,11 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
-        "name": "Acros.Ai",
+        "name": "ACROS.Ai",
         "manufacturer": "Magazino",
         "productAvailable": "true",
         "logo": "magazino.png",
@@ -2164,7 +2293,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "2txt-AI",
@@ -2180,7 +2310,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AskBrian",
@@ -2196,7 +2327,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Cohesive",
@@ -2215,7 +2347,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "yes"
     },
     {
         "name": "Marketing Blocks",
@@ -2231,7 +2364,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Jasper",
@@ -2247,7 +2381,8 @@
         "companyLocation": "Austin",
         "funding": "$131.000.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "ChatGPT",
@@ -2266,7 +2401,8 @@
         "companyLocation": "San Francisco",
         "funding": "$11.000.000.000",
         "revenuePerYear": "$19.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Rytr",
@@ -2282,7 +2418,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Yaara",
@@ -2298,7 +2435,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Magic Studio",
@@ -2317,7 +2455,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AI21 Labs",
@@ -2333,7 +2472,8 @@
         "companyLocation": "Tel Aviv, Israel",
         "funding": "$64,000,000.00",
         "revenuePerYear": "$118,500,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Anyword",
@@ -2353,7 +2493,8 @@
         "companyLocation": "New York, United States",
         "funding": "$21,000,000.00",
         "revenuePerYear": "$30,100,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Autobound",
@@ -2369,7 +2510,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$1,800,000.00",
         "revenuePerYear": "$1,800,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Cogram",
@@ -2389,7 +2531,8 @@
         "companyLocation": "Berlin, Germany",
         "funding": "$4,000,000.00",
         "revenuePerYear": "$4,500,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Compose.AI",
@@ -2405,7 +2548,8 @@
         "companyLocation": "Chicago, U.S.A",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Contexts.com",
@@ -2421,7 +2565,8 @@
         "companyLocation": "Milan, Italy",
         "funding": "$8,000,000",
         "revenuePerYear": "$8,000,000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Copymatic",
@@ -2437,7 +2582,8 @@
         "companyLocation": "Los Angeles, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Copysmith",
@@ -2453,7 +2599,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$10,000,000.00",
         "revenuePerYear": "$10,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Creatext",
@@ -2469,7 +2616,8 @@
         "companyLocation": "Berlin, Germany",
         "funding": "$120,000.00",
         "revenuePerYear": "$120,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Frase",
@@ -2488,7 +2636,8 @@
         "companyLocation": "Boston, Massachusetts, United States",
         "funding": "$947,000.00",
         "revenuePerYear": "$947,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "genei",
@@ -2507,7 +2656,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "$125,000.00",
         "revenuePerYear": "$125,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "GoCharlie",
@@ -2523,7 +2673,8 @@
         "companyLocation": "",
         "funding": "$385,000",
         "revenuePerYear": "$405,000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Hypertype.co",
@@ -2539,7 +2690,8 @@
         "companyLocation": "Stockholm, Stockholms Lan, Sweden",
         "funding": "$1,221,408.00",
         "revenuePerYear": "$1,499,749.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Hypotenuse",
@@ -2558,7 +2710,8 @@
         "companyLocation": "Mountain View, California, United States",
         "funding": "",
         "revenuePerYear": "$125,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Lately",
@@ -2574,7 +2727,8 @@
         "companyLocation": "New York, United States",
         "funding": "$405,000.00",
         "revenuePerYear": "$3,385,066.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Linguix",
@@ -2590,7 +2744,8 @@
         "companyLocation": "Miami, Florida, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Mutiny",
@@ -2610,7 +2765,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$50,000,000.00",
         "revenuePerYear": "$71,620,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "HyperWriteAI",
@@ -2626,7 +2782,8 @@
         "companyLocation": "Los Angeles, California, United States",
         "funding": "$2,600,000.00",
         "revenuePerYear": "$2,600,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Persado",
@@ -2642,7 +2799,8 @@
         "companyLocation": "New York, United States",
         "funding": "$30,000,000.00",
         "revenuePerYear": "$66,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "regie.ai",
@@ -2658,7 +2816,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$10,000,000.00",
         "revenuePerYear": "$14,800,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Smart Writer",
@@ -2677,7 +2836,8 @@
         "companyLocation": "Sydney, New South Wales, Australia",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Aive",
@@ -2693,7 +2853,8 @@
         "companyLocation": "Paris, France",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AudioLabs",
@@ -2709,7 +2870,8 @@
         "companyLocation": "Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Colossyan",
@@ -2725,7 +2887,8 @@
         "companyLocation": "Wilmington, Delaware, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Deepdub",
@@ -2741,7 +2904,8 @@
         "companyLocation": "Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Fathom Video",
@@ -2757,7 +2921,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Gloss Ai",
@@ -2773,7 +2938,8 @@
         "companyLocation": "Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Incentivai",
@@ -2789,7 +2955,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "InVideo",
@@ -2805,7 +2972,8 @@
         "companyLocation": "Singapore",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Maverick",
@@ -2821,7 +2989,8 @@
         "companyLocation": "San Francisco",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "MethaphysicAi",
@@ -2837,7 +3006,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Peech",
@@ -2853,7 +3023,8 @@
         "companyLocation": "Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Pictory",
@@ -2869,7 +3040,8 @@
         "companyLocation": "Bothell, Washington, United States",
         "funding": "$4.700.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Sendpotion",
@@ -2885,7 +3057,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Recut",
@@ -2901,7 +3074,8 @@
         "companyLocation": "New York, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Rephrase AI",
@@ -2917,7 +3091,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Respeecher",
@@ -2933,7 +3108,8 @@
         "companyLocation": "Kyiv, Ukraine",
         "funding": "",
         "revenuePerYear": "<$5.000.000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Steve.AI",
@@ -2949,7 +3125,8 @@
         "companyLocation": "California, Kentucky, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Synthesia",
@@ -2965,7 +3142,8 @@
         "companyLocation": "London, England, United States",
         "funding": "$66.600.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Terra Video",
@@ -2981,7 +3159,8 @@
         "companyLocation": "New York, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "VEED",
@@ -2997,7 +3176,8 @@
         "companyLocation": "Benfleet, Essex, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Windsor.io",
@@ -3013,7 +3193,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Wombo AI",
@@ -3029,7 +3210,8 @@
         "companyLocation": "Toronto, Ontario, Canada",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Xembly",
@@ -3045,7 +3227,8 @@
         "companyLocation": "Seattle, Washington, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "YepicAi",
@@ -3061,7 +3244,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Zubtitle",
@@ -3077,7 +3261,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "AI-Writer",
@@ -3093,7 +3278,8 @@
         "companyLocation": "Regensburg",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Algolia",
@@ -3109,7 +3295,8 @@
         "companyLocation": "San Francisco",
         "funding": "$334.200.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Rosebud",
@@ -3128,7 +3315,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Magician",
@@ -3144,7 +3332,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Papercup",
@@ -3160,7 +3349,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "$20,000,000.00",
         "revenuePerYear": "$33,234,603.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Altered",
@@ -3176,7 +3366,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Emergent Drums",
@@ -3192,7 +3383,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Bark",
@@ -3208,7 +3400,8 @@
         "companyLocation": "Cambridge",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Runway",
@@ -3229,7 +3422,8 @@
         "companyLocation": "New York",
         "funding": "$95.500.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Descript",
@@ -3249,7 +3443,8 @@
         "companyLocation": "San Francisco",
         "funding": "$100.000.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Render",
@@ -3265,7 +3460,8 @@
         "companyLocation": "Dover, Delaware, United States",
         "funding": "$1,300,000.00",
         "revenuePerYear": "$2,200,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Autoenhance.ai",
@@ -3281,7 +3477,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Beautiful.ai",
@@ -3297,7 +3494,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Blend",
@@ -3313,7 +3511,8 @@
         "companyLocation": "Bengaluru, Karnataka, India",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Botika",
@@ -3329,7 +3528,8 @@
         "companyLocation": "Tel Aviv, Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Bria",
@@ -3348,7 +3548,8 @@
         "companyLocation": "Tel Aviv-yafo, Tel Aviv, Israel",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Bubbles",
@@ -3364,7 +3565,8 @@
         "companyLocation": "Salt Lake City, Utah, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Common Sense Machine",
@@ -3383,7 +3585,8 @@
         "companyLocation": "Cambridge, Massachusetts, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Hexo",
@@ -3402,7 +3605,8 @@
         "companyLocation": "Bengaluru, Karnataka, India",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Kaedim",
@@ -3421,7 +3625,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Maket",
@@ -3437,7 +3642,8 @@
         "companyLocation": "Montr\u00e9al, Quebec, Canada",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Modulize",
@@ -3456,7 +3662,8 @@
         "companyLocation": "Oslo, Norway",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Poly",
@@ -3475,7 +3682,8 @@
         "companyLocation": "Santa Monica, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Recast.ai",
@@ -3494,7 +3702,8 @@
         "companyLocation": "Singapore, Central Region, Singapore",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Scenario",
@@ -3513,7 +3722,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Sloyd",
@@ -3532,7 +3742,8 @@
         "companyLocation": "Oslo, Norway",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Stable Diffusion",
@@ -3548,7 +3759,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Uizard",
@@ -3564,7 +3776,8 @@
         "companyLocation": "Copenhagen, Hovedstaden, Denmark",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Wowto.ai",
@@ -3580,7 +3793,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Windsor",
@@ -3596,7 +3810,8 @@
         "companyLocation": "San Francisco",
         "funding": "$3.100.000",
         "revenuePerYear": "$149.300",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Waymark",
@@ -3612,7 +3827,8 @@
         "companyLocation": "Detroit",
         "funding": "$4.600.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Visio",
@@ -3628,7 +3844,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Vidyo",
@@ -3644,7 +3861,8 @@
         "companyLocation": "Bangalore",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Unscreen",
@@ -3660,7 +3878,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Typestudio",
@@ -3676,7 +3895,8 @@
         "companyLocation": "Borgholzhausen",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Topaz Video AI",
@@ -3692,7 +3912,8 @@
         "companyLocation": "Dallas",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Topaz Photo AI",
@@ -3708,7 +3929,8 @@
         "companyLocation": "Dallas",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Tavus",
@@ -3724,7 +3946,8 @@
         "companyLocation": "Houston, Texas, United States",
         "funding": "$6.100.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Stylized",
@@ -3740,7 +3963,8 @@
         "companyLocation": "San Francisco",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Soundful",
@@ -3756,7 +3980,8 @@
         "companyLocation": "San Diego",
         "funding": "$3.800.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Shuffll",
@@ -3772,7 +3997,8 @@
         "companyLocation": "Tel Aviv",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Promethean AI",
@@ -3788,7 +4014,8 @@
         "companyLocation": "Los Angeles",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Playground",
@@ -3804,7 +4031,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Plask motion",
@@ -3820,7 +4048,8 @@
         "companyLocation": "Seoul",
         "funding": "\u20a93.000.000.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "PhotoRoom",
@@ -3839,7 +4068,8 @@
         "companyLocation": "Paris, Ile-de-France, France",
         "funding": "$19,000,000.00",
         "revenuePerYear": "$19,125,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Nightcaf\u00e9",
@@ -3855,7 +4085,8 @@
         "companyLocation": "Sydney",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Neural.love",
@@ -3871,7 +4102,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Krisp",
@@ -3887,7 +4119,8 @@
         "companyLocation": "Berkeley",
         "funding": "$17.500.000",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Fliki",
@@ -3903,7 +4136,8 @@
         "companyLocation": "Wilmington",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Dubverse",
@@ -3919,7 +4153,8 @@
         "companyLocation": "Gurgaon, Haryana, India",
         "funding": "$800,000.00",
         "revenuePerYear": "$800,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Growthbar",
@@ -3935,7 +4170,8 @@
         "companyLocation": "",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Article Forge",
@@ -3954,7 +4190,8 @@
         "companyLocation": "Baltimore",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Typewise",
@@ -3970,7 +4207,8 @@
         "companyLocation": "Zurich, Switzerland",
         "funding": "",
         "revenuePerYear": "$3,400,000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "CoWrite",
@@ -3986,7 +4224,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$21,000,000.00",
         "revenuePerYear": "$26,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Writesonic",
@@ -4002,7 +4241,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$2,500,000.00",
         "revenuePerYear": "$2,625,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "You.com",
@@ -4021,7 +4261,8 @@
         "companyLocation": "Palo Alto, California, United States",
         "funding": "$25,000,000.00",
         "revenuePerYear": "$45,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Ad Auris",
@@ -4037,7 +4278,8 @@
         "companyLocation": "Vancouver, British Columbia, Canada",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Aimi",
@@ -4053,7 +4295,8 @@
         "companyLocation": "Austin, Texas, United States",
         "funding": "$20,000,000.00",
         "revenuePerYear": "$20,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "coqui.ai",
@@ -4069,7 +4312,8 @@
         "companyLocation": "Berlin, Germany",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Deepgram",
@@ -4085,7 +4329,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$47,000,000.00",
         "revenuePerYear": "$85,920,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Endel",
@@ -4101,7 +4346,8 @@
         "companyLocation": "Berlin, Germany",
         "funding": "$15,000,000.00",
         "revenuePerYear": "$21,221,791.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Listnr",
@@ -4121,7 +4367,8 @@
         "companyLocation": "Middletown, Delaware, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "LOVO",
@@ -4137,7 +4384,8 @@
         "companyLocation": "Berkeley, California, United States",
         "funding": "$2,000,000.00",
         "revenuePerYear": "$6,850,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Moises",
@@ -4153,7 +4401,8 @@
         "companyLocation": "Salt Lake City, Utah, United States",
         "funding": "$8,825,709.00",
         "revenuePerYear": "$10,425,709.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Neural Space",
@@ -4169,7 +4418,8 @@
         "companyLocation": "London, England, United Kingdom",
         "funding": "$1,251,874.00",
         "revenuePerYear": "$3,071,875.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Notably",
@@ -4188,7 +4438,8 @@
         "companyLocation": "Florida, New York, United States",
         "funding": "$1,500,000.00",
         "revenuePerYear": "$1,500,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Replica Studios",
@@ -4204,7 +4455,8 @@
         "companyLocation": "Brisbane, Queensland, Australia",
         "funding": "$2,873,757.00",
         "revenuePerYear": "$5,373,757.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Resemble AI",
@@ -4220,7 +4472,8 @@
         "companyLocation": "Toronto, Ontario, Canada",
         "funding": "$2,000,000.00",
         "revenuePerYear": "$4,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Soundraw",
@@ -4236,7 +4489,8 @@
         "companyLocation": "Tokyo, Japan",
         "funding": "1,500,000",
         "revenuePerYear": "2,000,000",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Speechify",
@@ -4256,7 +4510,8 @@
         "companyLocation": "Miami, Florida, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Vocal Clarity",
@@ -4272,7 +4527,8 @@
         "companyLocation": "New York, United States",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Voicemod",
@@ -4288,7 +4544,8 @@
         "companyLocation": "Valencia, Comunidad Valenciana, Spain",
         "funding": "$7,988,496.00",
         "revenuePerYear": "$8,547,522.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "WellSaid Labs",
@@ -4304,7 +4561,8 @@
         "companyLocation": "Seattle, Washington, United States",
         "funding": "$10,000,000.00",
         "revenuePerYear": "$10,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "ClipDrop",
@@ -4323,7 +4581,8 @@
         "companyLocation": "Paris, Ile-de-France, France",
         "funding": "",
         "revenuePerYear": "",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Facet",
@@ -4342,7 +4601,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$13,000,000.00",
         "revenuePerYear": "$15,500,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Let's Enhance",
@@ -4358,7 +4618,8 @@
         "companyLocation": "San Francisco, California, United States",
         "funding": "$3,000,000.00",
         "revenuePerYear": "$3,000,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     },
     {
         "name": "Try Pencil",
@@ -4374,6 +4635,7 @@
         "companyLocation": "Singapore, Central Region, Singapore",
         "funding": "$2,750,000.00",
         "revenuePerYear": "$3,850,000.00",
-        "notes": ""
+        "notes": "",
+        "highlightProduct": "no"
     }
 ]

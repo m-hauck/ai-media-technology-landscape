@@ -233,6 +233,17 @@ PRODUCTS
     text-shadow: 0 0 10px white;
     transition: opacity 0.5s ease-out;
 }
+.product-highlight::before {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(220, 0, 0);
+    font-size: 2rem;
+    transform: translate(50%, 0%);
+    z-index: 1;
+    line-height: 0.5;
+}
 /*
 TAGS
 */
@@ -383,6 +394,14 @@ LEGEND
 
 #legend-payment-model .payment-model {
     font-size: inherit;
+}
+
+#legend-product-highlight .product-highlight {
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    width: 100px;
+    border-color: #aaa;
 }
 
 /*

@@ -6,6 +6,7 @@ const modalCloseButton = document.querySelector("dialog #modal-close-button")!;
 const PRODUCT_KEY_NAMES = {
     name: "Name",
     manufacturer: "Company",
+    highlightProduct: "Highlight product",
     logo: "Logo",
     link: "Link",
     mediatype: "Media type",

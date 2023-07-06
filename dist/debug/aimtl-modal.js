@@ -126,6 +126,9 @@
       if (product["productAvailable"] == "false") {
         productListItem.classList.add("product-unavailable");
       }
+      if (product["highlightProduct"] == "yes") {
+        productListItem.classList.add("product-highlight");
+      }
       product["paymentModel"].forEach((paymentModel) => {
         const paymentModelDiv = document.createElement("div");
         paymentModelDiv.classList.add("payment-model");
@@ -233,6 +236,7 @@
   var PRODUCT_KEY_NAMES = {
     name: "Name",
     manufacturer: "Company",
+    highlightProduct: "Highlight product",
     logo: "Logo",
     link: "Link",
     mediatype: "Media type",
