@@ -92,7 +92,7 @@
         "description": "Text- and Image-Analytics, TextToSpeech, SpeechToText",
         "technologyReadinessLevel": "mass-production",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_SpeechToText",
             "ProductionContent_SpeechToText",
             "TechnicalProduction_SpeechToText"
         ],
@@ -192,7 +192,7 @@
         "description": "Media asset management; Tagging; Translation; generation of subtitles; Fingerprinting",
         "technologyReadinessLevel": "mass-production",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeMetadata",
             "ProductionContent_GenerativeMetadata"
         ],
         "paymentModel": ["free"],
@@ -371,7 +371,7 @@
         "description": "video content and audience analysis; Programmatic TV; Quality control",
         "technologyReadinessLevel": "mass-production",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_Analyzes",
             "AcquisitionAdvertisement_Analyzes",
             "Distribution"
         ],
@@ -1353,7 +1353,7 @@
         "description": "Media asset management; metadata generating",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeMetadata",
             "ProductionContent_GenerativeMetadata"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -1420,7 +1420,7 @@
         "description": "Market analyzing tool; extracting information from texts",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_Analyzes",
             "AcquisitionAdvertisement_Analyzes"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -1939,7 +1939,7 @@
         "description": "Speech to text tool; speeh analyzing",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_SpeechToText",
             "TechnicalProduction_SpeechToText"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -2259,7 +2259,7 @@
         "description": "AI-powered conversational interface that uses OpenAI technology to understand and process natural language input; Natural language processing, Adaptive learning",
         "technologyReadinessLevel": "mass-production",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeText",
             "ProductionContent_GenerativeText"
         ],
         "paymentModel": ["freemium"],
@@ -2345,7 +2345,7 @@
         "description": "automatically creating text-based content, offers publishers and marketers an approach to content distribution and performance measurement",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeText",
             "ProductionContent_GenerativeText",
             "AdvertisementPlacement_GenerativeAdContent"
         ],
@@ -2481,7 +2481,7 @@
         "description": "researches, writes, and optimizes high-quality SEO content",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeText",
             "ProductionContent_GenerativeText"
         ],
         "paymentModel": ["paid-periodically"],
@@ -2500,7 +2500,7 @@
         "description": "automatically summarises background reading; produce blogs, articles, and reports faster",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeText",
             "ProductionContent_GenerativeText"
         ],
         "paymentModel": ["paid-periodically"],
@@ -3121,7 +3121,7 @@
         "description": "Generating assets for games",
         "technologyReadinessLevel": "applied-research",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeGaming",
             "ProductionContent_GenerativeGaming"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -3292,7 +3292,7 @@
         "mediatype": ["image"],
         "description": "Creating software that understands the rules of great design and allows anyone to build stunningly beautiful visual documents with ease.",
         "technologyReadinessLevel": "first-applications",
-        "categories": ["ProcurementContent", "ProductionContent_Design"],
+        "categories": ["ProcurementContent_Design", "ProductionContent_Design"],
         "paymentModel": ["paid-with-premium-extra", "paid-periodically"],
         "companyLocation": "San Francisco, California, United States",
         "funding": "",
@@ -3308,7 +3308,7 @@
         "mediatype": ["text", "image"],
         "description": "Blend is AI-driven graphic design and marketing app to help sellers to stand out and sell more products online with social graphics, product photos and SEO optimised copy .",
         "technologyReadinessLevel": "first-applications",
-        "categories": ["ProcurementContent", "ProductionContent_Design"],
+        "categories": ["ProcurementContent_Design", "ProductionContent_Design"],
         "paymentModel": ["contact-for-pricing"],
         "companyLocation": "Bengaluru, Karnataka, India",
         "funding": "",
@@ -3341,7 +3341,7 @@
         "description": "Create and customize limitless visuals at scale through generative AI for businesses",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeImage",
             "ProductionContent_GenerativeImage"
         ],
         "paymentModel": ["freemium", "paid-periodically"],
@@ -3376,7 +3376,7 @@
         "description": "Common Sense Machines is building artificial intelligence that learns to translate the world into a 3D simulation.",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_ThreeDimensionalModeling",
             "ProductionContent_ThreeDimensionalModeling"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -3414,7 +3414,7 @@
         "description": "AI for turning 2D images into 3D models",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_ThreeDimensionalModeling",
             "ProductionContent_ThreeDimensionalModeling"
         ],
         "paymentModel": ["paid-periodically"],
@@ -3432,7 +3432,7 @@
         "mediatype": ["image"],
         "description": "Maket automates the creation of floor plans using generative AI",
         "technologyReadinessLevel": "first-applications",
-        "categories": ["ProcurementContent", "ProductionContent_Design"],
+        "categories": ["ProcurementContent_Design", "ProductionContent_Design"],
         "paymentModel": ["freemium", "paid-periodically"],
         "companyLocation": "Montr\u00e9al, Quebec, Canada",
         "funding": "",
@@ -3448,7 +3448,10 @@
         "mediatype": ["image"],
         "description": "Unlock the potential of offsite construction with the ultimate takeoff and cost estimation software",
         "technologyReadinessLevel": "first-applications",
-        "categories": ["ProcurementContent", "ProductionContent_Testing"],
+        "categories": [
+            "ProcurementContent_Testing",
+            "ProductionContent_Testing"
+        ],
         "paymentModel": ["freemium"],
         "companyLocation": "Oslo, Norway",
         "funding": "",
@@ -3465,7 +3468,7 @@
         "description": "Generating design assets (textures)",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeImage",
             "ProductionContent_GenerativeImage"
         ],
         "paymentModel": ["freemium"],
@@ -3484,7 +3487,7 @@
         "description": "Unique, on-brand content for marketing all in your browser",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeImage",
             "ProductionContent_GenerativeImage"
         ],
         "paymentModel": ["free"],
@@ -3503,7 +3506,7 @@
         "description": "Generative AI for game assets",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeGaming",
             "ProductionContent_GenerativeGaming"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -3522,7 +3525,7 @@
         "description": "Instant Automagic 3D creation",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_ThreeDimensionalModeling",
             "ProductionContent_ThreeDimensionalModeling"
         ],
         "paymentModel": ["contact-for-pricing"],
@@ -3556,7 +3559,7 @@
         "mediatype": ["image"],
         "description": "Uizard is a design tool for non-designers",
         "technologyReadinessLevel": "first-applications",
-        "categories": ["ProcurementContent", "ProductionContent_Design"],
+        "categories": ["ProcurementContent_Design", "ProductionContent_Design"],
         "paymentModel": ["freemium"],
         "companyLocation": "Copenhagen, Hovedstaden, Denmark",
         "funding": "",
@@ -4011,7 +4014,7 @@
         "description": "AI-powered search engine that delivers answers including suitable search results. Can be used for generating ideas, gathering information, generating content and templates.",
         "technologyReadinessLevel": "first-applications",
         "categories": [
-            "ProcurementContent",
+            "ProcurementContent_GenerativeText",
             "ProductionContent_GenerativeText"
         ],
         "paymentModel": ["free"],
@@ -4177,7 +4180,10 @@
         "mediatype": ["text"],
         "description": "Notably is a cloud-based data-driven platform thoughtfully designed for research workflow. It lets users create a research repository, manage and track participants, analyze research data and share insights.",
         "technologyReadinessLevel": "basic-research",
-        "categories": ["ProcurementContent", "ProductionContent_Testing"],
+        "categories": [
+            "ProcurementContent_Testing",
+            "ProductionContent_Testing"
+        ],
         "paymentModel": ["paid-periodically"],
         "companyLocation": "Florida, New York, United States",
         "funding": "$1,500,000.00",

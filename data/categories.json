@@ -1,7 +1,45 @@
 {
     "ProcurementContent": {
         "description": "Procurement of information and content",
-        "products": []
+        "products": [],
+        "subcategories": {
+            "Analyzes": {
+                "description": "Analyzes",
+                "products": []
+            },
+            "Design": {
+                "description": "Design",
+                "products": []
+            },
+            "GenerativeGaming": {
+                "description": "Generative (Gaming)",
+                "products": []
+            },
+            "GenerativeImage": {
+                "description": "Generative (Image)",
+                "products": []
+            },
+            "GenerativeMetadata": {
+                "description": "Generative (Metadata)",
+                "products": []
+            },
+            "GenerativeText": {
+                "description": "Generative (Text)",
+                "products": []
+            },
+            "SpeechToText": {
+                "description": "Speech-To-Text / Speech-To-Text",
+                "products": []
+            },
+            "ThreeDimensionalModeling": {
+                "description": "3D Modelling",
+                "products": []
+            },
+            "Testing": {
+                "description": "Testing",
+                "products": []
+            }
+        }
     },
     "AcquisitionAdvertisement": {
         "description": "Acquisition of advertisement",
