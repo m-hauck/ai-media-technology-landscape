@@ -153,6 +153,9 @@
   };
   function setEqualProductHeight() {
     const products = document.querySelectorAll(".product");
+    products.forEach((item) => {
+      item.style.minHeight = "0px";
+    });
     let maxHeight = 0;
     products.forEach((item) => {
       const itemHeight = item.getBoundingClientRect().height;
@@ -341,7 +344,9 @@
     }
   }
   function toggleUnavailableProductsVisibility(categories) {
-    const INPUT_SWITCH = document.querySelector(".switch input");
+    const INPUT_SWITCH = document.querySelector(
+      "#unavailable-products-switch .switch input"
+    );
     const UNAVAILABLE_PRODUCTS = document.querySelectorAll(
       ".product-unavailable"
     );
@@ -358,6 +363,18 @@
       setProductCounts(categories);
     });
   }
+  function toggleProductInformationVisibility() {
+    const INPUT_SWITCH = document.querySelector(
+      "#product-information-switch .switch input"
+    );
+    const PRODUCTS = document.querySelectorAll(".product");
+    INPUT_SWITCH?.addEventListener("change", () => {
+      PRODUCTS.forEach((product) => {
+        product.classList.toggle("product-information-hidden");
+      });
+      setEqualProductHeight();
+    });
+  }
   console.clear();
   Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")]).then((values) => {
     const [categories, products] = values;
@@ -370,5 +387,6 @@
     setEmptyModalFields();
     setEqualProductHeight();
     toggleUnavailableProductsVisibility(categories);
+    toggleProductInformationVisibility();
   }).catch((error) => console.error(`Could not load values. ${error.stack}`));
 })();

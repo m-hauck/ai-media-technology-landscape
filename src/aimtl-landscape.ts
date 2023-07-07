@@ -50,6 +50,11 @@ type Product = {
 function setEqualProductHeight() {
     const products = document.querySelectorAll<HTMLElement>(".product");
 
+    // Set the maxHeight to all products in .product
+    products.forEach((item) => {
+        item.style.minHeight = "0px";
+    });
+
     let maxHeight = 0;
     products.forEach((item) => {
         const itemHeight = item.getBoundingClientRect().height;
@@ -357,8 +362,9 @@ function addCategoriesAndProductsToPage(categories: Category): void {
  * @param categories List of categories with products
  */
 function toggleUnavailableProductsVisibility(categories: Category) {
-    const INPUT_SWITCH =
-        document.querySelector<HTMLInputElement>(".switch input");
+    const INPUT_SWITCH = document.querySelector<HTMLInputElement>(
+        "#unavailable-products-switch .switch input"
+    );
     const UNAVAILABLE_PRODUCTS = document.querySelectorAll<HTMLDivElement>(
         ".product-unavailable"
     );
@@ -374,6 +380,23 @@ function toggleUnavailableProductsVisibility(categories: Category) {
             product.style.display = displayStyle;
         });
         setProductCounts(categories);
+    });
+}
+
+/**
+ * Toggle the visibility of unavailable products
+ * @param categories List of categories with products
+ */
+function toggleProductInformationVisibility() {
+    const INPUT_SWITCH = document.querySelector<HTMLInputElement>(
+        "#product-information-switch .switch input"
+    );
+    const PRODUCTS = document.querySelectorAll<HTMLDivElement>(".product");
+    INPUT_SWITCH?.addEventListener("change", () => {
+        PRODUCTS.forEach((product) => {
+            product.classList.toggle("product-information-hidden");
+        });
+        setEqualProductHeight();
     });
 }
 
@@ -393,5 +416,6 @@ Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")])
         setEmptyModalFields();
         setEqualProductHeight();
         toggleUnavailableProductsVisibility(categories as Category);
+        toggleProductInformationVisibility();
     })
     .catch((error) => console.error(`Could not load values. ${error.stack}`));

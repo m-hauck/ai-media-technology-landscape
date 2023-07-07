@@ -207,9 +207,11 @@ PRODUCTS
 .logo {
     width: 100%;
     max-height: 30px;
-    margin-bottom: 10px;
     display: inline-block;
     object-fit: contain;
+}
+.product-title {
+    margin-top: 10px;
 }
 .product-unavailable {
     opacity: 0.25;
@@ -243,6 +245,10 @@ PRODUCTS
     z-index: 1;
     line-height: 0;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.product-information-hidden .product-title,
+.product-information-hidden .payment-model {
+    display: none;
 }
 /*
 TAGS
@@ -297,9 +303,15 @@ TAGS
 }
 
 /*
-SWITCH
+SWITCHES
 Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
 */
+#switches {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
 .switch-wrapper {
     display: flex;
     align-items: center;

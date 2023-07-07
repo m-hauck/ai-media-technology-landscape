@@ -55,15 +55,27 @@
                     ><span id="count-number">0</span> products</span
                 >
             </h1>
-            <div
-                id="unavailable-products-switch"
-                class="switch-wrapper invisible"
-            >
-                <label class="switch">
-                    <input type="checkbox" checked />
-                    <span class="slider"></span>
-                </label>
-                Show unavailable products
+            <div id="switches">
+                <div
+                    id="product-information-switch"
+                    class="switch-wrapper invisible"
+                >
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                    </label>
+                    Show product information
+                </div>
+                <div
+                    id="unavailable-products-switch"
+                    class="switch-wrapper invisible"
+                >
+                    <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                    </label>
+                    Show unavailable products
+                </div>
             </div>
             <template id="product-template">
                 <li class="product">
@@ -73,8 +85,10 @@
                             src=""
                             alt="Click here for more information"
                         />
-                        <span class="product-manufacturer"></span>
-                        <span class="product-name"></span>
+                        <div class="product-title">
+                            <span class="product-manufacturer"></span>
+                            <span class="product-name"></span>
+                        </div>
                     </div>
                 </li>
             </template>
