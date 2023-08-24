@@ -2520,7 +2520,7 @@
         "logo": "cogram-logo.png",
         "link": "https://cogram.com",
         "mediatype": ["text"],
-        "description": "Take notes in virtual meetings, track action items, and automate downstream tasks, while keeping your data private and secure",
+        "description": "Take notes in virtual meetings, track action items, and automate downstream tasks, while keeping data private and secure",
         "technologyReadinessLevel": "applied-research",
         "categories": [
             "ProcurementContent",
