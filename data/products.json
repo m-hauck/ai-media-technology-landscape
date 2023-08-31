@@ -2294,7 +2294,7 @@
         "funding": "",
         "revenuePerYear": "",
         "notes": "",
-        "highlightProduct": "yes"
+        "highlightProduct": "no"
     },
     {
         "name": "2txt-AI",
@@ -4049,7 +4049,7 @@
         "funding": "\u20a93.000.000.000",
         "revenuePerYear": "",
         "notes": "",
-        "highlightProduct": "no"
+        "highlightProduct": "yes"
     },
     {
         "name": "PhotoRoom",
