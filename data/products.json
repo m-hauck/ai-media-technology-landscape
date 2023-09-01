@@ -1160,7 +1160,7 @@
         "funding": "",
         "revenuePerYear": "",
         "notes": "",
-        "highlightProduct": "yes"
+        "highlightProduct": "no"
     },
     {
         "name": "Movix",
@@ -1727,7 +1727,7 @@
         "funding": "$40.000.000",
         "revenuePerYear": "$78.900.000",
         "notes": "",
-        "highlightProduct": "no"
+        "highlightProduct": "yes"
     },
     {
         "name": "AI Story Assist",
