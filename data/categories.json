@@ -28,7 +28,7 @@
                 "products": []
             },
             "SpeechToText": {
-                "description": "Speech-To-Text / Speech-To-Text",
+                "description": "Speech-To-Text / Text-To-Speech",
                 "products": []
             },
             "ThreeDimensionalModeling": {
@@ -132,7 +132,7 @@
                 "products": []
             },
             "SpeechToText": {
-                "description": "Speech-To-Text / Speech-To-Text",
+                "description": "Speech-To-Text / Text-To-Speech",
                 "products": []
             },
             "Testing": {
@@ -204,7 +204,7 @@
                 "products": []
             },
             "ImageEditor": {
-                "description": "ImageEditor",
+                "description": "Image Editor",
                 "products": []
             },
             "Personalization": {
@@ -216,7 +216,7 @@
                 "products": []
             },
             "SpeechToText": {
-                "description": "Speech-To-Text / Speech-To-Text",
+                "description": "Speech-To-Text / Text-To-Speech",
                 "products": []
             },
             "TextEditor": {
@@ -246,7 +246,7 @@
                 "products": []
             },
             "SpeechToText": {
-                "description": "Speech-To-Text / Speech-To-Text",
+                "description": "Speech-To-Text / Text-To-Speech",
                 "products": []
             },
             "VirtualMeetings": {
