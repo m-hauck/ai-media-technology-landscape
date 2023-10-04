@@ -54,14 +54,15 @@
       xhr.send();
     });
   }
-  function getVisibleProducts(htmlSelector) {
+  function getVisibleProductsCount(htmlSelector) {
     const visibleProducts = document.querySelectorAll(
       `${htmlSelector} .product:not([style*='display: none'])`
     );
     const uniqueProducts = /* @__PURE__ */ new Set();
     visibleProducts.forEach((product) => {
-      const productText = product.innerText.trim();
-      uniqueProducts.add(productText);
+      const productName = product.dataset.name;
+      const productManufacturer = product.dataset.manufacturer;
+      uniqueProducts.add(`${productManufacturer} ${productName}`);
     });
     return uniqueProducts.size.toString();
   }
@@ -69,9 +70,9 @@
     for (const [categoryKey] of Object.entries(categories)) {
       document.querySelector(
         `#${categoryKey} .count-product`
-      ).innerText = getVisibleProducts(`#${categoryKey}`);
+      ).innerText = getVisibleProductsCount(`#${categoryKey}`);
     }
-    document.querySelector("#count-number").innerText = getVisibleProducts("#row-products");
+    document.querySelector("#count-number").innerText = getVisibleProductsCount("#row-products");
   }
   function afterProductsLoaded() {
     document.querySelector("#counter-total")?.classList.remove("invisible");
@@ -293,7 +294,7 @@
   }
   function convertCases(product, key) {
     const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
-    modal.querySelector(`[data-${kebabKey}-content]`).innerText = product.getAttribute(`data-${kebabKey}`) || "";
+    modal.querySelector(`[data-${kebabKey}-content]`).innerText = product.getAttribute(`data-${kebabKey}`) ?? "";
     let display_style = "initial";
     if (product.getAttribute(`data-${kebabKey}`) == null || product.getAttribute(`data-${kebabKey}`) == "") {
       display_style = "none";

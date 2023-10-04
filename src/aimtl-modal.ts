@@ -79,7 +79,7 @@ export function setEmptyModalFields(): void {
 function convertCases(product: HTMLElement, key: string): void {
     const kebabKey = key.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
     modal.querySelector<HTMLElement>(`[data-${kebabKey}-content]`)!.innerText =
-        product.getAttribute(`data-${kebabKey}`) || "";
+        product.getAttribute(`data-${kebabKey}`) ?? "";
 
     // Hide row if no data content available
     let display_style = "initial";

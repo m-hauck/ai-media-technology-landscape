@@ -115,15 +115,16 @@ function loadJson(path: string): void | Promise<void | Category | Product[]> {
     });
 }
 
-function getVisibleProducts(htmlSelector: string): string {
+function getVisibleProductsCount(htmlSelector: string): string {
     const visibleProducts = document.querySelectorAll<HTMLDivElement>(
         `${htmlSelector} .product:not([style*='display: none'])`
     );
 
     const uniqueProducts = new Set();
     visibleProducts.forEach((product) => {
-        const productText = product.innerText.trim();
-        uniqueProducts.add(productText);
+        const productName = product.dataset.name;
+        const productManufacturer = product.dataset.manufacturer;
+        uniqueProducts.add(`${productManufacturer} ${productName}`);
     });
 
     return uniqueProducts.size.toString();
@@ -138,12 +139,12 @@ function setProductCounts(categories: Category) {
     for (const [categoryKey] of Object.entries(categories)) {
         document.querySelector<HTMLSpanElement>(
             `#${categoryKey} .count-product`
-        )!.innerText = getVisibleProducts(`#${categoryKey}`);
+        )!.innerText = getVisibleProductsCount(`#${categoryKey}`);
     }
 
     // Total data count
     document.querySelector<HTMLSpanElement>("#count-number")!.innerText =
-        getVisibleProducts("#row-products");
+        getVisibleProductsCount("#row-products");
 }
 
 /**
