@@ -189,19 +189,51 @@ function addProductsToCategories(
             } else {
                 categories[mainCategory]["products"].push(product);
             }
-
-            // Sort content by product names
-            categories[mainCategory]["products"].sort((first, second) => {
-                if (first.name < second.name) {
-                    return -1;
-                } else if (first.name > second.name) {
-                    return 1;
-                } else {
-                    return 0;
-                }
-            });
         });
     });
+}
+
+/**
+ * Sorts an array of products based on a specified property.
+ * @param products An array of Product objects to be sorted.
+ * @param property The property based on which the sorting should be performed.
+ */
+function sortProductsByProperty(
+    products: Product[],
+    property: keyof Product
+): void {
+    products.sort((first: Product, second: Product) => {
+        // Ignore the case
+        const firstValue = first[property].toString().toLowerCase();
+        const secondValue = second[property].toString().toLowerCase();
+        if (firstValue < secondValue) {
+            return -1;
+        } else if (firstValue > secondValue) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+}
+
+/**
+ * Sorts products in categories.
+ * @param categories The object containing the categories and their respective products.
+ */
+function sortProductsInCategories(categories: Category): void {
+    for (const [category, categoryContent] of Object.entries(categories)) {
+        // Sort products that don't belong to a subcategory
+        sortProductsByProperty(categories[category]["products"], "name");
+
+        const subcategories = categoryContent["subcategories"];
+        // Sort products that belong to a subcategory
+        for (const [subcategory, _] of Object.entries(subcategories)) {
+            sortProductsByProperty(
+                subcategories[subcategory]["products"],
+                "name"
+            );
+        }
+    }
 }
 
 /**
@@ -213,7 +245,7 @@ function addProductsToHtmlElement(
     products: Product[],
     htmlTarget: HTMLElement | null,
     categories: Category
-) {
+): void {
     if (htmlTarget == null) {
         return;
     }
@@ -412,6 +444,7 @@ Promise.all([loadJson("data/categories.json"), loadJson("data/products.json")])
         }
 
         addProductsToCategories(categories as Category, products as Product[]);
+        sortProductsInCategories(categories as Category);
         addCategoriesAndProductsToPage(categories as Category);
         setProductCounts(categories as Category);
         setEmptyModalFields();

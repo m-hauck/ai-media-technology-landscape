@@ -232,17 +232,33 @@
         } else {
           categories[mainCategory]["products"].push(product);
         }
-        categories[mainCategory]["products"].sort((first, second) => {
-          if (first.name < second.name) {
-            return -1;
-          } else if (first.name > second.name) {
-            return 1;
-          } else {
-            return 0;
-          }
-        });
       });
     });
+  }
+  function sortProductsByProperty(products, property) {
+    products.sort((first, second) => {
+      const firstValue = first[property].toString().toLowerCase();
+      const secondValue = second[property].toString().toLowerCase();
+      if (firstValue < secondValue) {
+        return -1;
+      } else if (firstValue > secondValue) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  }
+  function sortProductsInCategories(categories) {
+    for (const [category, categoryContent] of Object.entries(categories)) {
+      sortProductsByProperty(categories[category]["products"], "name");
+      const subcategories = categoryContent["subcategories"];
+      for (const [subcategory, _] of Object.entries(subcategories)) {
+        sortProductsByProperty(
+          subcategories[subcategory]["products"],
+          "name"
+        );
+      }
+    }
   }
   function addProductsToHtmlElement(products, htmlTarget, categories) {
     if (htmlTarget == null) {
@@ -383,6 +399,7 @@
       return;
     }
     addProductsToCategories(categories, products);
+    sortProductsInCategories(categories);
     addCategoriesAndProductsToPage(categories);
     setProductCounts(categories);
     setEmptyModalFields();
