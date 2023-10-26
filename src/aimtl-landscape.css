@@ -199,10 +199,12 @@ PRODUCTS
 .product-manufacturer {
     font-weight: lighter;
     color: #666666;
+    hyphens: auto;
 }
 .product-name {
     display: block;
     font-weight: bold;
+    hyphens: auto;
 }
 .logo {
     width: 100%;
