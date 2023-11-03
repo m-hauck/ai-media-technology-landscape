@@ -536,7 +536,7 @@ Media queries
         column-count: 3;
     }
     .container {
-        max-width: 1140px;
+        max-width: 90vw;
         margin: 0 auto;
     }
     #content {
