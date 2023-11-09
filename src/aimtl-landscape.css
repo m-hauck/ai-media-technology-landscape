@@ -155,7 +155,7 @@ CATEGORIES
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .subcategory-header {
     background: #fff;
@@ -541,5 +541,14 @@ Media queries
     }
     #content {
         padding: 0;
+    }
+}
+
+@media (min-width: 120rem) {
+    .category-columns {
+        display: flex;
+    }
+    .category {
+        height: fit-content;
     }
 }
