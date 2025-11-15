@@ -172,11 +172,9 @@
     });
   }
   function deleteTableRow(button) {
-    if (button == null || button.parentNode == null)
-      return;
+    if (button == null || button.parentNode == null) return;
     const row = button.parentNode.parentNode;
-    if (row == null || row.parentNode == null)
-      return;
+    if (row == null || row.parentNode == null) return;
     row.parentNode.removeChild(row);
   }
   function addNewProductToTextarea(product, textarea) {
